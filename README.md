@@ -1,12 +1,6 @@
 # MakoCelo
 Log file parser for Company of Heroes 2 match stats
 
-Program: MakoCelo
-Date   : 01/27/2020
-Version: 3.00
-Code   : Visual Basic 2008 (NET 3.5)
-
-
 SUMMARY
 ------------------------------------------------------------------
 MakoCelo is a log file parser for the game Company of Heroes 2.
