@@ -12,7 +12,8 @@ COH2.Org stats. Stats displayed by this program are limited to
 what is available in the local log file.
 
 For a full featured program please search CELO on COH2.Org for
-the original program. The Company of Heroes ELO program.
+the original program. The Company of Heroes ELO program. Or 
+look at https://github.com/0xNeffarion/CELO-Enhanced
 
 The goal of this application is to make it easy for streamers
 to create custom match stat visuals for their streams. Preset
