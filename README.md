@@ -20,6 +20,9 @@ to create custom match stat visuals for their streams. Preset
 size and layouts make it a one click operation to get consistent
 layouts.
 
+CONTRIBUTORS
+------------------------------------------------------------------
+Ishtari, Sturmpanther, Flappy
 
 VERSION HISTORY
 ------------------------------------------------------------------
@@ -56,7 +59,11 @@ v3.00
 * Player select faction icon rollover added.
 * New settings file with some future vals added.
 	
-
-
+v3.10
+* Added FX mode controls for future graphical updates.
+* Added Shade/Glow and Emboss FX.
+* Added code to maintain last played match stats.
+* Added Help Hint button for new FX types.
+* Created MSI installation package.
 
 
