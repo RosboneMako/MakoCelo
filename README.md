@@ -8,8 +8,12 @@ The program displays all players, their ranks, and the factions
 they are playing. By clicking a players name (left/right), each
 players individual stats will be called up on your web browser.
 Left clicking calls up Relics stats and left clicking calls up 
-COH2.Org stats. Stats displayed by this program are limited to 
-what is available in the local log file.
+COH2.Org stats. Presing CTRL and Left mouse button sends the 
+player name selected to google translate. CTRL and RIGHT mouse
+send you to Coh2.Org main page for that player.
+
+Stats displayed by this program are limited to what is available
+in the local log file at runtime.
 
 For a full featured program please search CELO on COH2.Org for
 the original program. The Company of Heroes ELO program. Or 
@@ -66,4 +70,10 @@ v3.10
 * Added Help Hint button for new FX types.
 * Created MSI installation package.
 
-
+v3.20
+* Migrated to Visual Studio 2019
+* Improved LOG file scanning. Catches out of order matchs
+  and spectates.
+* Added Blurry Label background FX.
+* Able to apply all FX at once now.
+* Ctrl-Right now directs you to Coh2.Org main player card page.
