@@ -1,6 +1,7 @@
 # MakoCelo
 * Log file parser for Company of Heroes 2 match stats.
 * Written in Visual Basic 2019.
+* Version: 3.30
 * Posted: Feb 05, 2020
 
 SUMMARY
