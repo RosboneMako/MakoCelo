@@ -9,8 +9,8 @@ MakoCelo is a log file parser for the game Company of Heroes 2.
 The program displays all players, their ranks, and the factions
 they are playing. By clicking a players name (left/right), each
 players individual stats will be called up on your web browser.
-Left clicking calls up Relics stats and left clicking calls up 
-COH2.Org stats. Presing CTRL and Left mouse button sends the 
+LEFT clicking calls up Relics stats and RIGHT clicking calls up 
+COH2.Org stats. Presing CTRL and LEFT mouse button sends the 
 player name selected to google translate. CTRL and RIGHT mouse
 send you to Coh2.Org main page for that player.
 
@@ -79,3 +79,10 @@ v3.20
 * Added Blurry Label background FX.
 * Able to apply all FX at once now.
 * Ctrl-Right now directs you to Coh2.Org main player card page.
+
+v3.30
+* Added Save stats image button.
+* Changed COPY and SAVE to enabled at all times.
+* Slight speed improvements on FX routines.
+* Added additional error checking.
+* Cleaned up code for posting.
