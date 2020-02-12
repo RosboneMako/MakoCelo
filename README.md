@@ -1,8 +1,8 @@
 # MakoCelo
 * Log file parser for Company of Heroes 2 match stats.
 * Written in Visual Basic 2019.
-* Version: 3.30
-* Posted: Feb 05, 2020
+* Version: 3.40
+* Posted: Feb 12, 2020
 
 SUMMARY
 ------------------------------------------------------------------
@@ -87,3 +87,11 @@ v3.30
 * Slight speed improvements on FX routines.
 * Added additional error checking.
 * Cleaned up code for posting.
+
+v3.40
+* Changed stats page default sizes to better fit COH2 screen.
+* Added centered screen X Layouts.
+* Optimized FX routines.
+* Fixed bad faction detection code.
+* Added bad match stats bypass option so replays show names.
+* Added Tool Tip option to help new users figure out controls.
