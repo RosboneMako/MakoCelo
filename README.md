@@ -1,19 +1,21 @@
 # MakoCelo
 * Log file parser for Company of Heroes 2 match stats.
 * Written in Visual Basic 2019.
-* Version: 3.40
-* Posted: Feb 12, 2020
+* Version: 4.00
+* Posted: March 10, 2020
 
+VERSION
+------------------------------------------------------------------
+3.40 - Best for most users. Simply shows CELO stats.
+4.00 - Adds Note Crawlers, Sounds, and image overlays for advanced
+       streaming options.
+       
 SUMMARY
 ------------------------------------------------------------------
 MakoCelo is a log file parser for the game Company of Heroes 2.
 The program displays all players, their ranks, and the factions
-they are playing. By clicking a players name (left/right), each
-players individual stats will be called up on your web browser.
-LEFT clicking calls up Relics stats and RIGHT clicking calls up 
-COH2.Org stats. Presing CTRL and LEFT mouse button sends the 
-player name selected to google translate. CTRL and RIGHT mouse
-send you to Coh2.Org main page for that player.
+they are playing. Additional stats can be found by clicking the 
+player name in the STATS window or using the PopUp menu option.
 
 Stats displayed by this program are limited to what is available
 in the local log file at runtime.
@@ -26,6 +28,15 @@ The goal of this application is to make it easy for streamers
 to create custom match stat visuals for their streams. Preset
 size and layouts make it a one click operation to get consistent
 layouts.
+
+GET STARTED
+------------------------------------------------------------------
+1) To get started, click on FIND LOG FILE to locate the Relic Log
+file used for match stats. The file is called Warnings.log. 
+2) Once a game is started, click on CHECK LOG FILE or SCAN LOG
+EVERY 10S. The program will open the log file and look for a
+match. For best results restart COH2 frequently.
+
 
 CONTRIBUTORS
 ------------------------------------------------------------------
@@ -95,3 +106,9 @@ v3.40
 * Fixed bad faction detection code.
 * Added bad match stats bypass option so replays show names.
 * Added Tool Tip option to help new users figure out controls.
+
+v4.00
+* Added NOTE objects with various text crawl animations.
+* Added SOUND section to quickly play premade WAVE sound files.
+* Added STATS page PopUp context menu option.
+* Added Window position and size storage option.
