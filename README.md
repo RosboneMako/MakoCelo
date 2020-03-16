@@ -10,6 +10,7 @@ VERSION
 
 4.00 - Adds Note Crawlers, Sounds, and image overlays for advanced
        streaming options.
+       
 4.10 - Sound volume and stop button. Manual Stat page sizing. 
        Bug fixes.      
        
