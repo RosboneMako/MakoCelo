@@ -1,8 +1,8 @@
 # MakoCelo
 * Log file parser for Company of Heroes 2 match stats.
 * Written in Visual Basic 2019.
-* Version: 4.00
-* Posted: March 10, 2020
+* Version: 4.10
+* Posted: March 15, 2020
 
 VERSION
 ------------------------------------------------------------------
@@ -10,6 +10,8 @@ VERSION
 
 4.00 - Adds Note Crawlers, Sounds, and image overlays for advanced
        streaming options.
+4.10 - Sound volume and stop button. Manual Stat page sizing. 
+       Bug fixes.      
        
 SUMMARY
 ------------------------------------------------------------------
@@ -113,3 +115,11 @@ v4.00
 * Added SOUND section to quickly play premade WAVE sound files.
 * Added STATS page PopUp context menu option.
 * Added Window position and size storage option.
+
+v4.10
+* Changed STAT page sizing to manual mode.
+* Added individual sound volume thru popup menu.
+* Added STOP button to sound player.
+* Fixed a recursive bug during the log file scan.
+* Added animation smoothing mode option.
+* Various smaller bug fixes.
