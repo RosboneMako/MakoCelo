@@ -33,6 +33,9 @@ to create custom match stat visuals for their streams. Preset
 size and layouts make it a one click operation to get consistent
 layouts.
 
+For examples and additional information goto:
+https://www.coh2.org/topic/103744/mako-celo
+
 GET STARTED
 ------------------------------------------------------------------
 1) To get started, click on FIND LOG FILE to locate the Relic Log
