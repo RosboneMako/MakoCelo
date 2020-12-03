@@ -6,8 +6,6 @@
 
 VERSION
 ------------------------------------------------------------------
-3.40 - Best for most users. Simply shows CELO stats.
-
 4.00 - Adds Note Crawlers, Sounds, and image overlays for advanced
        streaming options.
        
