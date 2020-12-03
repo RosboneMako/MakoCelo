@@ -10,7 +10,9 @@ VERSION
        streaming options.
        
 4.10 - Sound volume and stop button. Manual Stat page sizing. 
-       Bug fixes.      
+       Bug fixes.   
+       
+4.20 - Added Load/Save setup buttons.
        
 SUMMARY
 ------------------------------------------------------------------
