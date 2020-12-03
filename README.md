@@ -29,9 +29,7 @@ the original program. The Company of Heroes ELO program. Or
 look at https://github.com/0xNeffarion/CELO-Enhanced
 
 The goal of this application is to make it easy for streamers
-to create custom match stat visuals for their streams. Preset
-size and layouts make it a one click operation to get consistent
-layouts.
+to create custom match stat visuals for their streams. 
 
 For examples and additional information goto:
 https://www.coh2.org/topic/103744/mako-celo
