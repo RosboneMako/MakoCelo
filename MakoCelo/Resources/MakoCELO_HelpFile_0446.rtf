@@ -1,0 +1,126 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sl240\slmult1\b\f0\fs22\lang9 What is MakoCELO\par
+\b0 The \i Company of Heroes ELO\i0  (CELO) program was created to give players info about the current Coh2 match they are playing. That program uses web calls to get extended match information and has some built in tools  for non-match related tasks.  MakoCELO is a simplified program that just gives the basic match information from local files and lets the user further customize the data presentation. This is aimed at helping Twitch streamers create their own style.\b\par
+\par
+\b0 MakoCELO is a parser for Company of Heroes 2 log files.  As the game is being run, Relic logs information in a text file called \b Warnings.Log\b0 . This file is where you can find information about players ranks and steamIDs when a match starts. When directed, MakoCELO opens this file in READ ONLY mode and scans it looking for the current game stats. Since this file is local to the computer being used, it may be more reliable for some users.\par
+\par
+During a COH2 match this program will try to present information about the players in the current match. This program will need to be running when a COH2 match begins. It can be manually triggered to scan or it can automatically scan the log file periodically. A dropdown list allows for scan periods between 10 and 60 seconds.\par
+\par
+If a player does not have a rank for the current game mode, no rank will be shown as "---".\par
+\par
+\b ADDITIONAL PLAYER INFORMATION\b0\par
+Before the Coh2 64-bit patch, the players steam ID and ranks were located in the LOG file. They have been removed for no apparent reason.\line\line Because of this problem, MakoCELO now has to use web API based calls to read JSON data returned from Relics servers. Which is not documented anywhere and has been passed down to a few people secretly I suppose?\par
+\par
+A few new things are gained from the web calls:\line - Player ranks when spectating.\par
+- Player cards and team lists are now in makoCELO.\par
+- Player country flags and names available on main menu SHOW COUNTRY FLAGS.\par
+\par
+\b ELO PRESENTATION\par
+\b0 A section  has been added that tries to show player LEVEL and where they are in percent of player population. In order to approximate these values, MakoCELO needs to know how large the playerbase is for each mode. An ELO button has been added in the STATS AND NOTE SETUP area. \par
+\par
+At the ELO dialog you can select:\line - GET ALL ACTUAL to load all player mode web ages and get the actual player counts.\par
+- GET ALL APPROXIMATES to load pages and key off the page counter. \par
+\par
+When performing these web page calls you are subject to the Relic AGE GATE. Which may cause problems. If you so run the program again.\par
+\par
+Verify that all modes have values in them. Then press SAVE AND EXIT.\par
+\par
+You can now select the main menu option CYCLE ELO VALS. When a match is found the player ranks, level, and percent of population values will cycle every few seconds. \par
+\par
+\b PREMADE TEAM RANKS\b0\par
+MakoCELO has no way to determine if a group is playing as a team. This info was in the LOG file and no longer exists. MakoCELO now searches all of a players team combos looking for one that best represents the current players. This is good when people are sniping each other to boost as you can see they have played together and are a team.\par
+\par
+Premade ranks are now show three differnet ways:\par
+- If the team has a rank it is noted with a period:  Example \b 43.\b0\par
+- If the team has played together before but has no rank you will see: \b P.\b0\par
+- If the team has not played together before but has no rank you will see: \b 0.\b0\par
+\par
+\par
+\b MATCH PRESENTATION\b0\par
+MakoCelo is designed for Streaming and has several buttons to allow for match presentation customization such as text color, background image, etc.  Most colors in the program are now gradients and require two color defintions. Gradient direction buttons are located next to the color picker buttons.\par
+\par
+\b Example: [1] [2] [v] [>]\b0  \i are the controls to pick two colors and the gradient direction down or across.\i0\par
+\par
+The main stats area is defined in the STATS AND NOTES SETUP menu section. \par
+* Select RANK SETUP to adjust player rank fonts, colors, etc.\par
+* Select NAME SETUP to adjustplayer name fonts, colors, etc.\par
+\par
+The STATS background images or colors can be setup in either RANK or NAME setup. \par
+\par
+Since all names and ranks will not fit in the space provided, you can select the SHOW TEST DATA button to get a worst case scenario list of ranks and player names. You can then adjust your font sizes, stats layout sizes, etc to show as many characters as you see fit.\par
+\par
+The STATS information is displayed in five layers (Bottom to Top):\par
+* Background image or Color - Draw to the screen first.\par
+* RANK and NAME text boxes - Optional rectangles where text is displayed.\par
+* FX Shadows - Colorized shadows that appear under text and faction icons.\par
+* Faction, Rank, and Name data.\par
+* Overlay image.\par
+\par
+BACKGROUND IMAGE\par
+This optional image will fill the area behind Rank, Name, and Faction data. This image can be very plain or custom built by you for your stream theme. For best results the image should be the same size as the STATS page size. You can select COPY STATS IMAGE to get the exact image size and text locations to customize.\par
+\par
+If the stats data will be chromay keyed you could create a non square image so the presentation on screen would not be a boring rectangle. There are settings under STATS LAYOUT to help align the data to this image.\par
+\par
+OVERLAY IMAGE\par
+The OVERLAY is an image that has see thru sections (Alpha/Opacity). The image is drawn over the top of the Note or Stats images. This feature stands out when used on the Note objects since the text is moving and interacting with the overlay. \par
+\par
+Simple Text shadows can be located around in 45 degree increments with varying color and depth offsets. These are applied in the RANK and NAME setup dialogs.\par
+\par
+\b BORDERS \par
+\b0 MakoCELO was originally designed for people to make their own backgrounds with customized label sections. Very few people do this and they simply rely on makoCELO for graphical presentation.\par
+\par
+Borders were added to punch up existing label looks and create more variety options for streamers.  Borders are simple lines drawn around the rank, name, or stats page areas. \par
+\par
+\b NOTE OBJECTS\b0\par
+Versions 4.00 and newer have NOTE objects that allow the user to present information about the stream such as subscribers, supporters, news, etc. Each note can be animated with scrolling text effects so that large amounts of data can be presented in small places. You may get better performance/results by using your streaming softwares native objects for this purpose. These note objects are presented to simplify/automate the tasks and give users options.\par
+\par
+There are two setup buttons for NOTES:\par
+* Setup - edit the displayed font, colors, images, etc.\par
+* Notes - enter the actual displayed text/notes and choose an animation option.\par
+\par
+\par
+\b LOAD/SAVE SETUPS AND MOBILE STREAMERS\par
+\b0 The SETUP area now has buttons to allow you to save or load a setup file. This is useful for people who are using MakoCELO from a USB drive or other device while streaming on a PC they do not install MakoCELO on. You can run MakoCELO from anywhere, all you need is the MakoCELO.exe program. \par
+\par
+\par
+\b STATS FX - LETS PUNCH IT UP\b0\par
+There are three additional effects that can be added to the stats page data:\par
+- SHADOW - Adds a soft blurred shadow under text and faction icons.\par
+- EMBOSS - Creates and embossed effect that gives text a 3D look.\line - LABEL BLUR - Blurs the rectangular areas under the rank and name text to create a see thru glass/plastic illusion.\par
+\par
+These effects are applied every time a LOG file is processed. These effects are CPU intensive while rendering. So if you feel unwanted stutters  during streaming/playing, you should turn off some FX or manually scan the LOG file only when needed.\par
+\par
+Note that the shadow effect helps text pop out when using chromakey (Green Screen) to overlay match stats. Adjust the blur amount and bias to make larger and bolder shadows.\par
+\par
+\par
+\b SOUND - WINDOWS WAVE PLAYER\par
+\b0 Verion 4.00 and higher incorporates a simple Windows WAVE file sound player capability. No effects are applied to the sounds. There are many programs dedicated to sound adjustment, capture, and conversion. My personal favorite is at Goldwave.com. You can right click each sound button to set the sound to play and the volume for that sound. Each sound is played by clicking the button you assigned a sound to. Only one sound can be played at a time. To stop a sound that is playing, press the STOP button on the bottom right of the SOUND section.\par
+\par
+\par
+\b SOUND - MATCH FOUND ALERT\par
+\b0 Note that starting with version 4.30, sound pad number 15 is also used as an alert for when MakoCELO is auto-scanning and finds a match. The auto-scan alert will be played at full sound player volume but still uses the individual sound volumes(right-click) for adjustment.\par
+\par
+\b MATCH RANK READER\b0\par
+Some players may not have dual monitors or a good way to view MakoCELO at the start of a match. For these people an option was added to have Windows read the player stats aloud using the Windows Speech api.\par
+\par
+\b SETUP INFORMATION\b0\par
+MakoCELO saves your current settings in a file on the hard drive. For a standard installation to Program Files(x86), this directory is well hidden within your USERS data folders so each user can have their own copy. Some users have had issues with Windows updates blocking access to that folder and losing their settings. For this reason it may be best to install to another location besides the default Program Files folder. \line\line For example:\line Installing to a location such as C:\\MakoCELO may be the safest bet. \par
+\par
+Version 4.2 adds the ability for users to load and save their own setups.  So installing outside of Program Files is not necessary, but you may need to manually load your setups if Windows Update frags your access.\par
+\par
+MakoCELO does not require an installation. If you have the necessary .NET runtime files, you can run the EXE from anywhere. The program should look for its settings file from the directory it was run from.  So mobile streamers can run the EXE from a USB stick etc. You may need to manually load a setup if it cannot be found on startup.\par
+\par
+NOTE:\par
+The default settings are updated with every change you manually make and the program will load to the default setting every time.  If you load a setup, that will now be your default setup on startup.\par
+\par
+\par
+\b CELO - Company of Heroes ELO\b0\par
+For a full featured COH2 match tool, search for the original CELO program on Coh2.Org.\par
+\line\line\b MakoCELO SOURCE CODE\par
+\b0 The core actions of this program are a simple text file parser. Some of the other FX routines are complex. If there are things you wish MakoCELO had or if you just dont trust a download source, download the source code and create your own version.\par
+\b\par
+\b0 This program was originally posted on GitHub and updated information/examples can be found at Coh2.Org:\i  {\i0{\field{\*\fldinst{HYPERLINK https://www.coh2.org/topic/103744/mako-celo }}{\fldrslt{https://www.coh2.org/topic/103744/mako-celo\ul0\cf0}}}}\i0\f0\fs22\line\line The official program was developed in Visual Basic. Other forks may be present in other languages created by GitHub users.\par
+}
+ 
