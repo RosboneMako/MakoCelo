@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakoCelo", "MakoCelo\MakoCelo.csproj", "{89F0E02D-BDAB-00E5-2331-BE5C385E84CE}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MakoCelo", "MakoCelo\MakoCelo.vbproj", "{3BD46146-71F3-4F14-A169-74225AC9B06E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{89F0E02D-BDAB-00E5-2331-BE5C385E84CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{89F0E02D-BDAB-00E5-2331-BE5C385E84CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{89F0E02D-BDAB-00E5-2331-BE5C385E84CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{89F0E02D-BDAB-00E5-2331-BE5C385E84CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BD46146-71F3-4F14-A169-74225AC9B06E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BD46146-71F3-4F14-A169-74225AC9B06E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BD46146-71F3-4F14-A169-74225AC9B06E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BD46146-71F3-4F14-A169-74225AC9B06E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

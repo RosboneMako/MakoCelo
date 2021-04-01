@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{89F0E02D-BDAB-00E5-2331-BE5C385E84CE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MakoCelo.My.MyApplication</StartupObject>
+    <RootNamespace>MakoCelo</RootNamespace>
+    <AssemblyName>MakoCelo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>MC_48x48_LED_01.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\TempCelo\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(ProjectDir)**\*.vb</DefaultItemExcludes>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>bin\Debug\MakoCelo.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <PlatformTarget>x64</PlatformTarget>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>bin\Release\MakoCelo.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <PlatformTarget>x64</PlatformTarget>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1858192E616B9EE24AF9B0E0206455C5CC9CFF25</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MakoCelo_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\MyNamespace.Dynamic.Designer.cs" />
+    <Compile Include="My Project\MyNamespace.Static.1.Designer.cs" />
+    <Compile Include="My Project\MyNamespace.Static.2.Designer.cs" />
+    <Compile Include="My Project\MyNamespace.Static.3.Designer.cs" />
+    <Compile Include="clsGlobal.cs" />
+    <Compile Include="frmErrLog.Designer.cs">
+      <DependentUpon>frmErrLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmErrLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLabelSetup.Designer.cs">
+      <DependentUpon>frmLabelSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLabelSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaxPlayerSearch.Designer.cs">
+      <DependentUpon>frmMaxPlayerSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaxPlayerSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotes.Designer.cs">
+      <DependentUpon>frmNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.cs" />
+    <Compile Include="My Project\Application.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmErrLog.resx">
+      <DependentUpon>frmErrLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLabelSetup.resx">
+      <DependentUpon>frmLabelSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaxPlayerSearch.resx">
+      <DependentUpon>frmMaxPlayerSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotes.resx">
+      <DependentUpon>frmNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>MakoCelo.My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="MakoCelo_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>MakoCelo.My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\MakoCELO_HelpFile_0446.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MC_48x48_LED_01.ico" />
+    <None Include="Resources\country_defs.txt" />
+    <None Include="Resources\flag_uy.png" />
+    <None Include="Resources\flag_us.png" />
+    <None Include="Resources\flag_um.png" />
+    <None Include="Resources\flag_ug.png" />
+    <None Include="Resources\flag_ua.png" />
+    <None Include="Resources\flag_tz.png" />
+    <None Include="Resources\flag_tw.png" />
+    <None Include="Resources\flag_tv.png" />
+    <None Include="Resources\flag_tt.png" />
+    <None Include="Resources\flag_tr.png" />
+    <None Include="Resources\flag_to.png" />
+    <None Include="Resources\flag_tn.png" />
+    <None Include="Resources\flag_tm.png" />
+    <None Include="Resources\flag_tl.png" />
+    <None Include="Resources\flag_tk.png" />
+    <None Include="Resources\flag_tj.png" />
+    <None Include="Resources\flag_th.png" />
+    <None Include="Resources\flag_tg.png" />
+    <None Include="Resources\flag_tf.png" />
+    <None Include="Resources\flag_td.png" />
+    <None Include="Resources\flag_tc.png" />
+    <None Include="Resources\flag_sz.png" />
+    <None Include="Resources\flag_sy.png" />
+    <None Include="Resources\flag_sv.png" />
+    <None Include="Resources\flag_st.png" />
+    <None Include="Resources\flag_sr.png" />
+    <None Include="Resources\flag_so.png" />
+    <None Include="Resources\flag_sn.png" />
+    <None Include="Resources\flag_sm.png" />
+    <None Include="Resources\flag_sl.png" />
+    <None Include="Resources\flag_sk.png" />
+    <None Include="Resources\flag_sj.png" />
+    <None Include="Resources\flag_si.png" />
+    <None Include="Resources\flag_sh.png" />
+    <None Include="Resources\flag_sg.png" />
+    <None Include="Resources\flag_se.png" />
+    <None Include="Resources\flag_sd.png" />
+    <None Include="Resources\flag_scotland.png" />
+    <None Include="Resources\flag_sc.png" />
+    <None Include="Resources\flag_sb.png" />
+    <None Include="Resources\flag_sa.png" />
+    <None Include="Resources\flag_rw.png" />
+    <None Include="Resources\flag_ru.png" />
+    <None Include="Resources\flag_rs.png" />
+    <None Include="Resources\flag_ro.png" />
+    <None Include="Resources\flag_re.png" />
+    <None Include="Resources\flag_qa.png" />
+    <None Include="Resources\flag_py.png" />
+    <None Include="Resources\flag_pw.png" />
+    <None Include="Resources\flag_pt.png" />
+    <None Include="Resources\flag_ps.png" />
+    <None Include="Resources\flag_pr.png" />
+    <None Include="Resources\flag_pn.png" />
+    <None Include="Resources\flag_pm.png" />
+    <None Include="Resources\flag_pl.png" />
+    <None Include="Resources\flag_pk.png" />
+    <None Include="Resources\flag_ph.png" />
+    <None Include="Resources\flag_pg.png" />
+    <None Include="Resources\flag_pf.png" />
+    <None Include="Resources\flag_pe.png" />
+    <None Include="Resources\flag_pa.png" />
+    <None Include="Resources\flag_om.png" />
+    <None Include="Resources\flag_nz.png" />
+    <None Include="Resources\flag_nu.png" />
+    <None Include="Resources\flag_nr.png" />
+    <None Include="Resources\flag_np.png" />
+    <None Include="Resources\flag_no.png" />
+    <None Include="Resources\flag_nl.png" />
+    <None Include="Resources\flag_ni.png" />
+    <None Include="Resources\flag_ng.png" />
+    <None Include="Resources\flag_nf.png" />
+    <None Include="Resources\flag_ne.png" />
+    <None Include="Resources\flag_nc.png" />
+    <None Include="Resources\flag_na.png" />
+    <None Include="Resources\flag_mz.png" />
+    <None Include="Resources\flag_my.png" />
+    <None Include="Resources\flag_mx.png" />
+    <None Include="Resources\flag_mw.png" />
+    <None Include="Resources\flag_mv.png" />
+    <None Include="Resources\flag_mu.png" />
+    <None Include="Resources\flag_mt.png" />
+    <None Include="Resources\flag_ms.png" />
+    <None Include="Resources\flag_mr.png" />
+    <None Include="Resources\flag_mq.png" />
+    <None Include="Resources\flag_mp.png" />
+    <None Include="Resources\flag_mo.png" />
+    <None Include="Resources\flag_mn.png" />
+    <None Include="Resources\flag_mm.png" />
+    <None Include="Resources\flag_ml.png" />
+    <None Include="Resources\flag_mk.png" />
+    <None Include="Resources\flag_mh.png" />
+    <None Include="Resources\flag_mg.png" />
+    <None Include="Resources\flag_me.png" />
+    <None Include="Resources\flag_md.png" />
+    <None Include="Resources\flag_mc.png" />
+    <None Include="Resources\flag_ma.png" />
+    <None Include="Resources\flag_ly.png" />
+    <None Include="Resources\flag_lv.png" />
+    <None Include="Resources\flag_lu.png" />
+    <None Include="Resources\flag_lt.png" />
+    <None Include="Resources\flag_ls.png" />
+    <None Include="Resources\flag_lr.png" />
+    <None Include="Resources\flag_lk.png" />
+    <None Include="Resources\flag_li.png" />
+    <None Include="Resources\flag_lc.png" />
+    <None Include="Resources\flag_lb.png" />
+    <None Include="Resources\flag_la.png" />
+    <None Include="Resources\flag_kz.png" />
+    <None Include="Resources\flag_ky.png" />
+    <None Include="Resources\flag_kw.png" />
+    <None Include="Resources\flag_kr.png" />
+    <None Include="Resources\flag_kp.png" />
+    <None Include="Resources\flag_kn.png" />
+    <None Include="Resources\flag_km.png" />
+    <None Include="Resources\flag_ki.png" />
+    <None Include="Resources\flag_kh.png" />
+    <None Include="Resources\flag_kg.png" />
+    <None Include="Resources\flag_ke.png" />
+    <None Include="Resources\flag_jp.png" />
+    <None Include="Resources\flag_jo.png" />
+    <None Include="Resources\flag_jm.png" />
+    <None Include="Resources\flag_it.png" />
+    <None Include="Resources\flag_is.png" />
+    <None Include="Resources\flag_ir.png" />
+    <None Include="Resources\flag_iq.png" />
+    <None Include="Resources\flag_io.png" />
+    <None Include="Resources\flag_in.png" />
+    <None Include="Resources\flag_il.png" />
+    <None Include="Resources\flag_ie.png" />
+    <None Include="Resources\flag_id.png" />
+    <None Include="Resources\flag_hu.png" />
+    <None Include="Resources\flag_ht.png" />
+    <None Include="Resources\flag_hr.png" />
+    <None Include="Resources\flag_hn.png" />
+    <None Include="Resources\flag_hm.png" />
+    <None Include="Resources\flag_hk.png" />
+    <None Include="Resources\flag_gy.png" />
+    <None Include="Resources\flag_gw.png" />
+    <None Include="Resources\flag_gu.png" />
+    <None Include="Resources\flag_gt.png" />
+    <None Include="Resources\flag_gs.png" />
+    <None Include="Resources\flag_gr.png" />
+    <None Include="Resources\flag_gq.png" />
+    <None Include="Resources\flag_gp.png" />
+    <None Include="Resources\flag_gn.png" />
+    <None Include="Resources\flag_gm.png" />
+    <None Include="Resources\flag_gl.png" />
+    <None Include="Resources\flag_gi.png" />
+    <None Include="Resources\flag_gh.png" />
+    <None Include="Resources\flag_gg.png" />
+    <None Include="Resources\flag_gf.png" />
+    <None Include="Resources\flag_ge.png" />
+    <None Include="Resources\flag_gd.png" />
+    <None Include="Resources\flag_gb.png" />
+    <None Include="Resources\flag_ga.png" />
+    <None Include="Resources\flag_fr.png" />
+    <None Include="Resources\flag_fo.png" />
+    <None Include="Resources\flag_fm.png" />
+    <None Include="Resources\flag_fk.png" />
+    <None Include="Resources\flag_fj.png" />
+    <None Include="Resources\flag_fi.png" />
+    <None Include="Resources\flag_fam.png" />
+    <None Include="Resources\flag_europeanunion.png" />
+    <None Include="Resources\flag_et.png" />
+    <None Include="Resources\flag_es.png" />
+    <None Include="Resources\flag_er.png" />
+    <None Include="Resources\flag_england.png" />
+    <None Include="Resources\flag_eh.png" />
+    <None Include="Resources\flag_eg.png" />
+    <None Include="Resources\flag_ee.png" />
+    <None Include="Resources\flag_ec.png" />
+    <None Include="Resources\flag_dz.png" />
+    <None Include="Resources\flag_do.png" />
+    <None Include="Resources\flag_dm.png" />
+    <None Include="Resources\flag_dk.png" />
+    <None Include="Resources\flag_dj.png" />
+    <None Include="Resources\flag_de.png" />
+    <None Include="Resources\flag_cz.png" />
+    <None Include="Resources\flag_cy.png" />
+    <None Include="Resources\flag_cx.png" />
+    <None Include="Resources\flag_cv.png" />
+    <None Include="Resources\flag_cu.png" />
+    <None Include="Resources\flag_cs.png" />
+    <None Include="Resources\flag_cr.png" />
+    <None Include="Resources\flag_co.png" />
+    <None Include="Resources\flag_cn.png" />
+    <None Include="Resources\flag_cm.png" />
+    <None Include="Resources\flag_cl.png" />
+    <None Include="Resources\flag_ck.png" />
+    <None Include="Resources\flag_ci.png" />
+    <None Include="Resources\flag_ch.png" />
+    <None Include="Resources\flag_cg.png" />
+    <None Include="Resources\flag_cf.png" />
+    <None Include="Resources\flag_cd.png" />
+    <None Include="Resources\flag_cc.png" />
+    <None Include="Resources\flag_catalonia.png" />
+    <None Include="Resources\flag_ca.png" />
+    <None Include="Resources\flag_bz.png" />
+    <None Include="Resources\flag_by.png" />
+    <None Include="Resources\flag_bw.png" />
+    <None Include="Resources\flag_bv.png" />
+    <None Include="Resources\flag_bt.png" />
+    <None Include="Resources\flag_bs.png" />
+    <None Include="Resources\flag_br.png" />
+    <None Include="Resources\flag_bo.png" />
+    <None Include="Resources\flag_bn.png" />
+    <None Include="Resources\flag_bm.png" />
+    <None Include="Resources\flag_bj.png" />
+    <None Include="Resources\flag_bi.png" />
+    <None Include="Resources\flag_bh.png" />
+    <None Include="Resources\flag_bg.png" />
+    <None Include="Resources\flag_bf.png" />
+    <None Include="Resources\flag_be.png" />
+    <None Include="Resources\flag_bd.png" />
+    <None Include="Resources\flag_bb.png" />
+    <None Include="Resources\flag_ba.png" />
+    <None Include="Resources\flag_az.png" />
+    <None Include="Resources\flag_ax.png" />
+    <None Include="Resources\flag_aw.png" />
+    <None Include="Resources\flag_au.png" />
+    <None Include="Resources\flag_at.png" />
+    <None Include="Resources\flag_as.png" />
+    <None Include="Resources\flag_ar.png" />
+    <None Include="Resources\flag_ao.png" />
+    <None Include="Resources\flag_an.png" />
+    <None Include="Resources\flag_am.png" />
+    <None Include="Resources\flag_al.png" />
+    <None Include="Resources\flag_ai.png" />
+    <None Include="Resources\flag_ag.png" />
+    <None Include="Resources\flag_af.png" />
+    <None Include="Resources\flag_ae.png" />
+    <None Include="Resources\flag_ad.png" />
+    <None Include="Resources\flag_zw.png" />
+    <None Include="Resources\flag_zm.png" />
+    <None Include="Resources\flag_za.png" />
+    <None Include="Resources\flag_yt.png" />
+    <None Include="Resources\flag_ye.png" />
+    <None Include="Resources\flag_ws.png" />
+    <None Include="Resources\flag_wf.png" />
+    <None Include="Resources\flag_wales.png" />
+    <None Include="Resources\flag_vu.png" />
+    <None Include="Resources\flag_vn.png" />
+    <None Include="Resources\flag_vi.png" />
+    <None Include="Resources\flag_vg.png" />
+    <None Include="Resources\flag_ve.png" />
+    <None Include="Resources\flag_vc.png" />
+    <None Include="Resources\flag_va.png" />
+    <None Include="Resources\flag_uz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

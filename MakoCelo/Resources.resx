@@ -1,0 +1,871 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="country_defs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\country_defs.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="flag_ad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ae" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ae.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_af" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_af.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_al" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_al.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_am" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_am.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_an" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_an.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_as" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_as.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_at" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_at.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_au" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_au.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_aw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_aw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ax" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ax.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_az" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_az.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ba" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ba.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_bb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_bb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_bd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_bd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_be" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_be.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_bf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_bf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_bh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_bh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_bi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_bi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_bj" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_bj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_bm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_bm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_bn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_bn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_bo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_bo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_br" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_br.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_bs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_bs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_bt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_bt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_bv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_bv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_by" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_by.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_bz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_bz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_catalonia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_catalonia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_cc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_cc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_cd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_cd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_cf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_cf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_cg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_cg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ci" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ci.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ck.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_cl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_cl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_cm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_cm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_cn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_cn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_co" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_co.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_cr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_cr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_cs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_cs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_cu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_cu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_cv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_cv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_cx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_cx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_cy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_cy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_cz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_cz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_de" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_de.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_dj" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_dj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_dk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_dk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_dm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_dm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_do" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_do.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_dz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_dz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ec" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ec.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_eg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_eg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_eh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_eh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_england" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_england.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_er" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_er.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_es" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_es.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_et" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_et.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_europeanunion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_europeanunion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_fam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_fam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_fi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_fi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_fj" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_fj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_fk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_fk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_fm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_fm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_fo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_fo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_fr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_fr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ga" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_gb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_gb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_gd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_gd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_gf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_gf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_gg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_gg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_gh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_gh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_gi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_gi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_gl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_gl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_gm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_gm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_gn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_gn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_gp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_gp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_gq" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_gq.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_gr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_gr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_gs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_gs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_gt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_gt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_gu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_gu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_gw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_gw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_gy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_gy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_hk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_hk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_hm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_hm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_hn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_hn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_hr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_hr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ht" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ht.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_hu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_hu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_id" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_id.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_il" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_il.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_in" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_in.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_io" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_io.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_iq" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_iq.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_is" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_is.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_it" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_it.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_jm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_jm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_jo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_jo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_jp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_jp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ke" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ke.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_kg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_kg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_kh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_kh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ki" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ki.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_km" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_km.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_kn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_kn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_kp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_kp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_kr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_kr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_kw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_kw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ky.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_kz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_kz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_la" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_la.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_lb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_lb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_lc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_lc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_li" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_li.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_lk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_lk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_lr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_lr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ls" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ls.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_lt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_lt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_lu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_lu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_lv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_lv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_mc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_me" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_me.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_mg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_mh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_mk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ml.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_mm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_mn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_mo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_mp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mq" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_mq.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_mr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ms" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ms.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_mt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_mu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_mv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_mw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_mx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_my" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_my.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_mz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_na" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_na.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_nc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_nc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_nf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_nf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ni" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ni.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_nl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_nl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_no" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_no.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_np" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_np.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_nr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_nr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_nu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_nu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_nz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_nz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_om" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_om.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_pa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_pa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_pe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_pe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_pf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_pf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_pg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_pg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ph" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ph.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_pk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_pk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_pl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_pl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_pm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_pm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_pn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_pn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_pr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_pr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_pt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_pt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_pw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_pw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_py" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_py.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_qa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_qa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_re" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_re.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_rs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_rs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ru" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ru.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_rw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_rw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_sa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_sa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_sb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_sb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_sc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_sc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_scotland" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_scotland.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_sd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_sd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_se" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_se.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_sg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_sg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_sh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_sh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_si" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_si.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_sj" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_sj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_sk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_sk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_sl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_sl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_sn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_sn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_so" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_so.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_sr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_sr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_st" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_st.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_sv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_sv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_sy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_sy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_sz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_sz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_tc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_tc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_td" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_td.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_tf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_tf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_tg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_tg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_th" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_th.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_tj" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_tj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_tk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_tk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_tl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_tl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_tm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_tm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_tn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_tn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_to" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_to.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_tr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_tr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_tt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_tt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_tv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_tv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_tw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_tw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_tz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_tz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ug" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_um" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_um.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_us" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_us.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_uy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_uy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_uz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_uz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_va" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_va.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_vc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_vc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_vg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_vg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_vi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_vi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_vn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_vn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_vu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_vu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_wales" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_wales.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_wf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_wf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ws" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ws.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_ye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_ye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_yt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_yt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_za" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_za.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_zm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_zm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_zw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flag_zw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MakoCELO_HelpFile_0446" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\MakoCELO_HelpFile_0446.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+</root>
