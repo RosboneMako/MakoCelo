@@ -5,7 +5,7 @@ namespace MakoCelo
 {
     public partial class frmNotes
     {
-        public frmNotes()
+        public frmNotes(bool displayTooltips)
         {
             InitializeComponent();
             _Button1.Name = "Button1";
@@ -26,12 +26,14 @@ namespace MakoCelo
             _Button13.Name = "Button13";
             _cmRotUp.Name = "cmRotUp";
             _cmRotDn.Name = "cmRotDn";
+            _displayTooltips = displayTooltips;
         }
         // R4.00 This class should be rewritten to use properties.
 
         private clsGlobal.t_NoteAnimation _NoteAnim;
         private bool _Cancel = true;
         private string[] _NoteText = new string[12];
+        private readonly bool _displayTooltips;
 
         public clsGlobal.t_NoteAnimation NoteAnim
         {
@@ -75,7 +77,7 @@ namespace MakoCelo
 
             // R4.00 Setup ToolTips
             ToolTip_Setup();
-            if (My.MyProject.Forms.frmMain.chkTips.Checked)
+            if (_displayTooltips)
             {
                 ToolTip1.Active = true;
             }

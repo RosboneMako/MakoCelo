@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
@@ -7,11 +8,14 @@ namespace MakoCelo
 {
     public partial class frmErrLog
     {
-        public frmErrLog()
+        private readonly List<object> _logItems;
+
+        public frmErrLog(List<object> logItems)
         {
             InitializeComponent();
             _cmCopy.Name = "cmCopy";
             _cmExit.Name = "cmExit";
+            _logItems = logItems;
         }
 
         private void frmErrLog_Load(object sender, EventArgs e)
@@ -19,8 +23,8 @@ namespace MakoCelo
             string A = "";
 
             // R4.41 Get the data from the main form listbox.
-            for (int t = 0, loopTo = My.MyProject.Forms.frmMain.lstLog.Items.Count - 1; t <= loopTo; t++)
-                A = Conversions.ToString(Operators.ConcatenateObject(Operators.ConcatenateObject(A, My.MyProject.Forms.frmMain.lstLog.Items[t]), Constants.vbCrLf));
+            for (int t = 0, loopTo = _logItems.Count - 1; t <= loopTo; t++)
+                A = Conversions.ToString(Operators.ConcatenateObject(Operators.ConcatenateObject(A, _logItems[t]), Constants.vbCrLf));
 
             // R4.41 Place the log data into the text box and unselect the text.
             tbErrLog.Text = A;

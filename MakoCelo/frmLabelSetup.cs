@@ -13,7 +13,7 @@ namespace MakoCelo
     // ************************************************************
     public partial class frmLabelSetup
     {
-        public frmLabelSetup()
+        public frmLabelSetup(bool displayTooltips)
         {
             InitializeComponent();
             _lbShadowColor.Name = "lbShadowColor";
@@ -59,6 +59,7 @@ namespace MakoCelo
             _cmOVLNoImage.Name = "cmOVLNoImage";
             _cboBordWidth.Name = "cboBordWidth";
             _cboBordPanWidth.Name = "cboBordPanWidth";
+            _displayTooltips = displayTooltips;
         }
 
         // R4.00 Create some PROPERTIES that hide/show dialog controls.
@@ -69,6 +70,7 @@ namespace MakoCelo
         private bool _HideSizeAll = false;
         private bool _HideFormColor = false;
         private bool _Cancel = true;
+        private readonly bool _displayTooltips;
 
         public clsGlobal.t_LabelSetup LSetup
         {
@@ -226,7 +228,7 @@ namespace MakoCelo
 
             // R4.00 Setup ToolTips
             ToolTip_Setup();
-            if (My.MyProject.Forms.frmMain.chkTips.Checked)
+            if (_displayTooltips)
             {
                 ToolTip1.Active = true;
             }
@@ -574,11 +576,11 @@ namespace MakoCelo
             fd.Title = "Background Image Dialog";
             if (!string.IsNullOrEmpty(frmMain.PATH_DlgBmp))
             {
-                fd.InitialDirectory = My.MyProject.Forms.frmMain.PATH_StripFilename(frmMain.PATH_DlgBmp);
+                fd.InitialDirectory = Utilities.PATH_StripFilename(frmMain.PATH_DlgBmp);
             }
             else
             {
-                fd.InitialDirectory = My.MyProject.Forms.frmMain.PATH_GetAnyPath();
+                fd.InitialDirectory = Utilities.PATH_GetAnyPath();
             }
 
             // R4.40 Added BMP and ALL option.
@@ -590,7 +592,7 @@ namespace MakoCelo
                 frmMain.PATH_DlgBmp = fd.FileName;
 
                 // R2.00 Strip the filename off for init dir on dialog.  
-                frmMain.PATH_DlgBmpPath = My.MyProject.Forms.frmMain.PATH_StripFilename(frmMain.PATH_DlgBmp);
+                frmMain.PATH_DlgBmpPath = Utilities.PATH_StripFilename(frmMain.PATH_DlgBmp);
             }
 
             GFX_DrawStats();
@@ -869,7 +871,7 @@ namespace MakoCelo
             frmMain.FONT_Setup = frmMain.FONT_Note01;
             frmMain.PATH_DlgBmp = frmMain.PATH_Note01_Bmp;                              // R3.50 Path for back image.
             frmMain.Note_BackBmp = frmMain.Note01_BackBmp;                              // R3.50 Back Image.
-            frmMain.PATH_DlgBmpPath = My.MyProject.Forms.frmMain.PATH_StripFilename(frmMain.PATH_DlgBmp);  // R3.50 Path without Filename. 
+            frmMain.PATH_DlgBmpPath = Utilities.PATH_StripFilename(frmMain.PATH_DlgBmp);  // R3.50 Path without Filename. 
             frmMain.FONT_Setup = frmMain.FONT_Note01;
             GFX_DrawStats();
         }
@@ -884,7 +886,7 @@ namespace MakoCelo
             frmMain.FONT_Setup = frmMain.FONT_Note02;
             frmMain.PATH_DlgBmp = frmMain.PATH_Note02_Bmp;                              // R3.50 Path for back image.
             frmMain.Note_BackBmp = frmMain.Note02_BackBmp;                              // R3.50 Back Image.
-            frmMain.PATH_DlgBmpPath = My.MyProject.Forms.frmMain.PATH_StripFilename(frmMain.PATH_DlgBmp);  // R3.50 Path without Filename. 
+            frmMain.PATH_DlgBmpPath = Utilities.PATH_StripFilename(frmMain.PATH_DlgBmp);  // R3.50 Path without Filename. 
             frmMain.FONT_Setup = frmMain.FONT_Note02;
             GFX_DrawStats();
         }
@@ -899,7 +901,7 @@ namespace MakoCelo
             frmMain.FONT_Setup = frmMain.FONT_Note03;
             frmMain.PATH_DlgBmp = frmMain.PATH_Note03_Bmp;                              // R3.50 Path for back image.
             frmMain.Note_BackBmp = frmMain.Note03_BackBmp;                              // R3.50 Back Image.
-            frmMain.PATH_DlgBmpPath = My.MyProject.Forms.frmMain.PATH_StripFilename(frmMain.PATH_DlgBmp);  // R3.50 Path without Filename. 
+            frmMain.PATH_DlgBmpPath = Utilities.PATH_StripFilename(frmMain.PATH_DlgBmp);  // R3.50 Path without Filename. 
             frmMain.FONT_Setup = frmMain.FONT_Note03;
             GFX_DrawStats();
         }
@@ -914,7 +916,7 @@ namespace MakoCelo
             frmMain.FONT_Setup = frmMain.FONT_Note04;
             frmMain.PATH_DlgBmp = frmMain.PATH_Note04_Bmp;                              // R3.50 Path for back image.
             frmMain.Note_BackBmp = frmMain.Note04_BackBmp;                              // R3.50 Back Image.
-            frmMain.PATH_DlgBmpPath = My.MyProject.Forms.frmMain.PATH_StripFilename(frmMain.PATH_DlgBmp);  // R3.50 Path without Filename. 
+            frmMain.PATH_DlgBmpPath = Utilities.PATH_StripFilename(frmMain.PATH_DlgBmp);  // R3.50 Path without Filename. 
             frmMain.FONT_Setup = frmMain.FONT_Note04;
             GFX_DrawStats();
         }
@@ -1036,11 +1038,11 @@ namespace MakoCelo
             fd.Title = "Overlay Image Dialog";
             if (!string.IsNullOrEmpty(frmMain.PATH_DlgOVLBmp))
             {
-                fd.InitialDirectory = My.MyProject.Forms.frmMain.PATH_StripFilename(frmMain.PATH_DlgOVLBmp);
+                fd.InitialDirectory = Utilities.PATH_StripFilename(frmMain.PATH_DlgOVLBmp);
             }
             else
             {
-                fd.InitialDirectory = My.MyProject.Forms.frmMain.PATH_GetAnyPath();
+                fd.InitialDirectory = Utilities.PATH_GetAnyPath();
             }
 
             fd.Filter = "Transparent Files (*.png,*.gif)|*.png;*.gif"; // R4.40 Removed JPG.
@@ -1051,7 +1053,7 @@ namespace MakoCelo
                 frmMain.PATH_DlgOVLBmp = fd.FileName;
 
                 // R2.00 Strip the filename off for init dir on dialog.  
-                frmMain.PATH_DlgOVLBmpPath = My.MyProject.Forms.frmMain.PATH_StripFilename(frmMain.PATH_DlgOVLBmp);
+                frmMain.PATH_DlgOVLBmpPath = Utilities.PATH_StripFilename(frmMain.PATH_DlgOVLBmp);
             }
 
             GFX_DrawStats();

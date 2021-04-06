@@ -4,6 +4,8 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
+using System.Linq;
+using System.Media;
 using System.Net;
 using System.Runtime.InteropServices;
 using System.Speech.Synthesis;
@@ -121,7 +123,7 @@ namespace MakoCelo
         public static extern int waveOutSetVolume(IntPtr hwo, uint dwVolume);
 
         private SpeechSynthesizer SpeechSynth = new SpeechSynthesizer();      // R4.34 Added for TEXT-TO-SPEECH option.
-
+        private SoundPlayer _soundPlayer = new SoundPlayer();
         // R4.41 Made these PUBLIC.
         private HttpWebRequest WBrequest = null;
         private HttpWebResponse WBresponse = null;
@@ -176,7 +178,7 @@ namespace MakoCelo
         private string PATH_Game = "";
         private string PATH_GamePath = "";            // R2.00 Raw path for dialogs.
         private string PATH_SetupPath = "";           // R4.20 Raw path for dialogs.
-        private string PATH_BackgroundImage = "";
+        public static string PATH_BackgroundImage = "";
         private string PATH_BackgroundImagePath = ""; // R2.00 Raw path for dialogs.
 
         // R4.00 Need these global so we can set them in frmLabelSetup objects. Could be properties.
@@ -4256,18 +4258,18 @@ namespace MakoCelo
             // R4.00 Get a texture path from defined textures.
             if (!string.IsNullOrEmpty(PATH_BackgroundImage))
             {
-                PATH_DlgBmp = PATH_StripFilename(PATH_BackgroundImage);
+                PATH_DlgBmp = Utilities.PATH_StripFilename(PATH_BackgroundImage);
             }
             else
             {
                 if (!string.IsNullOrEmpty(PATH_Note01_Bmp))
-                    PATH_DlgBmp = PATH_StripFilename(PATH_Note01_Bmp);
+                    PATH_DlgBmp = Utilities.PATH_StripFilename(PATH_Note01_Bmp);
                 if (!string.IsNullOrEmpty(PATH_Note02_Bmp))
-                    PATH_DlgBmp = PATH_StripFilename(PATH_Note02_Bmp);
+                    PATH_DlgBmp = Utilities.PATH_StripFilename(PATH_Note02_Bmp);
                 if (!string.IsNullOrEmpty(PATH_Note03_Bmp))
-                    PATH_DlgBmp = PATH_StripFilename(PATH_Note03_Bmp);
+                    PATH_DlgBmp = Utilities.PATH_StripFilename(PATH_Note03_Bmp);
                 if (!string.IsNullOrEmpty(PATH_Note04_Bmp))
-                    PATH_DlgBmp = PATH_StripFilename(PATH_Note04_Bmp);
+                    PATH_DlgBmp = Utilities.PATH_StripFilename(PATH_Note04_Bmp);
             }
             // *****************************************************
 
@@ -4278,7 +4280,7 @@ namespace MakoCelo
                 for (int t = 1; t <= 15; t++)
                 {
                     if (!string.IsNullOrEmpty(SOUND_File[t]))
-                        PATH_SoundFiles = PATH_StripFilename(SOUND_File[t]);
+                        PATH_SoundFiles = Utilities.PATH_StripFilename(SOUND_File[t]);
                 }
             }
             // *****************************************************
@@ -4996,71 +4998,6 @@ namespace MakoCelo
             }
         }
 
-        public object STRING_FindLastSlash(string A)
-        {
-            object STRING_FindLastSlashRet = default;
-            int i;
-            int Hit;
-            Hit = 0;
-            for (i = Strings.Len(A); i >= 1; i -= 1)
-            {
-                if (Strings.Mid(A, i, 1) == @"\")
-                {
-                    Hit = i;
-                    break;
-                }
-            }
-
-            STRING_FindLastSlashRet = Hit;
-            return STRING_FindLastSlashRet;
-        }
-
-        public string PATH_StripFilename(string tPath)
-        {
-            string PATH_StripFilenameRet = default;
-            // R2.00 Strip the filename off for init dir on dialog.  
-            int N;
-            string S;
-            N = Conversions.ToInteger(STRING_FindLastSlash(tPath));
-            if (3 < N)
-            {
-                S = Strings.Mid(tPath, 1, N);
-            }
-            else
-            {
-                S = "";
-            }
-
-            PATH_StripFilenameRet = S;
-            return PATH_StripFilenameRet;
-        }
-
-        public string PATH_GetAnyPath()
-        {
-            string PATH_GetAnyPathRet = default;
-            string tPath = "";
-
-            // R4.00 Get a texture path from defined textures.
-            if (!string.IsNullOrEmpty(PATH_BackgroundImage))
-            {
-                tPath = PATH_StripFilename(PATH_BackgroundImage);
-            }
-            else
-            {
-                if (!string.IsNullOrEmpty(PATH_Note01_Bmp))
-                    tPath = PATH_StripFilename(PATH_Note01_Bmp);
-                if (!string.IsNullOrEmpty(PATH_Note02_Bmp))
-                    tPath = PATH_StripFilename(PATH_Note02_Bmp);
-                if (!string.IsNullOrEmpty(PATH_Note03_Bmp))
-                    tPath = PATH_StripFilename(PATH_Note03_Bmp);
-                if (!string.IsNullOrEmpty(PATH_Note04_Bmp))
-                    tPath = PATH_StripFilename(PATH_Note04_Bmp);
-            }
-
-            PATH_GetAnyPathRet = tPath;
-            return PATH_GetAnyPathRet;
-        }
-
         private void frmMain_Load(object sender, EventArgs e)
         {
             FLAG_Loading = true;         // R2.00 Tell Controls not to update. Most save settings as they update,
@@ -5348,7 +5285,7 @@ namespace MakoCelo
             }
 
             // R2.00 Strip the filename off for init dir on dialog.  
-            N = Conversions.ToInteger(STRING_FindLastSlash(PATH_BackgroundImage));
+            N = Conversions.ToInteger(Utilities.STRING_FindLastSlash(PATH_BackgroundImage));
             if (3 < N)
             {
                 PATH_BackgroundImagePath = Strings.Mid(PATH_BackgroundImage, 1, N);
@@ -5511,7 +5448,7 @@ namespace MakoCelo
                 SETTINGS_Save("");
 
                 // R3.40 Strip off filename so we can use it for init dir later.
-                N = Conversions.ToInteger(STRING_FindLastSlash(PATH_Game));
+                N = Conversions.ToInteger(Utilities.STRING_FindLastSlash(PATH_Game));
                 if (3 < N)
                 {
                     PATH_GamePath = Strings.Mid(PATH_Game, 1, N);
@@ -5617,7 +5554,8 @@ namespace MakoCelo
 
         private void cmAbout_Click(object sender, EventArgs e)
         {
-            My.MyProject.Forms.frmAbout.ShowDialog();
+            var frmAbout = new frmAbout();
+            frmAbout.ShowDialog();
         }
 
         private void STATS_DefineY()
@@ -9109,7 +9047,7 @@ namespace MakoCelo
 
                 // R4.50 Save the directory we are using for image save dialog.
                 PATH_SaveStatsImage = fd.FileName;
-                PATH_SaveStatsImage = PATH_StripFilename(PATH_SaveStatsImage);
+                PATH_SaveStatsImage = Utilities.PATH_StripFilename(PATH_SaveStatsImage);
             }
         }
 
@@ -9943,8 +9881,9 @@ namespace MakoCelo
         {
             try
             {
-                My.MyProject.Computer.Audio.Stop();
-                My.MyProject.Computer.Audio.Play(tFile, AudioPlayMode.Background);
+                _soundPlayer.Stop();
+                _soundPlayer.SoundLocation = tFile;
+                _soundPlayer.Play();
             }
             catch
             {
@@ -10048,7 +9987,7 @@ namespace MakoCelo
         private void cmAudioStop_Click(object sender, EventArgs e)
         {
             // R4.34 Stop ALL audio being played. Sound Pads and Rank reader.
-            My.MyProject.Computer.Audio.Stop();
+            _soundPlayer.Stop();
             if (FLAG_SpeechOK)
                 SpeechSynth.SpeakAsyncCancelAll();
         }
@@ -10226,7 +10165,7 @@ namespace MakoCelo
 
         private void cmRankSetup_Click(object sender, EventArgs e)
         {
-            var LBDialog = new frmLabelSetup() { HideSizeOptions = true, HideSizeAll = true };
+            var LBDialog = new frmLabelSetup(chkTips.Checked) { HideSizeOptions = true, HideSizeAll = true };
 
             // R4.00 Get the data we are editing.
             LSRank.BackC = LSName.BackC;             // R4.00 Name has backround info that is used.
@@ -10236,10 +10175,10 @@ namespace MakoCelo
             FONT_Setup = FONT_Rank;
             PATH_DlgBmp = PATH_BackgroundImage;                      // R4.00 Path for back image.
             Note_BackBmp = NAME_bmp;                                 // R4.00 Back Image.
-            PATH_DlgBmpPath = PATH_StripFilename(PATH_DlgBmp);
+            PATH_DlgBmpPath = Utilities.PATH_StripFilename(PATH_DlgBmp);
             PATH_DlgOVLBmp = PATH_Name_OVLBmp;                       // R4.00 Path for back image.
             Note_OVLBmp = NAME_OVLBmp;                               // R4.00 Back Image.
-            PATH_DlgOVLBmpPath = PATH_StripFilename(PATH_DlgOVLBmp);
+            PATH_DlgOVLBmpPath = Utilities.PATH_StripFilename(PATH_DlgOVLBmp);
 
             // R4.00 Call the setup dialog and default to CANCEL being pressed.
             LBDialog.ShowDialog();
@@ -10255,10 +10194,10 @@ namespace MakoCelo
                 LSRank.B2 = Color.FromArgb((int)Math.Round(255d * (Conversion.Val(LSRank.O2) * 0.01d)), LSRank.B2.R, LSRank.B2.G, LSRank.B2.B);
                 NAME_bmp = Note_BackBmp;
                 PATH_BackgroundImage = PATH_DlgBmp;
-                PATH_BackgroundImagePath = PATH_StripFilename(PATH_DlgBmp);
+                PATH_BackgroundImagePath = Utilities.PATH_StripFilename(PATH_DlgBmp);
                 NAME_OVLBmp = Note_OVLBmp;
                 PATH_Name_OVLBmp = PATH_DlgOVLBmp;
-                PATH_Name_OVLBmpPath = PATH_StripFilename(PATH_DlgOVLBmp);
+                PATH_Name_OVLBmpPath = Utilities.PATH_StripFilename(PATH_DlgOVLBmp);
                 pbStats.BackColor = LSRank.BackC;
                 LSName.BackC = LSRank.BackC;
 
@@ -10287,17 +10226,17 @@ namespace MakoCelo
 
         private void cmNameSetup_Click(object sender, EventArgs e)
         {
-            var LBDialog = new frmLabelSetup() { HideSizeOptions = true, HideSizeAll = true };
+            var LBDialog = new frmLabelSetup(chkTips.Checked) { HideSizeOptions = true, HideSizeAll = true };
 
             // R4.00 Get the data we are editing.
             LBDialog.LSetup = LSName;
             FONT_Setup = FONT_Name;
             PATH_DlgBmp = PATH_BackgroundImage;                      // R4.00 Path for back image.
             Note_BackBmp = NAME_bmp;                                 // R4.00 Back Image.
-            PATH_DlgBmpPath = PATH_StripFilename(PATH_DlgBmp);
+            PATH_DlgBmpPath = Utilities.PATH_StripFilename(PATH_DlgBmp);
             PATH_DlgOVLBmp = PATH_Name_OVLBmp;                       // R4.00 Path for back image.
             Note_OVLBmp = NAME_OVLBmp;                               // R4.00 Back Image.
-            PATH_DlgOVLBmpPath = PATH_StripFilename(PATH_DlgOVLBmp);
+            PATH_DlgOVLBmpPath = Utilities.PATH_StripFilename(PATH_DlgOVLBmp);
 
             // R4.00 Call the setup dialog and default to CANCEL being pressed.
             LBDialog.ShowDialog();
@@ -10313,10 +10252,10 @@ namespace MakoCelo
                 LSName.B2 = Color.FromArgb((int)Math.Round(255d * (Conversion.Val(LSName.O2) * 0.01d)), LSName.B2.R, LSName.B2.G, LSName.B2.B);
                 NAME_bmp = Note_BackBmp;
                 PATH_BackgroundImage = PATH_DlgBmp;
-                PATH_BackgroundImagePath = PATH_StripFilename(PATH_DlgBmp);
+                PATH_BackgroundImagePath = Utilities.PATH_StripFilename(PATH_DlgBmp);
                 NAME_OVLBmp = Note_OVLBmp;
                 PATH_Name_OVLBmp = PATH_DlgOVLBmp;
-                PATH_Name_OVLBmpPath = PATH_StripFilename(PATH_DlgOVLBmp);
+                PATH_Name_OVLBmpPath = Utilities.PATH_StripFilename(PATH_DlgOVLBmp);
                 pbStats.BackColor = LSName.BackC;
 
                 // R4.40 Name and Rank CARD BACK must be the same.
@@ -10492,17 +10431,17 @@ namespace MakoCelo
 
         private void cmNote01Setup_Click_1(object sender, EventArgs e)
         {
-            var LBDialog = new frmLabelSetup() { HideFormColor = true };
+            var LBDialog = new frmLabelSetup(chkTips.Checked) { HideFormColor = true };
 
             // R4.00 Get the data we are editing.
             LBDialog.LSetup = LSNote01;
             FONT_Setup = FONT_Note01;
             PATH_DlgBmp = PATH_Note01_Bmp;                       // R4.00 Path for back image.
             Note_BackBmp = Note01_BackBmp;                       // R4.00 Back Image.
-            PATH_DlgBmpPath = PATH_StripFilename(PATH_DlgBmp);
+            PATH_DlgBmpPath = Utilities.PATH_StripFilename(PATH_DlgBmp);
             PATH_DlgOVLBmp = PATH_Note01_OVLBmp;                 // R4.00 Path for back image.
             Note_OVLBmp = Note01_OVLBmp;                         // R4.00 Back Image.
-            PATH_DlgOVLBmpPath = PATH_StripFilename(PATH_DlgOVLBmp);
+            PATH_DlgOVLBmpPath = Utilities.PATH_StripFilename(PATH_DlgOVLBmp);
 
             // R4.00 Call the setup dialog and default to CANCEL being pressed.
             LBDialog.ShowDialog();
@@ -10529,17 +10468,17 @@ namespace MakoCelo
 
         private void cmNote02Setup_Click_1(object sender, EventArgs e)
         {
-            var LBDialog = new frmLabelSetup() { HideFormColor = true };
+            var LBDialog = new frmLabelSetup(chkTips.Checked) { HideFormColor = true };
 
             // R4.00 Get the data we are editing.
             LBDialog.LSetup = LSNote02;
             FONT_Setup = FONT_Note02;
             PATH_DlgBmp = PATH_Note02_Bmp;                        // R4.00 Path for back image.
             Note_BackBmp = Note02_BackBmp;                        // R4.00 Back Image.
-            PATH_DlgBmpPath = PATH_StripFilename(PATH_DlgBmp);    // R4.00 Path without Filename. 
+            PATH_DlgBmpPath = Utilities.PATH_StripFilename(PATH_DlgBmp);    // R4.00 Path without Filename. 
             PATH_DlgOVLBmp = PATH_Note02_OVLBmp;                  // R4.00 Path for back image.
             Note_OVLBmp = Note02_OVLBmp;                          // R4.00 Back Image.
-            PATH_DlgOVLBmpPath = PATH_StripFilename(PATH_DlgOVLBmp);
+            PATH_DlgOVLBmpPath = Utilities.PATH_StripFilename(PATH_DlgOVLBmp);
 
             // R4.00 Call the setup dialog and default to CANCEL being pressed.
             LBDialog.ShowDialog();
@@ -10566,17 +10505,17 @@ namespace MakoCelo
 
         private void cmNote03Setup_Click_1(object sender, EventArgs e)
         {
-            var LBDialog = new frmLabelSetup() { HideFormColor = true };
+            var LBDialog = new frmLabelSetup(chkTips.Checked) { HideFormColor = true };
 
             // R4.00 Get the data we are editing.
             LBDialog.LSetup = LSNote03;
             FONT_Setup = FONT_Note03;
             PATH_DlgBmp = PATH_Note03_Bmp;                        // R4.00 Path for back image.
             Note_BackBmp = Note03_BackBmp;                        // R4.00 Back Image.
-            PATH_DlgBmpPath = PATH_StripFilename(PATH_DlgBmp);    // R4.00 Path without Filename. 
+            PATH_DlgBmpPath = Utilities.PATH_StripFilename(PATH_DlgBmp);    // R4.00 Path without Filename. 
             PATH_DlgOVLBmp = PATH_Note03_OVLBmp;                  // R4.00 Path for back image.
             Note_OVLBmp = Note03_OVLBmp;                          // R4.00 Back Image.
-            PATH_DlgOVLBmpPath = PATH_StripFilename(PATH_DlgOVLBmp);
+            PATH_DlgOVLBmpPath = Utilities.PATH_StripFilename(PATH_DlgOVLBmp);
 
             // R4.00 Call the setup dialog and default to CANCEL being pressed.
             LBDialog.ShowDialog();
@@ -10603,17 +10542,17 @@ namespace MakoCelo
 
         private void cmNote04Setup_Click_1(object sender, EventArgs e)
         {
-            var LBDialog = new frmLabelSetup() { HideFormColor = true };
+            var LBDialog = new frmLabelSetup(chkTips.Checked) { HideFormColor = true };
 
             // R4.00 Get the data we are editing.
             LBDialog.LSetup = LSNote04;
             FONT_Setup = FONT_Note04;
             PATH_DlgBmp = PATH_Note04_Bmp;                        // R4.00 Path for back image.
             Note_BackBmp = Note04_BackBmp;                        // R4.00 Back Image.
-            PATH_DlgBmpPath = PATH_StripFilename(PATH_DlgBmp);    // R4.00 Path without Filename. 
+            PATH_DlgBmpPath = Utilities.PATH_StripFilename(PATH_DlgBmp);    // R4.00 Path without Filename. 
             PATH_DlgOVLBmp = PATH_Note04_OVLBmp;                  // R4.00 Path for back image.
             Note_OVLBmp = Note04_OVLBmp;                          // R4.00 Back Image.
-            PATH_DlgOVLBmpPath = PATH_StripFilename(PATH_DlgOVLBmp);
+            PATH_DlgOVLBmpPath = Utilities.PATH_StripFilename(PATH_DlgOVLBmp);
 
             // R4.00 Call the setup dialog and default to CANCEL being pressed.
             LBDialog.ShowDialog();
@@ -10644,7 +10583,7 @@ namespace MakoCelo
         // ****************************************************************
         private void cmNote1_Click(object sender, EventArgs e)
         {
-            var DlgNotes = new frmNotes();
+            var DlgNotes = new frmNotes(chkTips.Checked);
             for (int t = 1; t <= 10; t++)
                 DlgNotes.set_NoteText(t, NoteAnim01_Text[t]);
             DlgNotes.NoteAnim = NoteAnim01;
@@ -10662,7 +10601,7 @@ namespace MakoCelo
 
         private void cmNote2_Click(object sender, EventArgs e)
         {
-            var DlgNotes = new frmNotes();
+            var DlgNotes = new frmNotes(chkTips.Checked);
             for (int t = 1; t <= 10; t++)
                 DlgNotes.set_NoteText(t, NoteAnim02_Text[t]);
             DlgNotes.NoteAnim = NoteAnim02;
@@ -10680,7 +10619,7 @@ namespace MakoCelo
 
         private void cmNote3_Click(object sender, EventArgs e)
         {
-            var DlgNotes = new frmNotes();
+            var DlgNotes = new frmNotes(chkTips.Checked);
             for (int t = 1; t <= 10; t++)
                 DlgNotes.set_NoteText(t, NoteAnim03_Text[t]);
             DlgNotes.NoteAnim = NoteAnim03;
@@ -10698,7 +10637,7 @@ namespace MakoCelo
 
         private void cmNote4_Click(object sender, EventArgs e)
         {
-            var DlgNotes = new frmNotes();
+            var DlgNotes = new frmNotes(chkTips.Checked);
             for (int t = 1; t <= 10; t++)
                 DlgNotes.set_NoteText(t, NoteAnim04_Text[t]);
             DlgNotes.NoteAnim = NoteAnim04;
@@ -10867,7 +10806,7 @@ namespace MakoCelo
             }
             else
             {
-                PATH_SoundFiles = PATH_StripFilename(SOUND_File[index]);
+                PATH_SoundFiles = Utilities.PATH_StripFilename(SOUND_File[index]);
                 fd.InitialDirectory = PATH_SoundFiles;
             }
 
@@ -11158,7 +11097,7 @@ namespace MakoCelo
                 }
 
                 // R3.40 Strip off filename so we can use it for init dir later.
-                N = Conversions.ToInteger(STRING_FindLastSlash(PATH_SetupPath));
+                N = Conversions.ToInteger(Utilities.STRING_FindLastSlash(PATH_SetupPath));
                 if (3 < N)
                 {
                     // R4.50 Add current SETUP file name.
@@ -11200,7 +11139,7 @@ namespace MakoCelo
                 SETTINGS_Save(PATH_SetupPath);
 
                 // R3.40 Strip off filename so we can use it for init dir later.
-                N = Conversions.ToInteger(STRING_FindLastSlash(PATH_SetupPath));
+                N = Conversions.ToInteger(Utilities.STRING_FindLastSlash(PATH_SetupPath));
                 if (3 < N)
                 {
                     PATH_SetupPath = Strings.Mid(PATH_SetupPath, 1, N);
@@ -11866,7 +11805,7 @@ namespace MakoCelo
 
         private void cmErrLog_Click(object sender, EventArgs e)
         {
-            var LogDialog = new frmErrLog(); // With {} ' {.HideSizeOptions = True, .HideSizeAll = True}
+            var LogDialog = new frmErrLog(lstLog.Items.Cast<object>().ToList()); // With {} ' {.HideSizeOptions = True, .HideSizeAll = True}
 
             // R4.42 Show the Error Log dialog.
             LogDialog.ShowDialog();
