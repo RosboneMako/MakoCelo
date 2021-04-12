@@ -1685,30 +1685,30 @@
 </value>
   </data>
   <metadata name="ColorDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+    <value>344, 17</value>
   </metadata>
   <metadata name="OpenFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>140, 17</value>
+    <value>467, 17</value>
   </metadata>
-  <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>419, 17</value>
+  <metadata name="_Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
   <metadata name="FontDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>508, 17</value>
+    <value>746, 17</value>
   </metadata>
   <metadata name="SaveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>282, 17</value>
+    <value>609, 17</value>
   </metadata>
   <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>626, 17</value>
+    <value>864, 17</value>
   </metadata>
-  <metadata name="timNote1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>725, 17</value>
+  <metadata name="_timNote1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>111, 17</value>
   </metadata>
   <metadata name="tsmPlayer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>828, 17</value>
+    <value>963, 17</value>
   </metadata>
-  <data name="tsmPlayer_Relic.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="_tsmPlayer_Relic.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk3mFgAAAAAAADYAAAAoAAAALAAAACwAAAABABgAAAAAAAAAAAATCwAAEwsAAAAAAAAAAAAAIB8jIB8j
         IB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8j
@@ -1810,7 +1810,7 @@
         IB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8jIB8j
 </value>
   </data>
-  <data name="tsmPlayer_OrgAT.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="_tsmPlayer_OrgAT.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAAAAAATCwAAEwsAAAAAAAAAAAAAIgIAIgIA
         IgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAPSEgMBIQIgIAIgIAIgIAIgIA
@@ -1828,7 +1828,7 @@
         IgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAMBIQIgIAIgIAIgIAIgIA
 </value>
   </data>
-  <data name="tsmPlayer_OrgFaction.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="_tsmPlayer_OrgFaction.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAAAAAATCwAAEwsAAAAAAAAAAAAAIgIAIgIA
         IgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAPSEgMBIQIgIAIgIAIgIAIgIA
@@ -1846,7 +1846,7 @@
         IgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAMBIQIgIAIgIAIgIAIgIA
 </value>
   </data>
-  <data name="tsmPlayer_OrgPlayercard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="_tsmPlayer_OrgPlayercard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAAAAAATCwAAEwsAAAAAAAAAAAAAIgIAIgIA
         IgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAPSEgMBIQIgIAIgIAIgIAIgIA
@@ -1864,7 +1864,7 @@
         IgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAIgIAMBIQIgIAIgIAIgIAIgIA
 </value>
   </data>
-  <data name="tsmPlayer_Google.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="_tsmPlayer_Google.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAAAAAATCwAAEwsAAAAAAAAAAAAA+vn5+vn5
         +vn5+vn5+/r6/Pz8/f39/v7+/v7+/f39/Pv7+vn5+vn5+vn5+vn5+vn5+vn5+vn5+vn5/Pz8////////
@@ -1882,7 +1882,7 @@
         +vn5+vn5+/r6/Pz8/f39/v7+/v7+/f39/Pz8+/r6+vn5+vn5+vn5+vn5
 </value>
   </data>
-  <data name="tsmPlayer_Steam.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="_tsmPlayer_Steam.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAAAAAATCwAAEwsAAAAAAAAAAAAA////////
         ////////6N/KyKtotYsprn0LrX0LtYspyKto6uHM////////////////////////+ff0vp9moG0LoG0L
@@ -1901,13 +1901,16 @@
 </value>
   </data>
   <metadata name="tsmAudio.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>933, 17</value>
+    <value>1068, 17</value>
   </metadata>
-  <metadata name="timELOCycle.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1037, 17</value>
+  <metadata name="_timELOCycle.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>219, 17</value>
   </metadata>
   <metadata name="SS1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1157, 17</value>
+    <value>1172, 17</value>
+  </metadata>
+  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1243, 17</value>
   </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -37,2069 +37,2108 @@ namespace MakoCelo
         [DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            var resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            _cmCheckLog = new Button();
-            _cmCheckLog.Click += new EventHandler(cmCheckLog_Click);
-            lbStatus = new Label();
-            pbFact01 = new PictureBox();
-            pbFact02 = new PictureBox();
-            pbFact03 = new PictureBox();
-            pbFact04 = new PictureBox();
-            pbFact05 = new PictureBox();
-            lbSteam01 = new Label();
-            lbSteam02 = new Label();
-            lbSteam03 = new Label();
-            lbSteam04 = new Label();
-            lbSteam05 = new Label();
-            lbSteam06 = new Label();
-            lbSteam07 = new Label();
-            lbSteam08 = new Label();
-            ColorDialog1 = new ColorDialog();
-            OpenFileDialog1 = new OpenFileDialog();
-            _Timer1 = new Timer(components);
-            _Timer1.Tick += new EventHandler(Timer1_Tick);
-            _cmFindLog = new Button();
-            _cmFindLog.Click += new EventHandler(cmFindLog_Click);
-            _cmScanLog = new Button();
-            _cmScanLog.Click += new EventHandler(cmScanLog_Click);
-            _cmCopy = new Button();
-            _cmCopy.Click += new EventHandler(cmCopy_Click);
-            Label2 = new Label();
-            FontDialog1 = new FontDialog();
-            _cmAbout = new Button();
-            _cmAbout.Click += new EventHandler(cmAbout_Click);
-            Label3 = new Label();
-            Label4 = new Label();
-            _cboLayoutY = new ComboBox();
-            _cboLayoutY.SelectedIndexChanged += new EventHandler(cboLayoutY_SelectedIndexChanged);
-            gbRank = new GroupBox();
-            _cmELO = new Button();
-            _cmELO.Click += new EventHandler(cmTest_Click);
-            _cmSetupSave = new Button();
-            _cmSetupSave.Click += new EventHandler(cmSetupSave_Click);
-            _cmSetupLoad = new Button();
-            _cmSetupLoad.Click += new EventHandler(cmSetupLoad_Click);
-            _cmNote_PlayAll = new Button();
-            _cmNote_PlayAll.Click += new EventHandler(cmNote_PlayAll_Click);
-            _cmNote04_Play = new Button();
-            _cmNote04_Play.Click += new EventHandler(cmNote04_Play_Click);
-            _cmNote03_Play = new Button();
-            _cmNote03_Play.Click += new EventHandler(cmNote03_Play_Click);
-            _cmNote02_Play = new Button();
-            _cmNote02_Play.Click += new EventHandler(cmNote02_Play_Click);
-            _cmNote01_Play = new Button();
-            _cmNote01_Play.Click += new EventHandler(cmNote01_Play_Click);
-            _cmNote4 = new Button();
-            _cmNote4.Click += new EventHandler(cmNote4_Click);
-            _cmNote04Setup = new Button();
-            _cmNote04Setup.Click += new EventHandler(cmNote04Setup_Click_1);
-            Label14 = new Label();
-            _cmNote3 = new Button();
-            _cmNote3.Click += new EventHandler(cmNote3_Click);
-            _cmNote2 = new Button();
-            _cmNote2.Click += new EventHandler(cmNote2_Click);
-            _cmNote1 = new Button();
-            _cmNote1.Click += new EventHandler(cmNote1_Click);
-            _cmNote03Setup = new Button();
-            _cmNote03Setup.Click += new EventHandler(cmNote03Setup_Click_1);
-            _cmNote02Setup = new Button();
-            _cmNote02Setup.Click += new EventHandler(cmNote02Setup_Click_1);
-            Label13 = new Label();
-            Label12 = new Label();
-            _cmNote01Setup = new Button();
-            _cmNote01Setup.Click += new EventHandler(cmNote01Setup_Click_1);
-            Label11 = new Label();
-            _cmNameSetup = new Button();
-            _cmNameSetup.Click += new EventHandler(cmNameSetup_Click);
-            Label10 = new Label();
-            Label9 = new Label();
-            _cmRankSetup = new Button();
-            _cmRankSetup.Click += new EventHandler(cmRankSetup_Click);
-            _cmSave = new Button();
-            _cmSave.Click += new EventHandler(cmSave_Click);
-            gbLayout = new GroupBox();
-            _cmStatsModeHelp = new Button();
-            _cmStatsModeHelp.Click += new EventHandler(cmStatsModeHelp_Click);
-            _cmDefaults = new Button();
-            _cmDefaults.Click += new EventHandler(cmDefaults_Click);
-            _tbYSize = new TextBox();
-            _tbYSize.TextChanged += new EventHandler(tbYSize_TextChanged);
-            _tbYSize.KeyPress += new KeyPressEventHandler(tbYSize_KeyPress);
-            _tbXsize = new TextBox();
-            _tbXsize.TextChanged += new EventHandler(tbXsize_TextChanged);
-            _tbXsize.KeyPress += new KeyPressEventHandler(tbXsize_KeyPress);
-            _tbYoff = new TextBox();
-            _tbYoff.KeyPress += new KeyPressEventHandler(tbYoff_KeyPress);
-            _tbYoff.TextChanged += new EventHandler(tbYoff_TextChanged);
-            _tbXoff = new TextBox();
-            _tbXoff.KeyPress += new KeyPressEventHandler(tbXoff_KeyPress);
-            _tbXoff.TextChanged += new EventHandler(tbXoff_TextChanged);
-            Label7 = new Label();
-            _cboNoteSpace = new ComboBox();
-            _cboNoteSpace.SelectedIndexChanged += new EventHandler(cboNoteSpace_SelectedIndexChanged);
-            _chkGUIMode = new CheckBox();
-            _chkGUIMode.CheckedChanged += new EventHandler(chkGUIMode_CheckedChanged);
-            Label5 = new Label();
-            _cmSizeRefresh = new Button();
-            _cmSizeRefresh.Click += new EventHandler(cmSizeRefresh_Click);
-            _cboLayoutX = new ComboBox();
-            _cboLayoutX.SelectedIndexChanged += new EventHandler(cboLayoutX_SelectedIndexChanged);
-            Label6 = new Label();
-            _pbStats = new PictureBox();
-            _pbStats.Click += new EventHandler(pbStats_Click);
-            _pbStats.MouseDown += new MouseEventHandler(pbStats_MouseDown);
-            _pbStats.MouseLeave += new EventHandler(pbStats_MouseLeave);
-            _pbStats.MouseMove += new MouseEventHandler(pbStats_MouseMove);
-            _pbStats.MouseWheel += new MouseEventHandler(pbStats_MouseWheel);
-            _cmTestData = new Button();
-            _cmTestData.Click += new EventHandler(cmTestData_Click);
-            _cmLastMatch = new Button();
-            _cmLastMatch.Click += new EventHandler(cmLastMatch_Click);
-            gbFX = new GroupBox();
-            cmRID = new Button();
-            _chkFX = new CheckBox();
-            _chkFX.CheckedChanged += new EventHandler(chkFX_CheckedChanged);
-            Label1 = new Label();
-            _cmFXModeHelp = new Button();
-            _cmFXModeHelp.Click += new EventHandler(cmFXModeHelp_Click);
-            _cboFXVar1 = new ComboBox();
-            _cboFXVar1.SelectedIndexChanged += new EventHandler(cboFXMode_SelectedIndexChanged);
-            lbFXVar1 = new Label();
-            _cboFxVar3 = new ComboBox();
-            _cboFxVar3.SelectedIndexChanged += new EventHandler(cboFxVar3_SelectedIndexChanged);
-            lbFXVar3 = new Label();
-            _cboFxVar4 = new ComboBox();
-            _cboFxVar4.SelectedIndexChanged += new EventHandler(cboFxVar4_SelectedIndexChanged);
-            _cmFX3DC = new Button();
-            _cmFX3DC.Click += new EventHandler(cmFX3DC_Click);
-            _cboFXVar2 = new ComboBox();
-            _cboFXVar2.SelectedIndexChanged += new EventHandler(cboFX3D_SelectedIndexChanged);
-            lbFXVar2 = new Label();
-            lbFXVar4 = new Label();
-            _chkMismatch = new CheckBox();
-            _chkMismatch.CheckedChanged += new EventHandler(chkMismatch_CheckedChanged);
-            lbError1 = new Label();
-            lbError2 = new Label();
-            SaveFileDialog1 = new SaveFileDialog();
-            ToolTip1 = new ToolTip(components);
-            _chkTips = new CheckBox();
-            _chkTips.CheckedChanged += new EventHandler(chkTips_CheckedChanged);
-            pbNote1 = new PictureBox();
-            _timNote1 = new Timer(components);
-            _timNote1.Tick += new EventHandler(timNote1_Tick);
-            gbSound = new GroupBox();
-            _cmAudioStop = new Button();
-            _cmAudioStop.Click += new EventHandler(cmAudioStop_Click);
-            lbVolume = new Label();
-            _scrVolume = new HScrollBar();
-            _scrVolume.ValueChanged += new EventHandler(scrVolume_ValueChanged);
-            _cmSound15 = new Button();
-            _cmSound15.MouseDown += new MouseEventHandler(cmSound15_MouseDown);
-            _cmSound15.MouseHover += new EventHandler(cmSound15_MouseHover);
-            _cmSound15.MouseLeave += new EventHandler(cmSound01_MouseLeave);
-            _cmSound14 = new Button();
-            _cmSound14.MouseDown += new MouseEventHandler(cmSound14_MouseDown);
-            _cmSound14.MouseHover += new EventHandler(cmSound14_MouseHover);
-            _cmSound14.MouseLeave += new EventHandler(cmSound01_MouseLeave);
-            _cmSound13 = new Button();
-            _cmSound13.MouseDown += new MouseEventHandler(cmSound13_MouseDown);
-            _cmSound13.MouseHover += new EventHandler(cmSound13_MouseHover);
-            _cmSound13.MouseLeave += new EventHandler(cmSound01_MouseLeave);
-            _cmSound12 = new Button();
-            _cmSound12.MouseDown += new MouseEventHandler(cmSound12_MouseDown);
-            _cmSound12.MouseHover += new EventHandler(cmSound12_MouseHover);
-            _cmSound12.MouseLeave += new EventHandler(cmSound01_MouseLeave);
-            _cmSound11 = new Button();
-            _cmSound11.MouseDown += new MouseEventHandler(cmSound11_MouseDown);
-            _cmSound11.MouseHover += new EventHandler(cmSound11_MouseHover);
-            _cmSound11.MouseLeave += new EventHandler(cmSound01_MouseLeave);
-            lbSoundCurrent = new Label();
-            _cmSound10 = new Button();
-            _cmSound10.MouseDown += new MouseEventHandler(cmSound10_MouseDown);
-            _cmSound10.MouseHover += new EventHandler(cmSound10_MouseHover);
-            _cmSound10.MouseLeave += new EventHandler(cmSound01_MouseLeave);
-            _cmSound09 = new Button();
-            _cmSound09.MouseDown += new MouseEventHandler(cmSound09_MouseDown);
-            _cmSound09.MouseHover += new EventHandler(cmSound09_MouseHover);
-            _cmSound09.MouseLeave += new EventHandler(cmSound01_MouseLeave);
-            _cmSound08 = new Button();
-            _cmSound08.MouseDown += new MouseEventHandler(cmSound08_MouseDown);
-            _cmSound08.MouseHover += new EventHandler(cmSound08_MouseHover);
-            _cmSound08.MouseLeave += new EventHandler(cmSound01_MouseLeave);
-            _cmSound07 = new Button();
-            _cmSound07.MouseDown += new MouseEventHandler(cmSound07_MouseDown);
-            _cmSound07.MouseHover += new EventHandler(cmSound07_MouseHover);
-            _cmSound07.MouseLeave += new EventHandler(cmSound01_MouseLeave);
-            _cmSound06 = new Button();
-            _cmSound06.MouseDown += new MouseEventHandler(cmSound06_MouseDown);
-            _cmSound06.MouseHover += new EventHandler(cmSound06_MouseHover);
-            _cmSound06.MouseLeave += new EventHandler(cmSound01_MouseLeave);
-            _cmSound05 = new Button();
-            _cmSound05.MouseDown += new MouseEventHandler(cmSound05_MouseDown);
-            _cmSound05.MouseHover += new EventHandler(cmSound05_MouseHover);
-            _cmSound05.MouseLeave += new EventHandler(cmSound01_MouseLeave);
-            _cmSound04 = new Button();
-            _cmSound04.MouseDown += new MouseEventHandler(cmSound04_MouseDown);
-            _cmSound04.MouseHover += new EventHandler(cmSound04_MouseHover);
-            _cmSound04.MouseLeave += new EventHandler(cmSound01_MouseLeave);
-            _cmSound03 = new Button();
-            _cmSound03.MouseDown += new MouseEventHandler(cmSound03_MouseDown);
-            _cmSound03.MouseHover += new EventHandler(cmSound03_MouseHover);
-            _cmSound03.MouseLeave += new EventHandler(cmSound01_MouseLeave);
-            _cmSound02 = new Button();
-            _cmSound02.MouseDown += new MouseEventHandler(cmSound02_MouseDown);
-            _cmSound02.MouseHover += new EventHandler(cmSound02_MouseHover);
-            _cmSound02.MouseLeave += new EventHandler(cmSound01_MouseLeave);
-            _cmSound01 = new Button();
-            _cmSound01.Click += new EventHandler(cmSound01_Click);
-            _cmSound01.MouseDown += new MouseEventHandler(cmSound01_MouseDown);
-            _cmSound01.MouseHover += new EventHandler(cmSound01_MouseHover);
-            _cmSound01.MouseLeave += new EventHandler(cmSound01_MouseLeave);
-            pbNote3 = new PictureBox();
-            pbNote4 = new PictureBox();
-            pbNote2 = new PictureBox();
-            chkPosition = new CheckBox();
-            tsmPlayer = new ContextMenuStrip(components);
-            _tsmPlayer_Relic = new ToolStripMenuItem();
-            _tsmPlayer_Relic.Click += new EventHandler(tsmPlayer_Relic_Click);
-            _tsmPlayer_OrgAT = new ToolStripMenuItem();
-            _tsmPlayer_OrgAT.Click += new EventHandler(tsmPlayer_OrgAT_Click);
-            _tsmPlayer_OrgFaction = new ToolStripMenuItem();
-            _tsmPlayer_OrgFaction.Click += new EventHandler(tsmPlayer_OrgFaction_Click);
-            _tsmPlayer_OrgPlayercard = new ToolStripMenuItem();
-            _tsmPlayer_OrgPlayercard.Click += new EventHandler(tsmPlayer_OrgPlayercard_Click);
-            _tsmPlayer_Google = new ToolStripMenuItem();
-            _tsmPlayer_Google.Click += new EventHandler(tsmPlayer_Google_Click);
-            _tsmPlayer_Steam = new ToolStripMenuItem();
-            _tsmPlayer_Steam.Click += new EventHandler(tsmPlayer_Steam_Click);
-            _chkPopUp = new CheckBox();
-            _chkPopUp.CheckedChanged += new EventHandler(chkPopUp_CheckedChanged);
-            tsmAudio = new ContextMenuStrip(components);
-            _tsmSetVolTo100 = new ToolStripMenuItem();
-            _tsmSetVolTo100.Click += new EventHandler(tsmSetVolTo100_Click);
-            _tsmSetVolTo90 = new ToolStripMenuItem();
-            _tsmSetVolTo90.Click += new EventHandler(tsmSetVolTo90_Click);
-            _tsmSetVolTo80 = new ToolStripMenuItem();
-            _tsmSetVolTo80.Click += new EventHandler(tsmSetVolTo80_Click);
-            _tsmSetVolTo70 = new ToolStripMenuItem();
-            _tsmSetVolTo70.Click += new EventHandler(tsmSetVolTo70_Click);
-            _tsmSetVolTo60 = new ToolStripMenuItem();
-            _tsmSetVolTo60.Click += new EventHandler(tsmSetVolTo60_Click);
-            _tsmSetVolTo50 = new ToolStripMenuItem();
-            _tsmSetVolTo50.Click += new EventHandler(tsmSetVolTo50_Click);
-            _tsmSetVolTo40 = new ToolStripMenuItem();
-            _tsmSetVolTo40.Click += new EventHandler(tsmSetVolTo40_Click);
-            _tsmSetVolTo30 = new ToolStripMenuItem();
-            _tsmSetVolTo30.Click += new EventHandler(tsmSetVolTo30_Click);
-            _tsmSetVolTo20 = new ToolStripMenuItem();
-            _tsmSetVolTo20.Click += new EventHandler(tsmSetVolTo20_Click);
-            _tsmSetVolTo10 = new ToolStripMenuItem();
-            _tsmSetVolTo10.Click += new EventHandler(tsmSetVolTo10_Click);
-            ToolStripMenuItem1 = new ToolStripSeparator();
-            _tsmSelectFile = new ToolStripMenuItem();
-            _tsmSelectFile.Click += new EventHandler(tsmSelectFile_Click);
-            _chkSmoothAni = new CheckBox();
-            _chkSmoothAni.CheckedChanged += new EventHandler(chkSmoothAni_CheckedChanged);
-            _chkFoundSound = new CheckBox();
-            _chkFoundSound.CheckedChanged += new EventHandler(chkFoundSound_CheckedChanged);
-            lbTime = new Label();
-            _cboDelay = new ComboBox();
-            _cboDelay.SelectedIndexChanged += new EventHandler(cboDelay_SelectedIndexChanged);
-            _chkHideMissing = new CheckBox();
-            _chkHideMissing.CheckedChanged += new EventHandler(chkHideMissing_CheckedChanged);
-            _chkShowELO = new CheckBox();
-            _chkShowELO.CheckedChanged += new EventHandler(chkShowELO_CheckedChanged);
-            _timELOCycle = new Timer(components);
-            _timELOCycle.Tick += new EventHandler(timELOCycle_Tick);
-            _scrStats = new VScrollBar();
-            _scrStats.Scroll += new ScrollEventHandler(scrStats_Scroll);
-            _scrStats.ValueChanged += new EventHandler(scrStats_ValueChanged);
-            _chkSpeech = new CheckBox();
-            _chkSpeech.CheckedChanged += new EventHandler(chkSpeech_CheckedChanged);
-            _chkGetTeams = new CheckBox();
-            _chkGetTeams.CheckedChanged += new EventHandler(chkGetTeams_CheckedChanged);
-            lstLog = new ListBox();
-            _cmErrLog = new Button();
-            _cmErrLog.Click += new EventHandler(cmErrLog_Click);
-            _chkCountry = new CheckBox();
-            _chkCountry.CheckedChanged += new EventHandler(chkCountry_CheckedChanged);
-            SS1 = new StatusStrip();
-            SS1_Version = new ToolStripStatusLabel();
-            SS1_Sep1 = new ToolStripStatusLabel();
-            SS1_Filename = new ToolStripStatusLabel();
-            SS1_Sep2 = new ToolStripStatusLabel();
-            SS1_Time = new ToolStripStatusLabel();
-            SS1_Sep3 = new ToolStripStatusLabel();
-            ((System.ComponentModel.ISupportInitialize)pbFact01).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pbFact02).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pbFact03).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pbFact04).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pbFact05).BeginInit();
-            gbRank.SuspendLayout();
-            gbLayout.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)_pbStats).BeginInit();
-            gbFX.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pbNote1).BeginInit();
-            gbSound.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pbNote3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pbNote4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pbNote2).BeginInit();
-            tsmPlayer.SuspendLayout();
-            tsmAudio.SuspendLayout();
-            SS1.SuspendLayout();
-            SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            this._cmCheckLog = new System.Windows.Forms.Button();
+            this.lbStatus = new System.Windows.Forms.Label();
+            this.pbFact01 = new System.Windows.Forms.PictureBox();
+            this.pbFact02 = new System.Windows.Forms.PictureBox();
+            this.pbFact03 = new System.Windows.Forms.PictureBox();
+            this.pbFact04 = new System.Windows.Forms.PictureBox();
+            this.pbFact05 = new System.Windows.Forms.PictureBox();
+            this.lbSteam01 = new System.Windows.Forms.Label();
+            this.lbSteam02 = new System.Windows.Forms.Label();
+            this.lbSteam03 = new System.Windows.Forms.Label();
+            this.lbSteam04 = new System.Windows.Forms.Label();
+            this.lbSteam05 = new System.Windows.Forms.Label();
+            this.lbSteam06 = new System.Windows.Forms.Label();
+            this.lbSteam07 = new System.Windows.Forms.Label();
+            this.lbSteam08 = new System.Windows.Forms.Label();
+            this.ColorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.OpenFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this._Timer1 = new System.Windows.Forms.Timer(this.components);
+            this._cmFindLog = new System.Windows.Forms.Button();
+            this._cmScanLog = new System.Windows.Forms.Button();
+            this._cmCopy = new System.Windows.Forms.Button();
+            this.Label2 = new System.Windows.Forms.Label();
+            this.FontDialog1 = new System.Windows.Forms.FontDialog();
+            this._cmAbout = new System.Windows.Forms.Button();
+            this.Label3 = new System.Windows.Forms.Label();
+            this.Label4 = new System.Windows.Forms.Label();
+            this._cboLayoutY = new System.Windows.Forms.ComboBox();
+            this.gbRank = new System.Windows.Forms.GroupBox();
+            this._cmELO = new System.Windows.Forms.Button();
+            this._cmSetupSave = new System.Windows.Forms.Button();
+            this._cmSetupLoad = new System.Windows.Forms.Button();
+            this._cmNote_PlayAll = new System.Windows.Forms.Button();
+            this._cmNote04_Play = new System.Windows.Forms.Button();
+            this._cmNote03_Play = new System.Windows.Forms.Button();
+            this._cmNote02_Play = new System.Windows.Forms.Button();
+            this._cmNote01_Play = new System.Windows.Forms.Button();
+            this._cmNote4 = new System.Windows.Forms.Button();
+            this._cmNote04Setup = new System.Windows.Forms.Button();
+            this.Label14 = new System.Windows.Forms.Label();
+            this._cmNote3 = new System.Windows.Forms.Button();
+            this._cmNote2 = new System.Windows.Forms.Button();
+            this._cmNote1 = new System.Windows.Forms.Button();
+            this._cmNote03Setup = new System.Windows.Forms.Button();
+            this._cmNote02Setup = new System.Windows.Forms.Button();
+            this.Label13 = new System.Windows.Forms.Label();
+            this.Label12 = new System.Windows.Forms.Label();
+            this._cmNote01Setup = new System.Windows.Forms.Button();
+            this.Label11 = new System.Windows.Forms.Label();
+            this._cmNameSetup = new System.Windows.Forms.Button();
+            this.Label10 = new System.Windows.Forms.Label();
+            this.Label9 = new System.Windows.Forms.Label();
+            this._cmRankSetup = new System.Windows.Forms.Button();
+            this._cmSave = new System.Windows.Forms.Button();
+            this.gbLayout = new System.Windows.Forms.GroupBox();
+            this._cmStatsModeHelp = new System.Windows.Forms.Button();
+            this._cmDefaults = new System.Windows.Forms.Button();
+            this._tbYSize = new System.Windows.Forms.TextBox();
+            this._tbXsize = new System.Windows.Forms.TextBox();
+            this._tbYoff = new System.Windows.Forms.TextBox();
+            this._tbXoff = new System.Windows.Forms.TextBox();
+            this.Label7 = new System.Windows.Forms.Label();
+            this._cboNoteSpace = new System.Windows.Forms.ComboBox();
+            this._chkGUIMode = new System.Windows.Forms.CheckBox();
+            this.Label5 = new System.Windows.Forms.Label();
+            this._cmSizeRefresh = new System.Windows.Forms.Button();
+            this._cboLayoutX = new System.Windows.Forms.ComboBox();
+            this.Label6 = new System.Windows.Forms.Label();
+            this._pbStats = new System.Windows.Forms.PictureBox();
+            this._cmTestData = new System.Windows.Forms.Button();
+            this._cmLastMatch = new System.Windows.Forms.Button();
+            this.gbFX = new System.Windows.Forms.GroupBox();
+            this.cmRID = new System.Windows.Forms.Button();
+            this._chkFX = new System.Windows.Forms.CheckBox();
+            this.Label1 = new System.Windows.Forms.Label();
+            this._cmFXModeHelp = new System.Windows.Forms.Button();
+            this._cboFXVar1 = new System.Windows.Forms.ComboBox();
+            this.lbFXVar1 = new System.Windows.Forms.Label();
+            this._cboFxVar3 = new System.Windows.Forms.ComboBox();
+            this.lbFXVar3 = new System.Windows.Forms.Label();
+            this._cboFxVar4 = new System.Windows.Forms.ComboBox();
+            this._cmFX3DC = new System.Windows.Forms.Button();
+            this._cboFXVar2 = new System.Windows.Forms.ComboBox();
+            this.lbFXVar2 = new System.Windows.Forms.Label();
+            this.lbFXVar4 = new System.Windows.Forms.Label();
+            this._chkMismatch = new System.Windows.Forms.CheckBox();
+            this.lbError1 = new System.Windows.Forms.Label();
+            this.lbError2 = new System.Windows.Forms.Label();
+            this.SaveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.ToolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this._chkTips = new System.Windows.Forms.CheckBox();
+            this.pbNote1 = new System.Windows.Forms.PictureBox();
+            this._timNote1 = new System.Windows.Forms.Timer(this.components);
+            this.gbSound = new System.Windows.Forms.GroupBox();
+            this._cmAudioStop = new System.Windows.Forms.Button();
+            this.lbVolume = new System.Windows.Forms.Label();
+            this._scrVolume = new System.Windows.Forms.HScrollBar();
+            this._cmSound15 = new System.Windows.Forms.Button();
+            this._cmSound14 = new System.Windows.Forms.Button();
+            this._cmSound13 = new System.Windows.Forms.Button();
+            this._cmSound12 = new System.Windows.Forms.Button();
+            this._cmSound11 = new System.Windows.Forms.Button();
+            this.lbSoundCurrent = new System.Windows.Forms.Label();
+            this._cmSound10 = new System.Windows.Forms.Button();
+            this._cmSound09 = new System.Windows.Forms.Button();
+            this._cmSound08 = new System.Windows.Forms.Button();
+            this._cmSound07 = new System.Windows.Forms.Button();
+            this._cmSound06 = new System.Windows.Forms.Button();
+            this._cmSound05 = new System.Windows.Forms.Button();
+            this._cmSound04 = new System.Windows.Forms.Button();
+            this._cmSound03 = new System.Windows.Forms.Button();
+            this._cmSound02 = new System.Windows.Forms.Button();
+            this._cmSound01 = new System.Windows.Forms.Button();
+            this.pbNote3 = new System.Windows.Forms.PictureBox();
+            this.pbNote4 = new System.Windows.Forms.PictureBox();
+            this.pbNote2 = new System.Windows.Forms.PictureBox();
+            this.chkPosition = new System.Windows.Forms.CheckBox();
+            this.tsmPlayer = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this._tsmPlayer_Relic = new System.Windows.Forms.ToolStripMenuItem();
+            this._tsmPlayer_OrgAT = new System.Windows.Forms.ToolStripMenuItem();
+            this._tsmPlayer_OrgFaction = new System.Windows.Forms.ToolStripMenuItem();
+            this._tsmPlayer_OrgPlayercard = new System.Windows.Forms.ToolStripMenuItem();
+            this._tsmPlayer_Google = new System.Windows.Forms.ToolStripMenuItem();
+            this._tsmPlayer_Steam = new System.Windows.Forms.ToolStripMenuItem();
+            this._chkPopUp = new System.Windows.Forms.CheckBox();
+            this.tsmAudio = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this._tsmSetVolTo100 = new System.Windows.Forms.ToolStripMenuItem();
+            this._tsmSetVolTo90 = new System.Windows.Forms.ToolStripMenuItem();
+            this._tsmSetVolTo80 = new System.Windows.Forms.ToolStripMenuItem();
+            this._tsmSetVolTo70 = new System.Windows.Forms.ToolStripMenuItem();
+            this._tsmSetVolTo60 = new System.Windows.Forms.ToolStripMenuItem();
+            this._tsmSetVolTo50 = new System.Windows.Forms.ToolStripMenuItem();
+            this._tsmSetVolTo40 = new System.Windows.Forms.ToolStripMenuItem();
+            this._tsmSetVolTo30 = new System.Windows.Forms.ToolStripMenuItem();
+            this._tsmSetVolTo20 = new System.Windows.Forms.ToolStripMenuItem();
+            this._tsmSetVolTo10 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this._tsmSelectFile = new System.Windows.Forms.ToolStripMenuItem();
+            this._chkSmoothAni = new System.Windows.Forms.CheckBox();
+            this._chkFoundSound = new System.Windows.Forms.CheckBox();
+            this.lbTime = new System.Windows.Forms.Label();
+            this._cboDelay = new System.Windows.Forms.ComboBox();
+            this._chkHideMissing = new System.Windows.Forms.CheckBox();
+            this._chkShowELO = new System.Windows.Forms.CheckBox();
+            this._timELOCycle = new System.Windows.Forms.Timer(this.components);
+            this._scrStats = new System.Windows.Forms.VScrollBar();
+            this._chkSpeech = new System.Windows.Forms.CheckBox();
+            this._chkGetTeams = new System.Windows.Forms.CheckBox();
+            this.lstLog = new System.Windows.Forms.ListBox();
+            this._cmErrLog = new System.Windows.Forms.Button();
+            this._chkCountry = new System.Windows.Forms.CheckBox();
+            this.SS1 = new System.Windows.Forms.StatusStrip();
+            this.SS1_Version = new System.Windows.Forms.ToolStripStatusLabel();
+            this.SS1_Sep1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.SS1_Filename = new System.Windows.Forms.ToolStripStatusLabel();
+            this.SS1_Sep2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.SS1_Time = new System.Windows.Forms.ToolStripStatusLabel();
+            this.SS1_Sep3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this._chkToggleOverlay = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFact01)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFact02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFact03)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFact04)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFact05)).BeginInit();
+            this.gbRank.SuspendLayout();
+            this.gbLayout.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._pbStats)).BeginInit();
+            this.gbFX.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNote1)).BeginInit();
+            this.gbSound.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNote3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNote4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNote2)).BeginInit();
+            this.tsmPlayer.SuspendLayout();
+            this.tsmAudio.SuspendLayout();
+            this.SS1.SuspendLayout();
+            this.SuspendLayout();
             // 
-            // cmCheckLog
+            // _cmCheckLog
             // 
-            _cmCheckLog.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmCheckLog.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmCheckLog.FlatStyle = FlatStyle.Flat;
-            _cmCheckLog.ForeColor = Color.Black;
-            _cmCheckLog.Location = new Point(10, 35);
-            _cmCheckLog.Name = "_cmCheckLog";
-            _cmCheckLog.Size = new Size(111, 30);
-            _cmCheckLog.TabIndex = 1;
-            _cmCheckLog.Text = "Check Log File";
-            _cmCheckLog.UseVisualStyleBackColor = false;
+            this._cmCheckLog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmCheckLog.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmCheckLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmCheckLog.ForeColor = System.Drawing.Color.Black;
+            this._cmCheckLog.Location = new System.Drawing.Point(10, 35);
+            this._cmCheckLog.Name = "_cmCheckLog";
+            this._cmCheckLog.Size = new System.Drawing.Size(111, 30);
+            this._cmCheckLog.TabIndex = 1;
+            this._cmCheckLog.Text = "Check Log File";
+            this._cmCheckLog.UseVisualStyleBackColor = false;
+            this._cmCheckLog.Click += new System.EventHandler(this.cmCheckLog_Click);
             // 
             // lbStatus
             // 
-            lbStatus.BackColor = Color.Silver;
-            lbStatus.BorderStyle = BorderStyle.FixedSingle;
-            lbStatus.Font = new Font("Arial", 9.75f, FontStyle.Regular, GraphicsUnit.Point, Conversions.ToByte(0));
-            lbStatus.ForeColor = Color.Black;
-            lbStatus.Location = new Point(880, 15);
-            lbStatus.Name = "lbStatus";
-            lbStatus.Size = new Size(235, 25);
-            lbStatus.TabIndex = 25;
-            lbStatus.Text = "Ready.";
-            lbStatus.TextAlign = ContentAlignment.MiddleCenter;
+            this.lbStatus.BackColor = System.Drawing.Color.Silver;
+            this.lbStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbStatus.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbStatus.ForeColor = System.Drawing.Color.Black;
+            this.lbStatus.Location = new System.Drawing.Point(880, 15);
+            this.lbStatus.Name = "lbStatus";
+            this.lbStatus.Size = new System.Drawing.Size(235, 25);
+            this.lbStatus.TabIndex = 25;
+            this.lbStatus.Text = "Ready.";
+            this.lbStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pbFact01
             // 
-            pbFact01.BackgroundImageLayout = ImageLayout.None;
-            pbFact01.Image = (Image)resources.GetObject("pbFact01.Image");
-            pbFact01.Location = new Point(1378, 192);
-            pbFact01.Name = "pbFact01";
-            pbFact01.Size = new Size(95, 95);
-            pbFact01.SizeMode = PictureBoxSizeMode.AutoSize;
-            pbFact01.TabIndex = 26;
-            pbFact01.TabStop = false;
-            pbFact01.Visible = false;
+            this.pbFact01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbFact01.Image = ((System.Drawing.Image)(resources.GetObject("pbFact01.Image")));
+            this.pbFact01.Location = new System.Drawing.Point(1378, 192);
+            this.pbFact01.Name = "pbFact01";
+            this.pbFact01.Size = new System.Drawing.Size(95, 95);
+            this.pbFact01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbFact01.TabIndex = 26;
+            this.pbFact01.TabStop = false;
+            this.pbFact01.Visible = false;
             // 
             // pbFact02
             // 
-            pbFact02.BackgroundImageLayout = ImageLayout.None;
-            pbFact02.Image = (Image)resources.GetObject("pbFact02.Image");
-            pbFact02.Location = new Point(1296, 192);
-            pbFact02.Name = "pbFact02";
-            pbFact02.Size = new Size(95, 95);
-            pbFact02.SizeMode = PictureBoxSizeMode.AutoSize;
-            pbFact02.TabIndex = 27;
-            pbFact02.TabStop = false;
-            pbFact02.Visible = false;
+            this.pbFact02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbFact02.Image = ((System.Drawing.Image)(resources.GetObject("pbFact02.Image")));
+            this.pbFact02.Location = new System.Drawing.Point(1296, 192);
+            this.pbFact02.Name = "pbFact02";
+            this.pbFact02.Size = new System.Drawing.Size(95, 95);
+            this.pbFact02.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbFact02.TabIndex = 27;
+            this.pbFact02.TabStop = false;
+            this.pbFact02.Visible = false;
             // 
             // pbFact03
             // 
-            pbFact03.BackgroundImageLayout = ImageLayout.None;
-            pbFact03.Image = (Image)resources.GetObject("pbFact03.Image");
-            pbFact03.Location = new Point(1378, 279);
-            pbFact03.Name = "pbFact03";
-            pbFact03.Size = new Size(95, 95);
-            pbFact03.SizeMode = PictureBoxSizeMode.AutoSize;
-            pbFact03.TabIndex = 28;
-            pbFact03.TabStop = false;
-            pbFact03.Visible = false;
+            this.pbFact03.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbFact03.Image = ((System.Drawing.Image)(resources.GetObject("pbFact03.Image")));
+            this.pbFact03.Location = new System.Drawing.Point(1378, 279);
+            this.pbFact03.Name = "pbFact03";
+            this.pbFact03.Size = new System.Drawing.Size(95, 95);
+            this.pbFact03.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbFact03.TabIndex = 28;
+            this.pbFact03.TabStop = false;
+            this.pbFact03.Visible = false;
             // 
             // pbFact04
             // 
-            pbFact04.BackgroundImageLayout = ImageLayout.None;
-            pbFact04.Image = (Image)resources.GetObject("pbFact04.Image");
-            pbFact04.Location = new Point(1460, 279);
-            pbFact04.Name = "pbFact04";
-            pbFact04.Size = new Size(95, 95);
-            pbFact04.SizeMode = PictureBoxSizeMode.AutoSize;
-            pbFact04.TabIndex = 29;
-            pbFact04.TabStop = false;
-            pbFact04.Visible = false;
+            this.pbFact04.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbFact04.Image = ((System.Drawing.Image)(resources.GetObject("pbFact04.Image")));
+            this.pbFact04.Location = new System.Drawing.Point(1460, 279);
+            this.pbFact04.Name = "pbFact04";
+            this.pbFact04.Size = new System.Drawing.Size(95, 95);
+            this.pbFact04.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbFact04.TabIndex = 29;
+            this.pbFact04.TabStop = false;
+            this.pbFact04.Visible = false;
             // 
             // pbFact05
             // 
-            pbFact05.BackgroundImageLayout = ImageLayout.None;
-            pbFact05.Image = (Image)resources.GetObject("pbFact05.Image");
-            pbFact05.Location = new Point(1296, 279);
-            pbFact05.Name = "pbFact05";
-            pbFact05.Size = new Size(95, 95);
-            pbFact05.SizeMode = PictureBoxSizeMode.AutoSize;
-            pbFact05.TabIndex = 30;
-            pbFact05.TabStop = false;
-            pbFact05.Visible = false;
+            this.pbFact05.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbFact05.Image = ((System.Drawing.Image)(resources.GetObject("pbFact05.Image")));
+            this.pbFact05.Location = new System.Drawing.Point(1296, 279);
+            this.pbFact05.Name = "pbFact05";
+            this.pbFact05.Size = new System.Drawing.Size(95, 95);
+            this.pbFact05.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbFact05.TabIndex = 30;
+            this.pbFact05.TabStop = false;
+            this.pbFact05.Visible = false;
             // 
             // lbSteam01
             // 
-            lbSteam01.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(224)), Conversions.ToInteger(Conversions.ToByte(224)), Conversions.ToInteger(Conversions.ToByte(224)));
-            lbSteam01.Font = new Font("Arial", 12.0f, FontStyle.Regular, GraphicsUnit.Point, Conversions.ToByte(0));
-            lbSteam01.Location = new Point(1465, 200);
-            lbSteam01.Name = "lbSteam01";
-            lbSteam01.Size = new Size(50, 23);
-            lbSteam01.TabIndex = 39;
-            lbSteam01.Visible = false;
+            this.lbSteam01.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbSteam01.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSteam01.Location = new System.Drawing.Point(1465, 200);
+            this.lbSteam01.Name = "lbSteam01";
+            this.lbSteam01.Size = new System.Drawing.Size(50, 23);
+            this.lbSteam01.TabIndex = 39;
+            this.lbSteam01.Visible = false;
             // 
             // lbSteam02
             // 
-            lbSteam02.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(224)), Conversions.ToInteger(Conversions.ToByte(224)), Conversions.ToInteger(Conversions.ToByte(224)));
-            lbSteam02.Font = new Font("Arial", 12.0f, FontStyle.Regular, GraphicsUnit.Point, Conversions.ToByte(0));
-            lbSteam02.Location = new Point(1465, 223);
-            lbSteam02.Name = "lbSteam02";
-            lbSteam02.Size = new Size(50, 23);
-            lbSteam02.TabIndex = 40;
-            lbSteam02.Visible = false;
+            this.lbSteam02.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbSteam02.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSteam02.Location = new System.Drawing.Point(1465, 223);
+            this.lbSteam02.Name = "lbSteam02";
+            this.lbSteam02.Size = new System.Drawing.Size(50, 23);
+            this.lbSteam02.TabIndex = 40;
+            this.lbSteam02.Visible = false;
             // 
             // lbSteam03
             // 
-            lbSteam03.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(224)), Conversions.ToInteger(Conversions.ToByte(224)), Conversions.ToInteger(Conversions.ToByte(224)));
-            lbSteam03.Font = new Font("Arial", 12.0f, FontStyle.Regular, GraphicsUnit.Point, Conversions.ToByte(0));
-            lbSteam03.Location = new Point(1465, 246);
-            lbSteam03.Name = "lbSteam03";
-            lbSteam03.Size = new Size(50, 23);
-            lbSteam03.TabIndex = 41;
-            lbSteam03.Visible = false;
+            this.lbSteam03.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbSteam03.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSteam03.Location = new System.Drawing.Point(1465, 246);
+            this.lbSteam03.Name = "lbSteam03";
+            this.lbSteam03.Size = new System.Drawing.Size(50, 23);
+            this.lbSteam03.TabIndex = 41;
+            this.lbSteam03.Visible = false;
             // 
             // lbSteam04
             // 
-            lbSteam04.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(224)), Conversions.ToInteger(Conversions.ToByte(224)), Conversions.ToInteger(Conversions.ToByte(224)));
-            lbSteam04.Font = new Font("Arial", 12.0f, FontStyle.Regular, GraphicsUnit.Point, Conversions.ToByte(0));
-            lbSteam04.Location = new Point(1465, 269);
-            lbSteam04.Name = "lbSteam04";
-            lbSteam04.Size = new Size(50, 23);
-            lbSteam04.TabIndex = 42;
-            lbSteam04.Visible = false;
+            this.lbSteam04.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbSteam04.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSteam04.Location = new System.Drawing.Point(1465, 269);
+            this.lbSteam04.Name = "lbSteam04";
+            this.lbSteam04.Size = new System.Drawing.Size(50, 23);
+            this.lbSteam04.TabIndex = 42;
+            this.lbSteam04.Visible = false;
             // 
             // lbSteam05
             // 
-            lbSteam05.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(224)), Conversions.ToInteger(Conversions.ToByte(224)), Conversions.ToInteger(Conversions.ToByte(224)));
-            lbSteam05.Font = new Font("Arial", 12.0f, FontStyle.Regular, GraphicsUnit.Point, Conversions.ToByte(0));
-            lbSteam05.Location = new Point(1519, 200);
-            lbSteam05.Name = "lbSteam05";
-            lbSteam05.Size = new Size(50, 23);
-            lbSteam05.TabIndex = 43;
-            lbSteam05.Visible = false;
+            this.lbSteam05.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbSteam05.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSteam05.Location = new System.Drawing.Point(1519, 200);
+            this.lbSteam05.Name = "lbSteam05";
+            this.lbSteam05.Size = new System.Drawing.Size(50, 23);
+            this.lbSteam05.TabIndex = 43;
+            this.lbSteam05.Visible = false;
             // 
             // lbSteam06
             // 
-            lbSteam06.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(224)), Conversions.ToInteger(Conversions.ToByte(224)), Conversions.ToInteger(Conversions.ToByte(224)));
-            lbSteam06.Font = new Font("Arial", 12.0f, FontStyle.Regular, GraphicsUnit.Point, Conversions.ToByte(0));
-            lbSteam06.Location = new Point(1519, 223);
-            lbSteam06.Name = "lbSteam06";
-            lbSteam06.Size = new Size(50, 23);
-            lbSteam06.TabIndex = 44;
-            lbSteam06.Visible = false;
+            this.lbSteam06.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbSteam06.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSteam06.Location = new System.Drawing.Point(1519, 223);
+            this.lbSteam06.Name = "lbSteam06";
+            this.lbSteam06.Size = new System.Drawing.Size(50, 23);
+            this.lbSteam06.TabIndex = 44;
+            this.lbSteam06.Visible = false;
             // 
             // lbSteam07
             // 
-            lbSteam07.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(224)), Conversions.ToInteger(Conversions.ToByte(224)), Conversions.ToInteger(Conversions.ToByte(224)));
-            lbSteam07.Font = new Font("Arial", 12.0f, FontStyle.Regular, GraphicsUnit.Point, Conversions.ToByte(0));
-            lbSteam07.Location = new Point(1519, 246);
-            lbSteam07.Name = "lbSteam07";
-            lbSteam07.Size = new Size(50, 23);
-            lbSteam07.TabIndex = 45;
-            lbSteam07.Visible = false;
+            this.lbSteam07.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbSteam07.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSteam07.Location = new System.Drawing.Point(1519, 246);
+            this.lbSteam07.Name = "lbSteam07";
+            this.lbSteam07.Size = new System.Drawing.Size(50, 23);
+            this.lbSteam07.TabIndex = 45;
+            this.lbSteam07.Visible = false;
             // 
             // lbSteam08
             // 
-            lbSteam08.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(224)), Conversions.ToInteger(Conversions.ToByte(224)), Conversions.ToInteger(Conversions.ToByte(224)));
-            lbSteam08.Font = new Font("Arial", 12.0f, FontStyle.Regular, GraphicsUnit.Point, Conversions.ToByte(0));
-            lbSteam08.Location = new Point(1519, 269);
-            lbSteam08.Name = "lbSteam08";
-            lbSteam08.Size = new Size(50, 23);
-            lbSteam08.TabIndex = 46;
-            lbSteam08.Visible = false;
+            this.lbSteam08.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbSteam08.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSteam08.Location = new System.Drawing.Point(1519, 269);
+            this.lbSteam08.Name = "lbSteam08";
+            this.lbSteam08.Size = new System.Drawing.Size(50, 23);
+            this.lbSteam08.TabIndex = 46;
+            this.lbSteam08.Visible = false;
             // 
             // OpenFileDialog1
             // 
-            OpenFileDialog1.FileName = "OpenFileDialog1";
+            this.OpenFileDialog1.FileName = "OpenFileDialog1";
             // 
-            // Timer1
+            // _Timer1
             // 
-            _Timer1.Interval = 1000;
+            this._Timer1.Interval = 1000;
+            this._Timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
-            // cmFindLog
+            // _cmFindLog
             // 
-            _cmFindLog.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmFindLog.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmFindLog.FlatStyle = FlatStyle.Flat;
-            _cmFindLog.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Regular, GraphicsUnit.Point, Conversions.ToByte(0));
-            _cmFindLog.ForeColor = Color.Black;
-            _cmFindLog.Location = new Point(10, 6);
-            _cmFindLog.Name = "_cmFindLog";
-            _cmFindLog.Size = new Size(111, 26);
-            _cmFindLog.TabIndex = 0;
-            _cmFindLog.Text = "Find Log File";
-            _cmFindLog.UseVisualStyleBackColor = false;
+            this._cmFindLog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmFindLog.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmFindLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmFindLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._cmFindLog.ForeColor = System.Drawing.Color.Black;
+            this._cmFindLog.Location = new System.Drawing.Point(10, 6);
+            this._cmFindLog.Name = "_cmFindLog";
+            this._cmFindLog.Size = new System.Drawing.Size(111, 26);
+            this._cmFindLog.TabIndex = 0;
+            this._cmFindLog.Text = "Find Log File";
+            this._cmFindLog.UseVisualStyleBackColor = false;
+            this._cmFindLog.Click += new System.EventHandler(this.cmFindLog_Click);
             // 
-            // cmScanLog
+            // _cmScanLog
             // 
-            _cmScanLog.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmScanLog.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmScanLog.FlatStyle = FlatStyle.Flat;
-            _cmScanLog.ForeColor = Color.Black;
-            _cmScanLog.Location = new Point(10, 115);
-            _cmScanLog.Name = "_cmScanLog";
-            _cmScanLog.Size = new Size(111, 46);
-            _cmScanLog.TabIndex = 2;
-            _cmScanLog.Text = "Auto Scan Log";
-            _cmScanLog.UseVisualStyleBackColor = false;
+            this._cmScanLog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmScanLog.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmScanLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmScanLog.ForeColor = System.Drawing.Color.Black;
+            this._cmScanLog.Location = new System.Drawing.Point(10, 115);
+            this._cmScanLog.Name = "_cmScanLog";
+            this._cmScanLog.Size = new System.Drawing.Size(111, 46);
+            this._cmScanLog.TabIndex = 2;
+            this._cmScanLog.Text = "Auto Scan Log";
+            this._cmScanLog.UseVisualStyleBackColor = false;
+            this._cmScanLog.Click += new System.EventHandler(this.cmScanLog_Click);
             // 
-            // cmCopy
+            // _cmCopy
             // 
-            _cmCopy.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmCopy.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmCopy.FlatStyle = FlatStyle.Flat;
-            _cmCopy.ForeColor = Color.Black;
-            _cmCopy.Location = new Point(880, 120);
-            _cmCopy.Name = "_cmCopy";
-            _cmCopy.Size = new Size(105, 23);
-            _cmCopy.TabIndex = 6;
-            _cmCopy.Text = "Copy Stats Image";
-            _cmCopy.UseVisualStyleBackColor = false;
+            this._cmCopy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmCopy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmCopy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmCopy.ForeColor = System.Drawing.Color.Black;
+            this._cmCopy.Location = new System.Drawing.Point(880, 120);
+            this._cmCopy.Name = "_cmCopy";
+            this._cmCopy.Size = new System.Drawing.Size(105, 23);
+            this._cmCopy.TabIndex = 6;
+            this._cmCopy.Text = "Copy Stats Image";
+            this._cmCopy.UseVisualStyleBackColor = false;
+            this._cmCopy.Click += new System.EventHandler(this.cmCopy_Click);
             // 
             // Label2
             // 
-            Label2.Location = new Point(880, 0);
-            Label2.Name = "Label2";
-            Label2.Size = new Size(235, 13);
-            Label2.TabIndex = 61;
-            Label2.Text = "Scan Status";
-            Label2.TextAlign = ContentAlignment.MiddleCenter;
+            this.Label2.Location = new System.Drawing.Point(880, 0);
+            this.Label2.Name = "Label2";
+            this.Label2.Size = new System.Drawing.Size(235, 13);
+            this.Label2.TabIndex = 61;
+            this.Label2.Text = "Scan Status";
+            this.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // cmAbout
+            // _cmAbout
             // 
-            _cmAbout.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmAbout.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmAbout.FlatStyle = FlatStyle.Flat;
-            _cmAbout.ForeColor = Color.Black;
-            _cmAbout.Location = new Point(880, 45);
-            _cmAbout.Name = "_cmAbout";
-            _cmAbout.Size = new Size(105, 23);
-            _cmAbout.TabIndex = 3;
-            _cmAbout.Text = "About";
-            _cmAbout.UseVisualStyleBackColor = false;
+            this._cmAbout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmAbout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmAbout.ForeColor = System.Drawing.Color.Black;
+            this._cmAbout.Location = new System.Drawing.Point(880, 45);
+            this._cmAbout.Name = "_cmAbout";
+            this._cmAbout.Size = new System.Drawing.Size(105, 23);
+            this._cmAbout.TabIndex = 3;
+            this._cmAbout.Text = "About";
+            this._cmAbout.UseVisualStyleBackColor = false;
+            this._cmAbout.Click += new System.EventHandler(this.cmAbout_Click);
             // 
             // Label3
             // 
-            Label3.AutoSize = true;
-            Label3.ForeColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)));
-            Label3.Location = new Point(5, 20);
-            Label3.Name = "Label3";
-            Label3.Size = new Size(44, 13);
-            Label3.TabIndex = 66;
-            Label3.Text = "XY Size";
+            this.Label3.AutoSize = true;
+            this.Label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.Label3.Location = new System.Drawing.Point(5, 20);
+            this.Label3.Name = "Label3";
+            this.Label3.Size = new System.Drawing.Size(44, 13);
+            this.Label3.TabIndex = 66;
+            this.Label3.Text = "XY Size";
             // 
             // Label4
             // 
-            Label4.AutoSize = true;
-            Label4.ForeColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)));
-            Label4.Location = new Point(5, 95);
-            Label4.Name = "Label4";
-            Label4.Size = new Size(49, 13);
-            Label4.TabIndex = 70;
-            Label4.Text = "Y Layout";
+            this.Label4.AutoSize = true;
+            this.Label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.Label4.Location = new System.Drawing.Point(5, 95);
+            this.Label4.Name = "Label4";
+            this.Label4.Size = new System.Drawing.Size(49, 13);
+            this.Label4.TabIndex = 70;
+            this.Label4.Text = "Y Layout";
             // 
-            // cboLayoutY
+            // _cboLayoutY
             // 
-            _cboLayoutY.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)));
-            _cboLayoutY.DropDownStyle = ComboBoxStyle.DropDownList;
-            _cboLayoutY.ForeColor = Color.White;
-            _cboLayoutY.FormattingEnabled = true;
-            _cboLayoutY.Location = new Point(60, 90);
-            _cboLayoutY.Name = "_cboLayoutY";
-            _cboLayoutY.Size = new Size(126, 21);
-            _cboLayoutY.TabIndex = 23;
+            this._cboLayoutY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this._cboLayoutY.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._cboLayoutY.ForeColor = System.Drawing.Color.White;
+            this._cboLayoutY.FormattingEnabled = true;
+            this._cboLayoutY.Location = new System.Drawing.Point(60, 90);
+            this._cboLayoutY.Name = "_cboLayoutY";
+            this._cboLayoutY.Size = new System.Drawing.Size(126, 21);
+            this._cboLayoutY.TabIndex = 23;
+            this._cboLayoutY.SelectedIndexChanged += new System.EventHandler(this.cboLayoutY_SelectedIndexChanged);
             // 
             // gbRank
             // 
-            gbRank.Controls.Add(_cmELO);
-            gbRank.Controls.Add(_cmSetupSave);
-            gbRank.Controls.Add(_cmSetupLoad);
-            gbRank.Controls.Add(_cmNote_PlayAll);
-            gbRank.Controls.Add(_cmNote04_Play);
-            gbRank.Controls.Add(_cmNote03_Play);
-            gbRank.Controls.Add(_cmNote02_Play);
-            gbRank.Controls.Add(_cmNote01_Play);
-            gbRank.Controls.Add(_cmNote4);
-            gbRank.Controls.Add(_cmNote04Setup);
-            gbRank.Controls.Add(Label14);
-            gbRank.Controls.Add(_cmNote3);
-            gbRank.Controls.Add(_cmNote2);
-            gbRank.Controls.Add(_cmNote1);
-            gbRank.Controls.Add(_cmNote03Setup);
-            gbRank.Controls.Add(_cmNote02Setup);
-            gbRank.Controls.Add(Label13);
-            gbRank.Controls.Add(Label12);
-            gbRank.Controls.Add(_cmNote01Setup);
-            gbRank.Controls.Add(Label11);
-            gbRank.Controls.Add(_cmNameSetup);
-            gbRank.Controls.Add(Label10);
-            gbRank.Controls.Add(Label9);
-            gbRank.Controls.Add(_cmRankSetup);
-            gbRank.ForeColor = Color.Black;
-            gbRank.Location = new Point(130, 0);
-            gbRank.Name = "gbRank";
-            gbRank.Size = new Size(198, 195);
-            gbRank.TabIndex = 73;
-            gbRank.TabStop = false;
-            gbRank.Text = "Stats and Note Setups";
+            this.gbRank.Controls.Add(this._cmELO);
+            this.gbRank.Controls.Add(this._cmSetupSave);
+            this.gbRank.Controls.Add(this._cmSetupLoad);
+            this.gbRank.Controls.Add(this._cmNote_PlayAll);
+            this.gbRank.Controls.Add(this._cmNote04_Play);
+            this.gbRank.Controls.Add(this._cmNote03_Play);
+            this.gbRank.Controls.Add(this._cmNote02_Play);
+            this.gbRank.Controls.Add(this._cmNote01_Play);
+            this.gbRank.Controls.Add(this._cmNote4);
+            this.gbRank.Controls.Add(this._cmNote04Setup);
+            this.gbRank.Controls.Add(this.Label14);
+            this.gbRank.Controls.Add(this._cmNote3);
+            this.gbRank.Controls.Add(this._cmNote2);
+            this.gbRank.Controls.Add(this._cmNote1);
+            this.gbRank.Controls.Add(this._cmNote03Setup);
+            this.gbRank.Controls.Add(this._cmNote02Setup);
+            this.gbRank.Controls.Add(this.Label13);
+            this.gbRank.Controls.Add(this.Label12);
+            this.gbRank.Controls.Add(this._cmNote01Setup);
+            this.gbRank.Controls.Add(this.Label11);
+            this.gbRank.Controls.Add(this._cmNameSetup);
+            this.gbRank.Controls.Add(this.Label10);
+            this.gbRank.Controls.Add(this.Label9);
+            this.gbRank.Controls.Add(this._cmRankSetup);
+            this.gbRank.ForeColor = System.Drawing.Color.Black;
+            this.gbRank.Location = new System.Drawing.Point(130, 0);
+            this.gbRank.Name = "gbRank";
+            this.gbRank.Size = new System.Drawing.Size(198, 195);
+            this.gbRank.TabIndex = 73;
+            this.gbRank.TabStop = false;
+            this.gbRank.Text = "Stats and Note Setups";
             // 
-            // cmELO
+            // _cmELO
             // 
-            _cmELO.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmELO.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmELO.FlatStyle = FlatStyle.Flat;
-            _cmELO.ForeColor = Color.Black;
-            _cmELO.Location = new Point(100, 15);
-            _cmELO.Name = "_cmELO";
-            _cmELO.Size = new Size(50, 23);
-            _cmELO.TabIndex = 94;
-            _cmELO.Text = "ELO";
-            _cmELO.UseVisualStyleBackColor = false;
+            this._cmELO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmELO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmELO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmELO.ForeColor = System.Drawing.Color.Black;
+            this._cmELO.Location = new System.Drawing.Point(100, 15);
+            this._cmELO.Name = "_cmELO";
+            this._cmELO.Size = new System.Drawing.Size(50, 23);
+            this._cmELO.TabIndex = 94;
+            this._cmELO.Text = "ELO";
+            this._cmELO.UseVisualStyleBackColor = false;
+            this._cmELO.Click += new System.EventHandler(this.cmTest_Click);
             // 
-            // cmSetupSave
+            // _cmSetupSave
             // 
-            _cmSetupSave.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSetupSave.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSetupSave.FlatStyle = FlatStyle.Flat;
-            _cmSetupSave.ForeColor = Color.Black;
-            _cmSetupSave.Location = new Point(100, 165);
-            _cmSetupSave.Name = "_cmSetupSave";
-            _cmSetupSave.Size = new Size(85, 23);
-            _cmSetupSave.TabIndex = 125;
-            _cmSetupSave.Text = "Save Setup";
-            _cmSetupSave.UseVisualStyleBackColor = false;
+            this._cmSetupSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmSetupSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmSetupSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmSetupSave.ForeColor = System.Drawing.Color.Black;
+            this._cmSetupSave.Location = new System.Drawing.Point(100, 165);
+            this._cmSetupSave.Name = "_cmSetupSave";
+            this._cmSetupSave.Size = new System.Drawing.Size(85, 23);
+            this._cmSetupSave.TabIndex = 125;
+            this._cmSetupSave.Text = "Save Setup";
+            this._cmSetupSave.UseVisualStyleBackColor = false;
+            this._cmSetupSave.Click += new System.EventHandler(this.cmSetupSave_Click);
             // 
-            // cmSetupLoad
+            // _cmSetupLoad
             // 
-            _cmSetupLoad.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSetupLoad.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSetupLoad.FlatStyle = FlatStyle.Flat;
-            _cmSetupLoad.ForeColor = Color.Black;
-            _cmSetupLoad.Location = new Point(5, 165);
-            _cmSetupLoad.Name = "_cmSetupLoad";
-            _cmSetupLoad.Size = new Size(90, 23);
-            _cmSetupLoad.TabIndex = 124;
-            _cmSetupLoad.Text = "Load Setup";
-            _cmSetupLoad.UseVisualStyleBackColor = false;
+            this._cmSetupLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmSetupLoad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmSetupLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmSetupLoad.ForeColor = System.Drawing.Color.Black;
+            this._cmSetupLoad.Location = new System.Drawing.Point(5, 165);
+            this._cmSetupLoad.Name = "_cmSetupLoad";
+            this._cmSetupLoad.Size = new System.Drawing.Size(90, 23);
+            this._cmSetupLoad.TabIndex = 124;
+            this._cmSetupLoad.Text = "Load Setup";
+            this._cmSetupLoad.UseVisualStyleBackColor = false;
+            this._cmSetupLoad.Click += new System.EventHandler(this.cmSetupLoad_Click);
             // 
-            // cmNote_PlayAll
+            // _cmNote_PlayAll
             // 
-            _cmNote_PlayAll.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote_PlayAll.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote_PlayAll.FlatStyle = FlatStyle.Flat;
-            _cmNote_PlayAll.ForeColor = Color.Black;
-            _cmNote_PlayAll.Location = new Point(155, 40);
-            _cmNote_PlayAll.Name = "_cmNote_PlayAll";
-            _cmNote_PlayAll.Size = new Size(30, 23);
-            _cmNote_PlayAll.TabIndex = 10;
-            _cmNote_PlayAll.Text = ">";
-            _cmNote_PlayAll.UseVisualStyleBackColor = false;
+            this._cmNote_PlayAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmNote_PlayAll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmNote_PlayAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmNote_PlayAll.ForeColor = System.Drawing.Color.Black;
+            this._cmNote_PlayAll.Location = new System.Drawing.Point(155, 40);
+            this._cmNote_PlayAll.Name = "_cmNote_PlayAll";
+            this._cmNote_PlayAll.Size = new System.Drawing.Size(30, 23);
+            this._cmNote_PlayAll.TabIndex = 10;
+            this._cmNote_PlayAll.Text = ">";
+            this._cmNote_PlayAll.UseVisualStyleBackColor = false;
+            this._cmNote_PlayAll.Click += new System.EventHandler(this.cmNote_PlayAll_Click);
             // 
-            // cmNote04_Play
+            // _cmNote04_Play
             // 
-            _cmNote04_Play.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote04_Play.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote04_Play.FlatStyle = FlatStyle.Flat;
-            _cmNote04_Play.ForeColor = Color.Black;
-            _cmNote04_Play.Location = new Point(155, 140);
-            _cmNote04_Play.Name = "_cmNote04_Play";
-            _cmNote04_Play.Size = new Size(30, 23);
-            _cmNote04_Play.TabIndex = 14;
-            _cmNote04_Play.Text = ">";
-            _cmNote04_Play.UseVisualStyleBackColor = false;
+            this._cmNote04_Play.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmNote04_Play.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmNote04_Play.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmNote04_Play.ForeColor = System.Drawing.Color.Black;
+            this._cmNote04_Play.Location = new System.Drawing.Point(155, 140);
+            this._cmNote04_Play.Name = "_cmNote04_Play";
+            this._cmNote04_Play.Size = new System.Drawing.Size(30, 23);
+            this._cmNote04_Play.TabIndex = 14;
+            this._cmNote04_Play.Text = ">";
+            this._cmNote04_Play.UseVisualStyleBackColor = false;
+            this._cmNote04_Play.Click += new System.EventHandler(this.cmNote04_Play_Click);
             // 
-            // cmNote03_Play
+            // _cmNote03_Play
             // 
-            _cmNote03_Play.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote03_Play.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote03_Play.FlatStyle = FlatStyle.Flat;
-            _cmNote03_Play.ForeColor = Color.Black;
-            _cmNote03_Play.Location = new Point(155, 115);
-            _cmNote03_Play.Name = "_cmNote03_Play";
-            _cmNote03_Play.Size = new Size(30, 23);
-            _cmNote03_Play.TabIndex = 13;
-            _cmNote03_Play.Text = ">";
-            _cmNote03_Play.UseVisualStyleBackColor = false;
+            this._cmNote03_Play.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmNote03_Play.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmNote03_Play.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmNote03_Play.ForeColor = System.Drawing.Color.Black;
+            this._cmNote03_Play.Location = new System.Drawing.Point(155, 115);
+            this._cmNote03_Play.Name = "_cmNote03_Play";
+            this._cmNote03_Play.Size = new System.Drawing.Size(30, 23);
+            this._cmNote03_Play.TabIndex = 13;
+            this._cmNote03_Play.Text = ">";
+            this._cmNote03_Play.UseVisualStyleBackColor = false;
+            this._cmNote03_Play.Click += new System.EventHandler(this.cmNote03_Play_Click);
             // 
-            // cmNote02_Play
+            // _cmNote02_Play
             // 
-            _cmNote02_Play.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote02_Play.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote02_Play.FlatStyle = FlatStyle.Flat;
-            _cmNote02_Play.ForeColor = Color.Black;
-            _cmNote02_Play.Location = new Point(155, 90);
-            _cmNote02_Play.Name = "_cmNote02_Play";
-            _cmNote02_Play.Size = new Size(30, 23);
-            _cmNote02_Play.TabIndex = 12;
-            _cmNote02_Play.Text = ">";
-            _cmNote02_Play.UseVisualStyleBackColor = false;
+            this._cmNote02_Play.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmNote02_Play.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmNote02_Play.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmNote02_Play.ForeColor = System.Drawing.Color.Black;
+            this._cmNote02_Play.Location = new System.Drawing.Point(155, 90);
+            this._cmNote02_Play.Name = "_cmNote02_Play";
+            this._cmNote02_Play.Size = new System.Drawing.Size(30, 23);
+            this._cmNote02_Play.TabIndex = 12;
+            this._cmNote02_Play.Text = ">";
+            this._cmNote02_Play.UseVisualStyleBackColor = false;
+            this._cmNote02_Play.Click += new System.EventHandler(this.cmNote02_Play_Click);
             // 
-            // cmNote01_Play
+            // _cmNote01_Play
             // 
-            _cmNote01_Play.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote01_Play.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote01_Play.FlatStyle = FlatStyle.Flat;
-            _cmNote01_Play.ForeColor = Color.Black;
-            _cmNote01_Play.Location = new Point(155, 65);
-            _cmNote01_Play.Name = "_cmNote01_Play";
-            _cmNote01_Play.Size = new Size(30, 23);
-            _cmNote01_Play.TabIndex = 11;
-            _cmNote01_Play.Text = ">";
-            _cmNote01_Play.UseVisualStyleBackColor = false;
+            this._cmNote01_Play.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmNote01_Play.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmNote01_Play.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmNote01_Play.ForeColor = System.Drawing.Color.Black;
+            this._cmNote01_Play.Location = new System.Drawing.Point(155, 65);
+            this._cmNote01_Play.Name = "_cmNote01_Play";
+            this._cmNote01_Play.Size = new System.Drawing.Size(30, 23);
+            this._cmNote01_Play.TabIndex = 11;
+            this._cmNote01_Play.Text = ">";
+            this._cmNote01_Play.UseVisualStyleBackColor = false;
+            this._cmNote01_Play.Click += new System.EventHandler(this.cmNote01_Play_Click);
             // 
-            // cmNote4
+            // _cmNote4
             // 
-            _cmNote4.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote4.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote4.FlatStyle = FlatStyle.Flat;
-            _cmNote4.ForeColor = Color.Black;
-            _cmNote4.Location = new Point(100, 140);
-            _cmNote4.Name = "_cmNote4";
-            _cmNote4.Size = new Size(50, 23);
-            _cmNote4.TabIndex = 9;
-            _cmNote4.Text = "Notes";
-            _cmNote4.UseVisualStyleBackColor = false;
+            this._cmNote4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmNote4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmNote4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmNote4.ForeColor = System.Drawing.Color.Black;
+            this._cmNote4.Location = new System.Drawing.Point(100, 140);
+            this._cmNote4.Name = "_cmNote4";
+            this._cmNote4.Size = new System.Drawing.Size(50, 23);
+            this._cmNote4.TabIndex = 9;
+            this._cmNote4.Text = "Notes";
+            this._cmNote4.UseVisualStyleBackColor = false;
+            this._cmNote4.Click += new System.EventHandler(this.cmNote4_Click);
             // 
-            // cmNote04Setup
+            // _cmNote04Setup
             // 
-            _cmNote04Setup.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote04Setup.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote04Setup.FlatStyle = FlatStyle.Flat;
-            _cmNote04Setup.ForeColor = Color.Black;
-            _cmNote04Setup.Location = new Point(45, 140);
-            _cmNote04Setup.Name = "_cmNote04Setup";
-            _cmNote04Setup.Size = new Size(50, 23);
-            _cmNote04Setup.TabIndex = 8;
-            _cmNote04Setup.Text = "Setup";
-            _cmNote04Setup.UseVisualStyleBackColor = false;
+            this._cmNote04Setup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmNote04Setup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmNote04Setup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmNote04Setup.ForeColor = System.Drawing.Color.Black;
+            this._cmNote04Setup.Location = new System.Drawing.Point(45, 140);
+            this._cmNote04Setup.Name = "_cmNote04Setup";
+            this._cmNote04Setup.Size = new System.Drawing.Size(50, 23);
+            this._cmNote04Setup.TabIndex = 8;
+            this._cmNote04Setup.Text = "Setup";
+            this._cmNote04Setup.UseVisualStyleBackColor = false;
+            this._cmNote04Setup.Click += new System.EventHandler(this.cmNote04Setup_Click_1);
             // 
             // Label14
             // 
-            Label14.AutoSize = true;
-            Label14.ForeColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)));
-            Label14.Location = new Point(5, 145);
-            Label14.Name = "Label14";
-            Label14.Size = new Size(39, 13);
-            Label14.TabIndex = 123;
-            Label14.Text = "Note 4";
+            this.Label14.AutoSize = true;
+            this.Label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.Label14.Location = new System.Drawing.Point(5, 145);
+            this.Label14.Name = "Label14";
+            this.Label14.Size = new System.Drawing.Size(39, 13);
+            this.Label14.TabIndex = 123;
+            this.Label14.Text = "Note 4";
             // 
-            // cmNote3
+            // _cmNote3
             // 
-            _cmNote3.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote3.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote3.FlatStyle = FlatStyle.Flat;
-            _cmNote3.ForeColor = Color.Black;
-            _cmNote3.Location = new Point(100, 115);
-            _cmNote3.Name = "_cmNote3";
-            _cmNote3.Size = new Size(50, 23);
-            _cmNote3.TabIndex = 7;
-            _cmNote3.Text = "Notes";
-            _cmNote3.UseVisualStyleBackColor = false;
+            this._cmNote3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmNote3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmNote3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmNote3.ForeColor = System.Drawing.Color.Black;
+            this._cmNote3.Location = new System.Drawing.Point(100, 115);
+            this._cmNote3.Name = "_cmNote3";
+            this._cmNote3.Size = new System.Drawing.Size(50, 23);
+            this._cmNote3.TabIndex = 7;
+            this._cmNote3.Text = "Notes";
+            this._cmNote3.UseVisualStyleBackColor = false;
+            this._cmNote3.Click += new System.EventHandler(this.cmNote3_Click);
             // 
-            // cmNote2
+            // _cmNote2
             // 
-            _cmNote2.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote2.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote2.FlatStyle = FlatStyle.Flat;
-            _cmNote2.ForeColor = Color.Black;
-            _cmNote2.Location = new Point(100, 90);
-            _cmNote2.Name = "_cmNote2";
-            _cmNote2.Size = new Size(50, 23);
-            _cmNote2.TabIndex = 5;
-            _cmNote2.Text = "Notes";
-            _cmNote2.UseVisualStyleBackColor = false;
+            this._cmNote2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmNote2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmNote2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmNote2.ForeColor = System.Drawing.Color.Black;
+            this._cmNote2.Location = new System.Drawing.Point(100, 90);
+            this._cmNote2.Name = "_cmNote2";
+            this._cmNote2.Size = new System.Drawing.Size(50, 23);
+            this._cmNote2.TabIndex = 5;
+            this._cmNote2.Text = "Notes";
+            this._cmNote2.UseVisualStyleBackColor = false;
+            this._cmNote2.Click += new System.EventHandler(this.cmNote2_Click);
             // 
-            // cmNote1
+            // _cmNote1
             // 
-            _cmNote1.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote1.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote1.FlatStyle = FlatStyle.Flat;
-            _cmNote1.ForeColor = Color.Black;
-            _cmNote1.Location = new Point(100, 65);
-            _cmNote1.Name = "_cmNote1";
-            _cmNote1.Size = new Size(50, 23);
-            _cmNote1.TabIndex = 3;
-            _cmNote1.Text = "Notes";
-            _cmNote1.UseVisualStyleBackColor = false;
+            this._cmNote1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmNote1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmNote1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmNote1.ForeColor = System.Drawing.Color.Black;
+            this._cmNote1.Location = new System.Drawing.Point(100, 65);
+            this._cmNote1.Name = "_cmNote1";
+            this._cmNote1.Size = new System.Drawing.Size(50, 23);
+            this._cmNote1.TabIndex = 3;
+            this._cmNote1.Text = "Notes";
+            this._cmNote1.UseVisualStyleBackColor = false;
+            this._cmNote1.Click += new System.EventHandler(this.cmNote1_Click);
             // 
-            // cmNote03Setup
+            // _cmNote03Setup
             // 
-            _cmNote03Setup.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote03Setup.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote03Setup.FlatStyle = FlatStyle.Flat;
-            _cmNote03Setup.ForeColor = Color.Black;
-            _cmNote03Setup.Location = new Point(45, 115);
-            _cmNote03Setup.Name = "_cmNote03Setup";
-            _cmNote03Setup.Size = new Size(50, 23);
-            _cmNote03Setup.TabIndex = 6;
-            _cmNote03Setup.Text = "Setup";
-            _cmNote03Setup.UseVisualStyleBackColor = false;
+            this._cmNote03Setup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmNote03Setup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmNote03Setup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmNote03Setup.ForeColor = System.Drawing.Color.Black;
+            this._cmNote03Setup.Location = new System.Drawing.Point(45, 115);
+            this._cmNote03Setup.Name = "_cmNote03Setup";
+            this._cmNote03Setup.Size = new System.Drawing.Size(50, 23);
+            this._cmNote03Setup.TabIndex = 6;
+            this._cmNote03Setup.Text = "Setup";
+            this._cmNote03Setup.UseVisualStyleBackColor = false;
+            this._cmNote03Setup.Click += new System.EventHandler(this.cmNote03Setup_Click_1);
             // 
-            // cmNote02Setup
+            // _cmNote02Setup
             // 
-            _cmNote02Setup.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote02Setup.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote02Setup.FlatStyle = FlatStyle.Flat;
-            _cmNote02Setup.ForeColor = Color.Black;
-            _cmNote02Setup.Location = new Point(45, 90);
-            _cmNote02Setup.Name = "_cmNote02Setup";
-            _cmNote02Setup.Size = new Size(50, 23);
-            _cmNote02Setup.TabIndex = 4;
-            _cmNote02Setup.Text = "Setup";
-            _cmNote02Setup.UseVisualStyleBackColor = false;
+            this._cmNote02Setup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmNote02Setup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmNote02Setup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmNote02Setup.ForeColor = System.Drawing.Color.Black;
+            this._cmNote02Setup.Location = new System.Drawing.Point(45, 90);
+            this._cmNote02Setup.Name = "_cmNote02Setup";
+            this._cmNote02Setup.Size = new System.Drawing.Size(50, 23);
+            this._cmNote02Setup.TabIndex = 4;
+            this._cmNote02Setup.Text = "Setup";
+            this._cmNote02Setup.UseVisualStyleBackColor = false;
+            this._cmNote02Setup.Click += new System.EventHandler(this.cmNote02Setup_Click_1);
             // 
             // Label13
             // 
-            Label13.AutoSize = true;
-            Label13.ForeColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)));
-            Label13.Location = new Point(5, 120);
-            Label13.Name = "Label13";
-            Label13.Size = new Size(39, 13);
-            Label13.TabIndex = 117;
-            Label13.Text = "Note 3";
+            this.Label13.AutoSize = true;
+            this.Label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.Label13.Location = new System.Drawing.Point(5, 120);
+            this.Label13.Name = "Label13";
+            this.Label13.Size = new System.Drawing.Size(39, 13);
+            this.Label13.TabIndex = 117;
+            this.Label13.Text = "Note 3";
             // 
             // Label12
             // 
-            Label12.AutoSize = true;
-            Label12.ForeColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)));
-            Label12.Location = new Point(5, 95);
-            Label12.Name = "Label12";
-            Label12.Size = new Size(39, 13);
-            Label12.TabIndex = 116;
-            Label12.Text = "Note 2";
+            this.Label12.AutoSize = true;
+            this.Label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.Label12.Location = new System.Drawing.Point(5, 95);
+            this.Label12.Name = "Label12";
+            this.Label12.Size = new System.Drawing.Size(39, 13);
+            this.Label12.TabIndex = 116;
+            this.Label12.Text = "Note 2";
             // 
-            // cmNote01Setup
+            // _cmNote01Setup
             // 
-            _cmNote01Setup.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote01Setup.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNote01Setup.FlatStyle = FlatStyle.Flat;
-            _cmNote01Setup.ForeColor = Color.Black;
-            _cmNote01Setup.Location = new Point(45, 65);
-            _cmNote01Setup.Name = "_cmNote01Setup";
-            _cmNote01Setup.Size = new Size(50, 23);
-            _cmNote01Setup.TabIndex = 2;
-            _cmNote01Setup.Text = "Setup";
-            _cmNote01Setup.UseVisualStyleBackColor = false;
+            this._cmNote01Setup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmNote01Setup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmNote01Setup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmNote01Setup.ForeColor = System.Drawing.Color.Black;
+            this._cmNote01Setup.Location = new System.Drawing.Point(45, 65);
+            this._cmNote01Setup.Name = "_cmNote01Setup";
+            this._cmNote01Setup.Size = new System.Drawing.Size(50, 23);
+            this._cmNote01Setup.TabIndex = 2;
+            this._cmNote01Setup.Text = "Setup";
+            this._cmNote01Setup.UseVisualStyleBackColor = false;
+            this._cmNote01Setup.Click += new System.EventHandler(this.cmNote01Setup_Click_1);
             // 
             // Label11
             // 
-            Label11.AutoSize = true;
-            Label11.ForeColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)));
-            Label11.Location = new Point(5, 70);
-            Label11.Name = "Label11";
-            Label11.Size = new Size(39, 13);
-            Label11.TabIndex = 114;
-            Label11.Text = "Note 1";
+            this.Label11.AutoSize = true;
+            this.Label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.Label11.Location = new System.Drawing.Point(5, 70);
+            this.Label11.Name = "Label11";
+            this.Label11.Size = new System.Drawing.Size(39, 13);
+            this.Label11.TabIndex = 114;
+            this.Label11.Text = "Note 1";
             // 
-            // cmNameSetup
+            // _cmNameSetup
             // 
-            _cmNameSetup.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNameSetup.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmNameSetup.FlatStyle = FlatStyle.Flat;
-            _cmNameSetup.ForeColor = Color.Black;
-            _cmNameSetup.Location = new Point(45, 40);
-            _cmNameSetup.Name = "_cmNameSetup";
-            _cmNameSetup.Size = new Size(50, 23);
-            _cmNameSetup.TabIndex = 1;
-            _cmNameSetup.Text = "Setup";
-            _cmNameSetup.UseVisualStyleBackColor = false;
+            this._cmNameSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmNameSetup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmNameSetup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmNameSetup.ForeColor = System.Drawing.Color.Black;
+            this._cmNameSetup.Location = new System.Drawing.Point(45, 40);
+            this._cmNameSetup.Name = "_cmNameSetup";
+            this._cmNameSetup.Size = new System.Drawing.Size(50, 23);
+            this._cmNameSetup.TabIndex = 1;
+            this._cmNameSetup.Text = "Setup";
+            this._cmNameSetup.UseVisualStyleBackColor = false;
+            this._cmNameSetup.Click += new System.EventHandler(this.cmNameSetup_Click);
             // 
             // Label10
             // 
-            Label10.AutoSize = true;
-            Label10.ForeColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)));
-            Label10.Location = new Point(5, 45);
-            Label10.Name = "Label10";
-            Label10.Size = new Size(35, 13);
-            Label10.TabIndex = 111;
-            Label10.Text = "Name";
+            this.Label10.AutoSize = true;
+            this.Label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.Label10.Location = new System.Drawing.Point(5, 45);
+            this.Label10.Name = "Label10";
+            this.Label10.Size = new System.Drawing.Size(35, 13);
+            this.Label10.TabIndex = 111;
+            this.Label10.Text = "Name";
             // 
             // Label9
             // 
-            Label9.AutoSize = true;
-            Label9.ForeColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)));
-            Label9.Location = new Point(5, 20);
-            Label9.Name = "Label9";
-            Label9.Size = new Size(33, 13);
-            Label9.TabIndex = 110;
-            Label9.Text = "Rank";
+            this.Label9.AutoSize = true;
+            this.Label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.Label9.Location = new System.Drawing.Point(5, 20);
+            this.Label9.Name = "Label9";
+            this.Label9.Size = new System.Drawing.Size(33, 13);
+            this.Label9.TabIndex = 110;
+            this.Label9.Text = "Rank";
             // 
-            // cmRankSetup
+            // _cmRankSetup
             // 
-            _cmRankSetup.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmRankSetup.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmRankSetup.FlatStyle = FlatStyle.Flat;
-            _cmRankSetup.ForeColor = Color.Black;
-            _cmRankSetup.Location = new Point(45, 15);
-            _cmRankSetup.Name = "_cmRankSetup";
-            _cmRankSetup.Size = new Size(50, 23);
-            _cmRankSetup.TabIndex = 0;
-            _cmRankSetup.Text = "Setup";
-            _cmRankSetup.UseVisualStyleBackColor = false;
+            this._cmRankSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmRankSetup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmRankSetup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmRankSetup.ForeColor = System.Drawing.Color.Black;
+            this._cmRankSetup.Location = new System.Drawing.Point(45, 15);
+            this._cmRankSetup.Name = "_cmRankSetup";
+            this._cmRankSetup.Size = new System.Drawing.Size(50, 23);
+            this._cmRankSetup.TabIndex = 0;
+            this._cmRankSetup.Text = "Setup";
+            this._cmRankSetup.UseVisualStyleBackColor = false;
+            this._cmRankSetup.Click += new System.EventHandler(this.cmRankSetup_Click);
             // 
-            // cmSave
+            // _cmSave
             // 
-            _cmSave.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSave.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSave.FlatStyle = FlatStyle.Flat;
-            _cmSave.ForeColor = Color.Black;
-            _cmSave.Location = new Point(880, 145);
-            _cmSave.Name = "_cmSave";
-            _cmSave.Size = new Size(105, 23);
-            _cmSave.TabIndex = 7;
-            _cmSave.Text = "Save Stats Image";
-            _cmSave.UseVisualStyleBackColor = false;
+            this._cmSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmSave.ForeColor = System.Drawing.Color.Black;
+            this._cmSave.Location = new System.Drawing.Point(880, 145);
+            this._cmSave.Name = "_cmSave";
+            this._cmSave.Size = new System.Drawing.Size(105, 23);
+            this._cmSave.TabIndex = 7;
+            this._cmSave.Text = "Save Stats Image";
+            this._cmSave.UseVisualStyleBackColor = false;
+            this._cmSave.Click += new System.EventHandler(this.cmSave_Click);
             // 
             // gbLayout
             // 
-            gbLayout.Controls.Add(_cmStatsModeHelp);
-            gbLayout.Controls.Add(_cmDefaults);
-            gbLayout.Controls.Add(_tbYSize);
-            gbLayout.Controls.Add(_tbXsize);
-            gbLayout.Controls.Add(_tbYoff);
-            gbLayout.Controls.Add(_tbXoff);
-            gbLayout.Controls.Add(Label7);
-            gbLayout.Controls.Add(_cboNoteSpace);
-            gbLayout.Controls.Add(_chkGUIMode);
-            gbLayout.Controls.Add(Label5);
-            gbLayout.Controls.Add(_cmSizeRefresh);
-            gbLayout.Controls.Add(_cboLayoutX);
-            gbLayout.Controls.Add(Label3);
-            gbLayout.Controls.Add(Label6);
-            gbLayout.Controls.Add(_cboLayoutY);
-            gbLayout.Controls.Add(Label4);
-            gbLayout.Location = new Point(335, 0);
-            gbLayout.Name = "gbLayout";
-            gbLayout.Size = new Size(194, 195);
-            gbLayout.TabIndex = 76;
-            gbLayout.TabStop = false;
-            gbLayout.Text = "Stats Layout";
+            this.gbLayout.Controls.Add(this._cmStatsModeHelp);
+            this.gbLayout.Controls.Add(this._cmDefaults);
+            this.gbLayout.Controls.Add(this._tbYSize);
+            this.gbLayout.Controls.Add(this._tbXsize);
+            this.gbLayout.Controls.Add(this._tbYoff);
+            this.gbLayout.Controls.Add(this._tbXoff);
+            this.gbLayout.Controls.Add(this.Label7);
+            this.gbLayout.Controls.Add(this._cboNoteSpace);
+            this.gbLayout.Controls.Add(this._chkGUIMode);
+            this.gbLayout.Controls.Add(this.Label5);
+            this.gbLayout.Controls.Add(this._cmSizeRefresh);
+            this.gbLayout.Controls.Add(this._cboLayoutX);
+            this.gbLayout.Controls.Add(this.Label3);
+            this.gbLayout.Controls.Add(this.Label6);
+            this.gbLayout.Controls.Add(this._cboLayoutY);
+            this.gbLayout.Controls.Add(this.Label4);
+            this.gbLayout.Location = new System.Drawing.Point(335, 0);
+            this.gbLayout.Name = "gbLayout";
+            this.gbLayout.Size = new System.Drawing.Size(194, 195);
+            this.gbLayout.TabIndex = 76;
+            this.gbLayout.TabStop = false;
+            this.gbLayout.Text = "Stats Layout";
             // 
-            // cmStatsModeHelp
+            // _cmStatsModeHelp
             // 
-            _cmStatsModeHelp.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmStatsModeHelp.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmStatsModeHelp.FlatStyle = FlatStyle.Flat;
-            _cmStatsModeHelp.ForeColor = Color.Black;
-            _cmStatsModeHelp.Location = new Point(67, 165);
-            _cmStatsModeHelp.Name = "_cmStatsModeHelp";
-            _cmStatsModeHelp.Size = new Size(56, 23);
-            _cmStatsModeHelp.TabIndex = 26;
-            _cmStatsModeHelp.Text = "Help";
-            _cmStatsModeHelp.UseVisualStyleBackColor = false;
+            this._cmStatsModeHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmStatsModeHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmStatsModeHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmStatsModeHelp.ForeColor = System.Drawing.Color.Black;
+            this._cmStatsModeHelp.Location = new System.Drawing.Point(67, 165);
+            this._cmStatsModeHelp.Name = "_cmStatsModeHelp";
+            this._cmStatsModeHelp.Size = new System.Drawing.Size(56, 23);
+            this._cmStatsModeHelp.TabIndex = 26;
+            this._cmStatsModeHelp.Text = "Help";
+            this._cmStatsModeHelp.UseVisualStyleBackColor = false;
+            this._cmStatsModeHelp.Click += new System.EventHandler(this.cmStatsModeHelp_Click);
             // 
-            // cmDefaults
+            // _cmDefaults
             // 
-            _cmDefaults.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmDefaults.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmDefaults.FlatStyle = FlatStyle.Flat;
-            _cmDefaults.ForeColor = Color.Black;
-            _cmDefaults.Location = new Point(7, 165);
-            _cmDefaults.Name = "_cmDefaults";
-            _cmDefaults.Size = new Size(58, 23);
-            _cmDefaults.TabIndex = 25;
-            _cmDefaults.Text = "Defaults";
-            _cmDefaults.UseVisualStyleBackColor = false;
+            this._cmDefaults.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmDefaults.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmDefaults.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmDefaults.ForeColor = System.Drawing.Color.Black;
+            this._cmDefaults.Location = new System.Drawing.Point(7, 165);
+            this._cmDefaults.Name = "_cmDefaults";
+            this._cmDefaults.Size = new System.Drawing.Size(58, 23);
+            this._cmDefaults.TabIndex = 25;
+            this._cmDefaults.Text = "Defaults";
+            this._cmDefaults.UseVisualStyleBackColor = false;
+            this._cmDefaults.Click += new System.EventHandler(this.cmDefaults_Click);
             // 
-            // tbYSize
+            // _tbYSize
             // 
-            _tbYSize.Location = new Point(126, 15);
-            _tbYSize.Name = "_tbYSize";
-            _tbYSize.Size = new Size(60, 20);
-            _tbYSize.TabIndex = 19;
-            _tbYSize.Text = "180";
+            this._tbYSize.Location = new System.Drawing.Point(126, 15);
+            this._tbYSize.Name = "_tbYSize";
+            this._tbYSize.Size = new System.Drawing.Size(60, 20);
+            this._tbYSize.TabIndex = 19;
+            this._tbYSize.Text = "180";
+            this._tbYSize.TextChanged += new System.EventHandler(this.tbYSize_TextChanged);
+            this._tbYSize.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbYSize_KeyPress);
             // 
-            // tbXsize
+            // _tbXsize
             // 
-            _tbXsize.Location = new Point(60, 15);
-            _tbXsize.Name = "_tbXsize";
-            _tbXsize.Size = new Size(60, 20);
-            _tbXsize.TabIndex = 18;
-            _tbXsize.Text = "990";
+            this._tbXsize.Location = new System.Drawing.Point(60, 15);
+            this._tbXsize.Name = "_tbXsize";
+            this._tbXsize.Size = new System.Drawing.Size(60, 20);
+            this._tbXsize.TabIndex = 18;
+            this._tbXsize.Text = "990";
+            this._tbXsize.TextChanged += new System.EventHandler(this.tbXsize_TextChanged);
+            this._tbXsize.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbXsize_KeyPress);
             // 
-            // tbYoff
+            // _tbYoff
             // 
-            _tbYoff.Location = new Point(126, 40);
-            _tbYoff.Name = "_tbYoff";
-            _tbYoff.Size = new Size(60, 20);
-            _tbYoff.TabIndex = 21;
+            this._tbYoff.Location = new System.Drawing.Point(126, 40);
+            this._tbYoff.Name = "_tbYoff";
+            this._tbYoff.Size = new System.Drawing.Size(60, 20);
+            this._tbYoff.TabIndex = 21;
+            this._tbYoff.TextChanged += new System.EventHandler(this.tbYoff_TextChanged);
+            this._tbYoff.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbYoff_KeyPress);
             // 
-            // tbXoff
+            // _tbXoff
             // 
-            _tbXoff.Location = new Point(60, 40);
-            _tbXoff.Name = "_tbXoff";
-            _tbXoff.Size = new Size(60, 20);
-            _tbXoff.TabIndex = 20;
+            this._tbXoff.Location = new System.Drawing.Point(60, 40);
+            this._tbXoff.Name = "_tbXoff";
+            this._tbXoff.Size = new System.Drawing.Size(60, 20);
+            this._tbXoff.TabIndex = 20;
+            this._tbXoff.TextChanged += new System.EventHandler(this.tbXoff_TextChanged);
+            this._tbXoff.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbXoff_KeyPress);
             // 
             // Label7
             // 
-            Label7.AutoSize = true;
-            Label7.ForeColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)));
-            Label7.Location = new Point(5, 45);
-            Label7.Name = "Label7";
-            Label7.Size = new Size(52, 13);
-            Label7.TabIndex = 77;
-            Label7.Text = "XY Offset";
+            this.Label7.AutoSize = true;
+            this.Label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.Label7.Location = new System.Drawing.Point(5, 45);
+            this.Label7.Name = "Label7";
+            this.Label7.Size = new System.Drawing.Size(52, 13);
+            this.Label7.TabIndex = 77;
+            this.Label7.Text = "XY Offset";
             // 
-            // cboNoteSpace
+            // _cboNoteSpace
             // 
-            _cboNoteSpace.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)));
-            _cboNoteSpace.DropDownStyle = ComboBoxStyle.DropDownList;
-            _cboNoteSpace.ForeColor = Color.White;
-            _cboNoteSpace.FormattingEnabled = true;
-            _cboNoteSpace.Location = new Point(90, 115);
-            _cboNoteSpace.Name = "_cboNoteSpace";
-            _cboNoteSpace.Size = new Size(96, 21);
-            _cboNoteSpace.TabIndex = 24;
+            this._cboNoteSpace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this._cboNoteSpace.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._cboNoteSpace.ForeColor = System.Drawing.Color.White;
+            this._cboNoteSpace.FormattingEnabled = true;
+            this._cboNoteSpace.Location = new System.Drawing.Point(90, 115);
+            this._cboNoteSpace.Name = "_cboNoteSpace";
+            this._cboNoteSpace.Size = new System.Drawing.Size(96, 21);
+            this._cboNoteSpace.TabIndex = 24;
+            this._cboNoteSpace.SelectedIndexChanged += new System.EventHandler(this.cboNoteSpace_SelectedIndexChanged);
             // 
-            // chkGUIMode
+            // _chkGUIMode
             // 
-            _chkGUIMode.AutoSize = true;
-            _chkGUIMode.Location = new Point(8, 145);
-            _chkGUIMode.Name = "_chkGUIMode";
-            _chkGUIMode.Size = new Size(108, 17);
-            _chkGUIMode.TabIndex = 100;
-            _chkGUIMode.Text = "Toggle GUI Color";
-            _chkGUIMode.UseVisualStyleBackColor = true;
+            this._chkGUIMode.AutoSize = true;
+            this._chkGUIMode.Location = new System.Drawing.Point(8, 145);
+            this._chkGUIMode.Name = "_chkGUIMode";
+            this._chkGUIMode.Size = new System.Drawing.Size(108, 17);
+            this._chkGUIMode.TabIndex = 100;
+            this._chkGUIMode.Text = "Toggle GUI Color";
+            this._chkGUIMode.UseVisualStyleBackColor = true;
+            this._chkGUIMode.CheckedChanged += new System.EventHandler(this.chkGUIMode_CheckedChanged);
             // 
             // Label5
             // 
-            Label5.AutoSize = true;
-            Label5.ForeColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)));
-            Label5.Location = new Point(5, 120);
-            Label5.Name = "Label5";
-            Label5.Size = new Size(72, 13);
-            Label5.TabIndex = 73;
-            Label5.Text = "Note Spacing";
+            this.Label5.AutoSize = true;
+            this.Label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.Label5.Location = new System.Drawing.Point(5, 120);
+            this.Label5.Name = "Label5";
+            this.Label5.Size = new System.Drawing.Size(72, 13);
+            this.Label5.TabIndex = 73;
+            this.Label5.Text = "Note Spacing";
             // 
-            // cmSizeRefresh
+            // _cmSizeRefresh
             // 
-            _cmSizeRefresh.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSizeRefresh.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSizeRefresh.FlatStyle = FlatStyle.Flat;
-            _cmSizeRefresh.ForeColor = Color.Black;
-            _cmSizeRefresh.Location = new Point(125, 165);
-            _cmSizeRefresh.Name = "_cmSizeRefresh";
-            _cmSizeRefresh.Size = new Size(58, 23);
-            _cmSizeRefresh.TabIndex = 27;
-            _cmSizeRefresh.Text = "Refresh";
-            _cmSizeRefresh.UseVisualStyleBackColor = false;
+            this._cmSizeRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmSizeRefresh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmSizeRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmSizeRefresh.ForeColor = System.Drawing.Color.Black;
+            this._cmSizeRefresh.Location = new System.Drawing.Point(125, 165);
+            this._cmSizeRefresh.Name = "_cmSizeRefresh";
+            this._cmSizeRefresh.Size = new System.Drawing.Size(58, 23);
+            this._cmSizeRefresh.TabIndex = 27;
+            this._cmSizeRefresh.Text = "Refresh";
+            this._cmSizeRefresh.UseVisualStyleBackColor = false;
+            this._cmSizeRefresh.Click += new System.EventHandler(this.cmSizeRefresh_Click);
             // 
-            // cboLayoutX
+            // _cboLayoutX
             // 
-            _cboLayoutX.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)));
-            _cboLayoutX.DropDownStyle = ComboBoxStyle.DropDownList;
-            _cboLayoutX.ForeColor = Color.White;
-            _cboLayoutX.FormattingEnabled = true;
-            _cboLayoutX.Location = new Point(60, 65);
-            _cboLayoutX.Name = "_cboLayoutX";
-            _cboLayoutX.Size = new Size(126, 21);
-            _cboLayoutX.TabIndex = 22;
+            this._cboLayoutX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this._cboLayoutX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._cboLayoutX.ForeColor = System.Drawing.Color.White;
+            this._cboLayoutX.FormattingEnabled = true;
+            this._cboLayoutX.Location = new System.Drawing.Point(60, 65);
+            this._cboLayoutX.Name = "_cboLayoutX";
+            this._cboLayoutX.Size = new System.Drawing.Size(126, 21);
+            this._cboLayoutX.TabIndex = 22;
+            this._cboLayoutX.SelectedIndexChanged += new System.EventHandler(this.cboLayoutX_SelectedIndexChanged);
             // 
             // Label6
             // 
-            Label6.AutoSize = true;
-            Label6.ForeColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)));
-            Label6.Location = new Point(5, 70);
-            Label6.Name = "Label6";
-            Label6.Size = new Size(49, 13);
-            Label6.TabIndex = 72;
-            Label6.Text = "X Layout";
+            this.Label6.AutoSize = true;
+            this.Label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.Label6.Location = new System.Drawing.Point(5, 70);
+            this.Label6.Name = "Label6";
+            this.Label6.Size = new System.Drawing.Size(49, 13);
+            this.Label6.TabIndex = 72;
+            this.Label6.Text = "X Layout";
             // 
-            // pbStats
+            // _pbStats
             // 
-            _pbStats.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)));
-            _pbStats.Cursor = Cursors.Default;
-            _pbStats.Location = new Point(10, 200);
-            _pbStats.Name = "_pbStats";
-            _pbStats.Size = new Size(990, 180);
-            _pbStats.TabIndex = 77;
-            _pbStats.TabStop = false;
+            this._pbStats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this._pbStats.Cursor = System.Windows.Forms.Cursors.Default;
+            this._pbStats.Location = new System.Drawing.Point(10, 237);
+            this._pbStats.Name = "_pbStats";
+            this._pbStats.Size = new System.Drawing.Size(990, 180);
+            this._pbStats.TabIndex = 77;
+            this._pbStats.TabStop = false;
+            this._pbStats.Click += new System.EventHandler(this.pbStats_Click);
+            this._pbStats.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbStats_MouseDown);
+            this._pbStats.MouseLeave += new System.EventHandler(this.pbStats_MouseLeave);
+            this._pbStats.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pbStats_MouseMove);
+            this._pbStats.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.pbStats_MouseWheel);
             // 
-            // cmTestData
+            // _cmTestData
             // 
-            _cmTestData.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmTestData.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmTestData.FlatStyle = FlatStyle.Flat;
-            _cmTestData.ForeColor = Color.Black;
-            _cmTestData.Location = new Point(880, 95);
-            _cmTestData.Name = "_cmTestData";
-            _cmTestData.Size = new Size(105, 23);
-            _cmTestData.TabIndex = 5;
-            _cmTestData.Text = "Show Test Data";
-            _cmTestData.UseVisualStyleBackColor = false;
+            this._cmTestData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmTestData.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmTestData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmTestData.ForeColor = System.Drawing.Color.Black;
+            this._cmTestData.Location = new System.Drawing.Point(880, 95);
+            this._cmTestData.Name = "_cmTestData";
+            this._cmTestData.Size = new System.Drawing.Size(105, 23);
+            this._cmTestData.TabIndex = 5;
+            this._cmTestData.Text = "Show Test Data";
+            this._cmTestData.UseVisualStyleBackColor = false;
+            this._cmTestData.Click += new System.EventHandler(this.cmTestData_Click);
             // 
-            // cmLastMatch
+            // _cmLastMatch
             // 
-            _cmLastMatch.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmLastMatch.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmLastMatch.FlatStyle = FlatStyle.Flat;
-            _cmLastMatch.ForeColor = Color.Black;
-            _cmLastMatch.Location = new Point(880, 70);
-            _cmLastMatch.Name = "_cmLastMatch";
-            _cmLastMatch.Size = new Size(105, 23);
-            _cmLastMatch.TabIndex = 4;
-            _cmLastMatch.Text = "Last Match Stats";
-            _cmLastMatch.UseVisualStyleBackColor = false;
+            this._cmLastMatch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmLastMatch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmLastMatch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmLastMatch.ForeColor = System.Drawing.Color.Black;
+            this._cmLastMatch.Location = new System.Drawing.Point(880, 70);
+            this._cmLastMatch.Name = "_cmLastMatch";
+            this._cmLastMatch.Size = new System.Drawing.Size(105, 23);
+            this._cmLastMatch.TabIndex = 4;
+            this._cmLastMatch.Text = "Last Match Stats";
+            this._cmLastMatch.UseVisualStyleBackColor = false;
+            this._cmLastMatch.Click += new System.EventHandler(this.cmLastMatch_Click);
             // 
             // gbFX
             // 
-            gbFX.Controls.Add(cmRID);
-            gbFX.Controls.Add(_chkFX);
-            gbFX.Controls.Add(Label1);
-            gbFX.Controls.Add(_cmFXModeHelp);
-            gbFX.Controls.Add(_cboFXVar1);
-            gbFX.Controls.Add(lbFXVar1);
-            gbFX.Controls.Add(_cboFxVar3);
-            gbFX.Controls.Add(lbFXVar3);
-            gbFX.Controls.Add(_cboFxVar4);
-            gbFX.Controls.Add(_cmFX3DC);
-            gbFX.Controls.Add(_cboFXVar2);
-            gbFX.Controls.Add(lbFXVar2);
-            gbFX.Controls.Add(lbFXVar4);
-            gbFX.Controls.Add(_chkMismatch);
-            gbFX.Location = new Point(535, 0);
-            gbFX.Name = "gbFX";
-            gbFX.Size = new Size(145, 195);
-            gbFX.TabIndex = 80;
-            gbFX.TabStop = false;
-            gbFX.Text = "Stats FX";
+            this.gbFX.Controls.Add(this.cmRID);
+            this.gbFX.Controls.Add(this._chkFX);
+            this.gbFX.Controls.Add(this.Label1);
+            this.gbFX.Controls.Add(this._cmFXModeHelp);
+            this.gbFX.Controls.Add(this._cboFXVar1);
+            this.gbFX.Controls.Add(this.lbFXVar1);
+            this.gbFX.Controls.Add(this._cboFxVar3);
+            this.gbFX.Controls.Add(this.lbFXVar3);
+            this.gbFX.Controls.Add(this._cboFxVar4);
+            this.gbFX.Controls.Add(this._cmFX3DC);
+            this.gbFX.Controls.Add(this._cboFXVar2);
+            this.gbFX.Controls.Add(this.lbFXVar2);
+            this.gbFX.Controls.Add(this.lbFXVar4);
+            this.gbFX.Controls.Add(this._chkMismatch);
+            this.gbFX.Location = new System.Drawing.Point(535, 0);
+            this.gbFX.Name = "gbFX";
+            this.gbFX.Size = new System.Drawing.Size(145, 195);
+            this.gbFX.TabIndex = 80;
+            this.gbFX.TabStop = false;
+            this.gbFX.Text = "Stats FX";
             // 
             // cmRID
             // 
-            cmRID.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            cmRID.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            cmRID.FlatStyle = FlatStyle.Flat;
-            cmRID.ForeColor = Color.Black;
-            cmRID.Location = new Point(9, 165);
-            cmRID.Name = "cmRID";
-            cmRID.Size = new Size(50, 23);
-            cmRID.TabIndex = 95;
-            cmRID.Text = "RID";
-            cmRID.UseVisualStyleBackColor = false;
-            cmRID.Visible = false;
+            this.cmRID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.cmRID.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this.cmRID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmRID.ForeColor = System.Drawing.Color.Black;
+            this.cmRID.Location = new System.Drawing.Point(9, 165);
+            this.cmRID.Name = "cmRID";
+            this.cmRID.Size = new System.Drawing.Size(50, 23);
+            this.cmRID.TabIndex = 95;
+            this.cmRID.Text = "RID";
+            this.cmRID.UseVisualStyleBackColor = false;
+            this.cmRID.Visible = false;
             // 
-            // chkFX
+            // _chkFX
             // 
-            _chkFX.AutoSize = true;
-            _chkFX.Enabled = false;
-            _chkFX.Location = new Point(66, 42);
-            _chkFX.Name = "_chkFX";
-            _chkFX.Size = new Size(56, 17);
-            _chkFX.TabIndex = 88;
-            _chkFX.Text = "Active";
-            _chkFX.UseVisualStyleBackColor = true;
+            this._chkFX.AutoSize = true;
+            this._chkFX.Enabled = false;
+            this._chkFX.Location = new System.Drawing.Point(66, 42);
+            this._chkFX.Name = "_chkFX";
+            this._chkFX.Size = new System.Drawing.Size(56, 17);
+            this._chkFX.TabIndex = 88;
+            this._chkFX.Text = "Active";
+            this._chkFX.UseVisualStyleBackColor = true;
+            this._chkFX.CheckedChanged += new System.EventHandler(this.chkFX_CheckedChanged);
             // 
             // Label1
             // 
-            Label1.AutoSize = true;
-            Label1.ForeColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)));
-            Label1.Location = new Point(6, 45);
-            Label1.Name = "Label1";
-            Label1.Size = new Size(34, 13);
-            Label1.TabIndex = 89;
-            Label1.Text = "Mode";
+            this.Label1.AutoSize = true;
+            this.Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.Label1.Location = new System.Drawing.Point(6, 45);
+            this.Label1.Name = "Label1";
+            this.Label1.Size = new System.Drawing.Size(34, 13);
+            this.Label1.TabIndex = 89;
+            this.Label1.Text = "Mode";
             // 
-            // cmFXModeHelp
+            // _cmFXModeHelp
             // 
-            _cmFXModeHelp.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmFXModeHelp.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmFXModeHelp.FlatStyle = FlatStyle.Flat;
-            _cmFXModeHelp.ForeColor = Color.Black;
-            _cmFXModeHelp.Location = new Point(65, 165);
-            _cmFXModeHelp.Name = "_cmFXModeHelp";
-            _cmFXModeHelp.Size = new Size(71, 23);
-            _cmFXModeHelp.TabIndex = 93;
-            _cmFXModeHelp.Text = "Help";
-            _cmFXModeHelp.UseVisualStyleBackColor = false;
+            this._cmFXModeHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmFXModeHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmFXModeHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmFXModeHelp.ForeColor = System.Drawing.Color.Black;
+            this._cmFXModeHelp.Location = new System.Drawing.Point(65, 165);
+            this._cmFXModeHelp.Name = "_cmFXModeHelp";
+            this._cmFXModeHelp.Size = new System.Drawing.Size(71, 23);
+            this._cmFXModeHelp.TabIndex = 93;
+            this._cmFXModeHelp.Text = "Help";
+            this._cmFXModeHelp.UseVisualStyleBackColor = false;
+            this._cmFXModeHelp.Click += new System.EventHandler(this.cmFXModeHelp_Click);
             // 
-            // cboFXVar1
+            // _cboFXVar1
             // 
-            _cboFXVar1.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)));
-            _cboFXVar1.DropDownStyle = ComboBoxStyle.DropDownList;
-            _cboFXVar1.ForeColor = Color.White;
-            _cboFXVar1.FormattingEnabled = true;
-            _cboFXVar1.Location = new Point(65, 15);
-            _cboFXVar1.Name = "_cboFXVar1";
-            _cboFXVar1.Size = new Size(71, 21);
-            _cboFXVar1.TabIndex = 87;
+            this._cboFXVar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this._cboFXVar1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._cboFXVar1.ForeColor = System.Drawing.Color.White;
+            this._cboFXVar1.FormattingEnabled = true;
+            this._cboFXVar1.Location = new System.Drawing.Point(65, 15);
+            this._cboFXVar1.Name = "_cboFXVar1";
+            this._cboFXVar1.Size = new System.Drawing.Size(71, 21);
+            this._cboFXVar1.TabIndex = 87;
+            this._cboFXVar1.SelectedIndexChanged += new System.EventHandler(this.cboFXMode_SelectedIndexChanged);
             // 
             // lbFXVar1
             // 
-            lbFXVar1.AutoSize = true;
-            lbFXVar1.ForeColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)));
-            lbFXVar1.Location = new Point(6, 21);
-            lbFXVar1.Name = "lbFXVar1";
-            lbFXVar1.Size = new Size(34, 13);
-            lbFXVar1.TabIndex = 86;
-            lbFXVar1.Text = "Mode";
+            this.lbFXVar1.AutoSize = true;
+            this.lbFXVar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.lbFXVar1.Location = new System.Drawing.Point(6, 21);
+            this.lbFXVar1.Name = "lbFXVar1";
+            this.lbFXVar1.Size = new System.Drawing.Size(34, 13);
+            this.lbFXVar1.TabIndex = 86;
+            this.lbFXVar1.Text = "Mode";
             // 
-            // cboFxVar3
+            // _cboFxVar3
             // 
-            _cboFxVar3.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)));
-            _cboFxVar3.DropDownStyle = ComboBoxStyle.DropDownList;
-            _cboFxVar3.Enabled = false;
-            _cboFxVar3.ForeColor = Color.White;
-            _cboFxVar3.FormattingEnabled = true;
-            _cboFxVar3.Location = new Point(65, 89);
-            _cboFxVar3.Name = "_cboFxVar3";
-            _cboFxVar3.Size = new Size(71, 21);
-            _cboFxVar3.TabIndex = 91;
+            this._cboFxVar3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this._cboFxVar3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._cboFxVar3.Enabled = false;
+            this._cboFxVar3.ForeColor = System.Drawing.Color.White;
+            this._cboFxVar3.FormattingEnabled = true;
+            this._cboFxVar3.Location = new System.Drawing.Point(65, 89);
+            this._cboFxVar3.Name = "_cboFxVar3";
+            this._cboFxVar3.Size = new System.Drawing.Size(71, 21);
+            this._cboFxVar3.TabIndex = 91;
+            this._cboFxVar3.SelectedIndexChanged += new System.EventHandler(this.cboFxVar3_SelectedIndexChanged);
             // 
             // lbFXVar3
             // 
-            lbFXVar3.AutoSize = true;
-            lbFXVar3.ForeColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)));
-            lbFXVar3.Location = new Point(6, 91);
-            lbFXVar3.Name = "lbFXVar3";
-            lbFXVar3.Size = new Size(13, 13);
-            lbFXVar3.TabIndex = 84;
-            lbFXVar3.Text = "--";
+            this.lbFXVar3.AutoSize = true;
+            this.lbFXVar3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.lbFXVar3.Location = new System.Drawing.Point(6, 91);
+            this.lbFXVar3.Name = "lbFXVar3";
+            this.lbFXVar3.Size = new System.Drawing.Size(13, 13);
+            this.lbFXVar3.TabIndex = 84;
+            this.lbFXVar3.Text = "--";
             // 
-            // cboFxVar4
+            // _cboFxVar4
             // 
-            _cboFxVar4.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)));
-            _cboFxVar4.DropDownStyle = ComboBoxStyle.DropDownList;
-            _cboFxVar4.Enabled = false;
-            _cboFxVar4.ForeColor = Color.White;
-            _cboFxVar4.FormattingEnabled = true;
-            _cboFxVar4.Location = new Point(65, 113);
-            _cboFxVar4.Name = "_cboFxVar4";
-            _cboFxVar4.Size = new Size(71, 21);
-            _cboFxVar4.TabIndex = 92;
+            this._cboFxVar4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this._cboFxVar4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._cboFxVar4.Enabled = false;
+            this._cboFxVar4.ForeColor = System.Drawing.Color.White;
+            this._cboFxVar4.FormattingEnabled = true;
+            this._cboFxVar4.Location = new System.Drawing.Point(65, 113);
+            this._cboFxVar4.Name = "_cboFxVar4";
+            this._cboFxVar4.Size = new System.Drawing.Size(71, 21);
+            this._cboFxVar4.TabIndex = 92;
+            this._cboFxVar4.SelectedIndexChanged += new System.EventHandler(this.cboFxVar4_SelectedIndexChanged);
             // 
-            // cmFX3DC
+            // _cmFX3DC
             // 
-            _cmFX3DC.Enabled = false;
-            _cmFX3DC.FlatStyle = FlatStyle.Flat;
-            _cmFX3DC.Location = new Point(65, 65);
-            _cmFX3DC.Name = "_cmFX3DC";
-            _cmFX3DC.Size = new Size(21, 21);
-            _cmFX3DC.TabIndex = 89;
-            _cmFX3DC.Text = "1";
-            _cmFX3DC.UseVisualStyleBackColor = true;
+            this._cmFX3DC.Enabled = false;
+            this._cmFX3DC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmFX3DC.Location = new System.Drawing.Point(65, 65);
+            this._cmFX3DC.Name = "_cmFX3DC";
+            this._cmFX3DC.Size = new System.Drawing.Size(21, 21);
+            this._cmFX3DC.TabIndex = 89;
+            this._cmFX3DC.Text = "1";
+            this._cmFX3DC.UseVisualStyleBackColor = true;
+            this._cmFX3DC.Click += new System.EventHandler(this.cmFX3DC_Click);
             // 
-            // cboFXVar2
+            // _cboFXVar2
             // 
-            _cboFXVar2.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)));
-            _cboFXVar2.DropDownStyle = ComboBoxStyle.DropDownList;
-            _cboFXVar2.Enabled = false;
-            _cboFXVar2.ForeColor = Color.White;
-            _cboFXVar2.FormattingEnabled = true;
-            _cboFXVar2.Location = new Point(90, 65);
-            _cboFXVar2.Name = "_cboFXVar2";
-            _cboFXVar2.Size = new Size(46, 21);
-            _cboFXVar2.TabIndex = 90;
+            this._cboFXVar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this._cboFXVar2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._cboFXVar2.Enabled = false;
+            this._cboFXVar2.ForeColor = System.Drawing.Color.White;
+            this._cboFXVar2.FormattingEnabled = true;
+            this._cboFXVar2.Location = new System.Drawing.Point(90, 65);
+            this._cboFXVar2.Name = "_cboFXVar2";
+            this._cboFXVar2.Size = new System.Drawing.Size(46, 21);
+            this._cboFXVar2.TabIndex = 90;
+            this._cboFXVar2.SelectedIndexChanged += new System.EventHandler(this.cboFX3D_SelectedIndexChanged);
             // 
             // lbFXVar2
             // 
-            lbFXVar2.AutoSize = true;
-            lbFXVar2.ForeColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)));
-            lbFXVar2.Location = new Point(6, 68);
-            lbFXVar2.Name = "lbFXVar2";
-            lbFXVar2.Size = new Size(13, 13);
-            lbFXVar2.TabIndex = 66;
-            lbFXVar2.Text = "--";
+            this.lbFXVar2.AutoSize = true;
+            this.lbFXVar2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.lbFXVar2.Location = new System.Drawing.Point(6, 68);
+            this.lbFXVar2.Name = "lbFXVar2";
+            this.lbFXVar2.Size = new System.Drawing.Size(13, 13);
+            this.lbFXVar2.TabIndex = 66;
+            this.lbFXVar2.Text = "--";
             // 
             // lbFXVar4
             // 
-            lbFXVar4.AutoSize = true;
-            lbFXVar4.ForeColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)));
-            lbFXVar4.Location = new Point(6, 115);
-            lbFXVar4.Name = "lbFXVar4";
-            lbFXVar4.Size = new Size(13, 13);
-            lbFXVar4.TabIndex = 70;
-            lbFXVar4.Text = "--";
+            this.lbFXVar4.AutoSize = true;
+            this.lbFXVar4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.lbFXVar4.Location = new System.Drawing.Point(6, 115);
+            this.lbFXVar4.Name = "lbFXVar4";
+            this.lbFXVar4.Size = new System.Drawing.Size(13, 13);
+            this.lbFXVar4.TabIndex = 70;
+            this.lbFXVar4.Text = "--";
             // 
-            // chkMismatch
+            // _chkMismatch
             // 
-            _chkMismatch.AutoSize = true;
-            _chkMismatch.Checked = true;
-            _chkMismatch.CheckState = CheckState.Checked;
-            _chkMismatch.Location = new Point(9, 143);
-            _chkMismatch.Name = "_chkMismatch";
-            _chkMismatch.Size = new Size(102, 17);
-            _chkMismatch.TabIndex = 11;
-            _chkMismatch.Text = "Show Bad Stats";
-            _chkMismatch.UseVisualStyleBackColor = true;
-            _chkMismatch.Visible = false;
+            this._chkMismatch.AutoSize = true;
+            this._chkMismatch.Checked = true;
+            this._chkMismatch.CheckState = System.Windows.Forms.CheckState.Checked;
+            this._chkMismatch.Location = new System.Drawing.Point(9, 143);
+            this._chkMismatch.Name = "_chkMismatch";
+            this._chkMismatch.Size = new System.Drawing.Size(102, 17);
+            this._chkMismatch.TabIndex = 11;
+            this._chkMismatch.Text = "Show Bad Stats";
+            this._chkMismatch.UseVisualStyleBackColor = true;
+            this._chkMismatch.Visible = false;
+            this._chkMismatch.CheckedChanged += new System.EventHandler(this.chkMismatch_CheckedChanged);
             // 
             // lbError1
             // 
-            lbError1.BackColor = Color.Silver;
-            lbError1.BorderStyle = BorderStyle.FixedSingle;
-            lbError1.Font = new Font("Arial", 9.75f, FontStyle.Regular, GraphicsUnit.Point, Conversions.ToByte(0));
-            lbError1.ForeColor = Color.White;
-            lbError1.Location = new Point(10, 70);
-            lbError1.Name = "lbError1";
-            lbError1.Size = new Size(111, 18);
-            lbError1.TabIndex = 81;
-            lbError1.TextAlign = ContentAlignment.MiddleCenter;
+            this.lbError1.BackColor = System.Drawing.Color.Silver;
+            this.lbError1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbError1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbError1.ForeColor = System.Drawing.Color.White;
+            this.lbError1.Location = new System.Drawing.Point(10, 70);
+            this.lbError1.Name = "lbError1";
+            this.lbError1.Size = new System.Drawing.Size(111, 18);
+            this.lbError1.TabIndex = 81;
+            this.lbError1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbError2
             // 
-            lbError2.BackColor = Color.Silver;
-            lbError2.BorderStyle = BorderStyle.FixedSingle;
-            lbError2.Font = new Font("Arial", 9.75f, FontStyle.Regular, GraphicsUnit.Point, Conversions.ToByte(0));
-            lbError2.ForeColor = Color.White;
-            lbError2.Location = new Point(10, 90);
-            lbError2.Name = "lbError2";
-            lbError2.Size = new Size(111, 18);
-            lbError2.TabIndex = 82;
-            lbError2.TextAlign = ContentAlignment.MiddleCenter;
+            this.lbError2.BackColor = System.Drawing.Color.Silver;
+            this.lbError2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbError2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbError2.ForeColor = System.Drawing.Color.White;
+            this.lbError2.Location = new System.Drawing.Point(10, 90);
+            this.lbError2.Name = "lbError2";
+            this.lbError2.Size = new System.Drawing.Size(111, 18);
+            this.lbError2.TabIndex = 82;
+            this.lbError2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // chkTips
+            // _chkTips
             // 
-            _chkTips.AutoSize = true;
-            _chkTips.Location = new Point(991, 42);
-            _chkTips.Name = "_chkTips";
-            _chkTips.Size = new Size(100, 17);
-            _chkTips.TabIndex = 10;
-            _chkTips.Text = "Show Tool Tips";
-            _chkTips.UseVisualStyleBackColor = true;
+            this._chkTips.AutoSize = true;
+            this._chkTips.Location = new System.Drawing.Point(991, 42);
+            this._chkTips.Name = "_chkTips";
+            this._chkTips.Size = new System.Drawing.Size(100, 17);
+            this._chkTips.TabIndex = 10;
+            this._chkTips.Text = "Show Tool Tips";
+            this._chkTips.UseVisualStyleBackColor = true;
+            this._chkTips.CheckedChanged += new System.EventHandler(this.chkTips_CheckedChanged);
             // 
             // pbNote1
             // 
-            pbNote1.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)));
-            pbNote1.Cursor = Cursors.Default;
-            pbNote1.Location = new Point(11, 386);
-            pbNote1.Name = "pbNote1";
-            pbNote1.Size = new Size(500, 60);
-            pbNote1.TabIndex = 91;
-            pbNote1.TabStop = false;
+            this.pbNote1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pbNote1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pbNote1.Location = new System.Drawing.Point(11, 423);
+            this.pbNote1.Name = "pbNote1";
+            this.pbNote1.Size = new System.Drawing.Size(500, 60);
+            this.pbNote1.TabIndex = 91;
+            this.pbNote1.TabStop = false;
             // 
-            // timNote1
+            // _timNote1
             // 
-            _timNote1.Enabled = true;
-            _timNote1.Interval = 30;
+            this._timNote1.Enabled = true;
+            this._timNote1.Interval = 30;
+            this._timNote1.Tick += new System.EventHandler(this.timNote1_Tick);
             // 
             // gbSound
             // 
-            gbSound.Controls.Add(_cmAudioStop);
-            gbSound.Controls.Add(lbVolume);
-            gbSound.Controls.Add(_scrVolume);
-            gbSound.Controls.Add(_cmSound15);
-            gbSound.Controls.Add(_cmSound14);
-            gbSound.Controls.Add(_cmSound13);
-            gbSound.Controls.Add(_cmSound12);
-            gbSound.Controls.Add(_cmSound11);
-            gbSound.Controls.Add(lbSoundCurrent);
-            gbSound.Controls.Add(_cmSound10);
-            gbSound.Controls.Add(_cmSound09);
-            gbSound.Controls.Add(_cmSound08);
-            gbSound.Controls.Add(_cmSound07);
-            gbSound.Controls.Add(_cmSound06);
-            gbSound.Controls.Add(_cmSound05);
-            gbSound.Controls.Add(_cmSound04);
-            gbSound.Controls.Add(_cmSound03);
-            gbSound.Controls.Add(_cmSound02);
-            gbSound.Controls.Add(_cmSound01);
-            gbSound.Location = new Point(685, 0);
-            gbSound.Name = "gbSound";
-            gbSound.Size = new Size(190, 195);
-            gbSound.TabIndex = 94;
-            gbSound.TabStop = false;
-            gbSound.Text = "Sound";
+            this.gbSound.Controls.Add(this._cmAudioStop);
+            this.gbSound.Controls.Add(this.lbVolume);
+            this.gbSound.Controls.Add(this._scrVolume);
+            this.gbSound.Controls.Add(this._cmSound15);
+            this.gbSound.Controls.Add(this._cmSound14);
+            this.gbSound.Controls.Add(this._cmSound13);
+            this.gbSound.Controls.Add(this._cmSound12);
+            this.gbSound.Controls.Add(this._cmSound11);
+            this.gbSound.Controls.Add(this.lbSoundCurrent);
+            this.gbSound.Controls.Add(this._cmSound10);
+            this.gbSound.Controls.Add(this._cmSound09);
+            this.gbSound.Controls.Add(this._cmSound08);
+            this.gbSound.Controls.Add(this._cmSound07);
+            this.gbSound.Controls.Add(this._cmSound06);
+            this.gbSound.Controls.Add(this._cmSound05);
+            this.gbSound.Controls.Add(this._cmSound04);
+            this.gbSound.Controls.Add(this._cmSound03);
+            this.gbSound.Controls.Add(this._cmSound02);
+            this.gbSound.Controls.Add(this._cmSound01);
+            this.gbSound.Location = new System.Drawing.Point(685, 0);
+            this.gbSound.Name = "gbSound";
+            this.gbSound.Size = new System.Drawing.Size(190, 195);
+            this.gbSound.TabIndex = 94;
+            this.gbSound.TabStop = false;
+            this.gbSound.Text = "Sound";
             // 
-            // cmAudioStop
+            // _cmAudioStop
             // 
-            _cmAudioStop.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmAudioStop.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmAudioStop.FlatStyle = FlatStyle.Flat;
-            _cmAudioStop.ForeColor = Color.Black;
-            _cmAudioStop.Location = new Point(145, 170);
-            _cmAudioStop.Name = "_cmAudioStop";
-            _cmAudioStop.Size = new Size(35, 18);
-            _cmAudioStop.TabIndex = 34;
-            _cmAudioStop.Text = "▀";
-            _cmAudioStop.UseVisualStyleBackColor = false;
+            this._cmAudioStop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmAudioStop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmAudioStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmAudioStop.ForeColor = System.Drawing.Color.Black;
+            this._cmAudioStop.Location = new System.Drawing.Point(145, 170);
+            this._cmAudioStop.Name = "_cmAudioStop";
+            this._cmAudioStop.Size = new System.Drawing.Size(35, 18);
+            this._cmAudioStop.TabIndex = 34;
+            this._cmAudioStop.Text = "▀";
+            this._cmAudioStop.UseVisualStyleBackColor = false;
+            this._cmAudioStop.Click += new System.EventHandler(this.cmAudioStop_Click);
             // 
             // lbVolume
             // 
-            lbVolume.BackColor = Color.Silver;
-            lbVolume.BorderStyle = BorderStyle.FixedSingle;
-            lbVolume.Font = new Font("Arial", 9.75f, FontStyle.Regular, GraphicsUnit.Point, Conversions.ToByte(0));
-            lbVolume.ForeColor = Color.Black;
-            lbVolume.Location = new Point(105, 170);
-            lbVolume.Name = "lbVolume";
-            lbVolume.Size = new Size(35, 18);
-            lbVolume.TabIndex = 33;
-            lbVolume.Text = "100";
-            lbVolume.TextAlign = ContentAlignment.MiddleCenter;
+            this.lbVolume.BackColor = System.Drawing.Color.Silver;
+            this.lbVolume.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbVolume.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVolume.ForeColor = System.Drawing.Color.Black;
+            this.lbVolume.Location = new System.Drawing.Point(105, 170);
+            this.lbVolume.Name = "lbVolume";
+            this.lbVolume.Size = new System.Drawing.Size(35, 18);
+            this.lbVolume.TabIndex = 33;
+            this.lbVolume.Text = "100";
+            this.lbVolume.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // scrVolume
+            // _scrVolume
             // 
-            _scrVolume.Location = new Point(5, 170);
-            _scrVolume.Maximum = 109;
-            _scrVolume.Name = "_scrVolume";
-            _scrVolume.Size = new Size(95, 18);
-            _scrVolume.TabIndex = 32;
-            _scrVolume.TabStop = true;
-            _scrVolume.Value = 100;
+            this._scrVolume.Location = new System.Drawing.Point(5, 170);
+            this._scrVolume.Maximum = 109;
+            this._scrVolume.Name = "_scrVolume";
+            this._scrVolume.Size = new System.Drawing.Size(95, 18);
+            this._scrVolume.TabIndex = 32;
+            this._scrVolume.TabStop = true;
+            this._scrVolume.Value = 100;
+            this._scrVolume.ValueChanged += new System.EventHandler(this.scrVolume_ValueChanged);
             // 
-            // cmSound15
+            // _cmSound15
             // 
-            _cmSound15.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound15.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound15.FlatStyle = FlatStyle.Flat;
-            _cmSound15.ForeColor = Color.Black;
-            _cmSound15.Location = new Point(125, 115);
-            _cmSound15.Name = "_cmSound15";
-            _cmSound15.Size = new Size(55, 23);
-            _cmSound15.TabIndex = 31;
-            _cmSound15.Text = "ALERT";
-            _cmSound15.UseVisualStyleBackColor = false;
+            this._cmSound15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmSound15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmSound15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmSound15.ForeColor = System.Drawing.Color.Black;
+            this._cmSound15.Location = new System.Drawing.Point(125, 115);
+            this._cmSound15.Name = "_cmSound15";
+            this._cmSound15.Size = new System.Drawing.Size(55, 23);
+            this._cmSound15.TabIndex = 31;
+            this._cmSound15.Text = "ALERT";
+            this._cmSound15.UseVisualStyleBackColor = false;
+            this._cmSound15.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cmSound15_MouseDown);
+            this._cmSound15.MouseLeave += new System.EventHandler(this.cmSound01_MouseLeave);
+            this._cmSound15.MouseHover += new System.EventHandler(this.cmSound15_MouseHover);
             // 
-            // cmSound14
+            // _cmSound14
             // 
-            _cmSound14.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound14.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound14.FlatStyle = FlatStyle.Flat;
-            _cmSound14.ForeColor = Color.Black;
-            _cmSound14.Location = new Point(65, 115);
-            _cmSound14.Name = "_cmSound14";
-            _cmSound14.Size = new Size(55, 23);
-            _cmSound14.TabIndex = 30;
-            _cmSound14.Text = "> 14";
-            _cmSound14.UseVisualStyleBackColor = false;
+            this._cmSound14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmSound14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmSound14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmSound14.ForeColor = System.Drawing.Color.Black;
+            this._cmSound14.Location = new System.Drawing.Point(65, 115);
+            this._cmSound14.Name = "_cmSound14";
+            this._cmSound14.Size = new System.Drawing.Size(55, 23);
+            this._cmSound14.TabIndex = 30;
+            this._cmSound14.Text = "> 14";
+            this._cmSound14.UseVisualStyleBackColor = false;
+            this._cmSound14.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cmSound14_MouseDown);
+            this._cmSound14.MouseLeave += new System.EventHandler(this.cmSound01_MouseLeave);
+            this._cmSound14.MouseHover += new System.EventHandler(this.cmSound14_MouseHover);
             // 
-            // cmSound13
+            // _cmSound13
             // 
-            _cmSound13.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound13.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound13.FlatStyle = FlatStyle.Flat;
-            _cmSound13.ForeColor = Color.Black;
-            _cmSound13.Location = new Point(5, 115);
-            _cmSound13.Name = "_cmSound13";
-            _cmSound13.Size = new Size(55, 23);
-            _cmSound13.TabIndex = 29;
-            _cmSound13.Text = "> 13";
-            _cmSound13.UseVisualStyleBackColor = false;
+            this._cmSound13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmSound13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmSound13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmSound13.ForeColor = System.Drawing.Color.Black;
+            this._cmSound13.Location = new System.Drawing.Point(5, 115);
+            this._cmSound13.Name = "_cmSound13";
+            this._cmSound13.Size = new System.Drawing.Size(55, 23);
+            this._cmSound13.TabIndex = 29;
+            this._cmSound13.Text = "> 13";
+            this._cmSound13.UseVisualStyleBackColor = false;
+            this._cmSound13.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cmSound13_MouseDown);
+            this._cmSound13.MouseLeave += new System.EventHandler(this.cmSound01_MouseLeave);
+            this._cmSound13.MouseHover += new System.EventHandler(this.cmSound13_MouseHover);
             // 
-            // cmSound12
+            // _cmSound12
             // 
-            _cmSound12.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound12.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound12.FlatStyle = FlatStyle.Flat;
-            _cmSound12.ForeColor = Color.Black;
-            _cmSound12.Location = new Point(125, 90);
-            _cmSound12.Name = "_cmSound12";
-            _cmSound12.Size = new Size(55, 23);
-            _cmSound12.TabIndex = 28;
-            _cmSound12.Text = "> 12";
-            _cmSound12.UseVisualStyleBackColor = false;
+            this._cmSound12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmSound12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmSound12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmSound12.ForeColor = System.Drawing.Color.Black;
+            this._cmSound12.Location = new System.Drawing.Point(125, 90);
+            this._cmSound12.Name = "_cmSound12";
+            this._cmSound12.Size = new System.Drawing.Size(55, 23);
+            this._cmSound12.TabIndex = 28;
+            this._cmSound12.Text = "> 12";
+            this._cmSound12.UseVisualStyleBackColor = false;
+            this._cmSound12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cmSound12_MouseDown);
+            this._cmSound12.MouseLeave += new System.EventHandler(this.cmSound01_MouseLeave);
+            this._cmSound12.MouseHover += new System.EventHandler(this.cmSound12_MouseHover);
             // 
-            // cmSound11
+            // _cmSound11
             // 
-            _cmSound11.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound11.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound11.FlatStyle = FlatStyle.Flat;
-            _cmSound11.ForeColor = Color.Black;
-            _cmSound11.Location = new Point(65, 90);
-            _cmSound11.Name = "_cmSound11";
-            _cmSound11.Size = new Size(55, 23);
-            _cmSound11.TabIndex = 27;
-            _cmSound11.Text = "> 11";
-            _cmSound11.UseVisualStyleBackColor = false;
+            this._cmSound11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmSound11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmSound11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmSound11.ForeColor = System.Drawing.Color.Black;
+            this._cmSound11.Location = new System.Drawing.Point(65, 90);
+            this._cmSound11.Name = "_cmSound11";
+            this._cmSound11.Size = new System.Drawing.Size(55, 23);
+            this._cmSound11.TabIndex = 27;
+            this._cmSound11.Text = "> 11";
+            this._cmSound11.UseVisualStyleBackColor = false;
+            this._cmSound11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cmSound11_MouseDown);
+            this._cmSound11.MouseLeave += new System.EventHandler(this.cmSound01_MouseLeave);
+            this._cmSound11.MouseHover += new System.EventHandler(this.cmSound11_MouseHover);
             // 
             // lbSoundCurrent
             // 
-            lbSoundCurrent.BackColor = Color.Silver;
-            lbSoundCurrent.BorderStyle = BorderStyle.FixedSingle;
-            lbSoundCurrent.Font = new Font("Arial", 9.75f, FontStyle.Regular, GraphicsUnit.Point, Conversions.ToByte(0));
-            lbSoundCurrent.ForeColor = Color.Black;
-            lbSoundCurrent.Location = new Point(5, 150);
-            lbSoundCurrent.Name = "lbSoundCurrent";
-            lbSoundCurrent.Size = new Size(175, 18);
-            lbSoundCurrent.TabIndex = 26;
-            lbSoundCurrent.TextAlign = ContentAlignment.MiddleLeft;
+            this.lbSoundCurrent.BackColor = System.Drawing.Color.Silver;
+            this.lbSoundCurrent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbSoundCurrent.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoundCurrent.ForeColor = System.Drawing.Color.Black;
+            this.lbSoundCurrent.Location = new System.Drawing.Point(5, 150);
+            this.lbSoundCurrent.Name = "lbSoundCurrent";
+            this.lbSoundCurrent.Size = new System.Drawing.Size(175, 18);
+            this.lbSoundCurrent.TabIndex = 26;
+            this.lbSoundCurrent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // cmSound10
+            // _cmSound10
             // 
-            _cmSound10.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound10.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound10.FlatStyle = FlatStyle.Flat;
-            _cmSound10.ForeColor = Color.Black;
-            _cmSound10.Location = new Point(5, 90);
-            _cmSound10.Name = "_cmSound10";
-            _cmSound10.Size = new Size(55, 23);
-            _cmSound10.TabIndex = 17;
-            _cmSound10.Text = "> 10";
-            _cmSound10.UseVisualStyleBackColor = false;
+            this._cmSound10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmSound10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmSound10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmSound10.ForeColor = System.Drawing.Color.Black;
+            this._cmSound10.Location = new System.Drawing.Point(5, 90);
+            this._cmSound10.Name = "_cmSound10";
+            this._cmSound10.Size = new System.Drawing.Size(55, 23);
+            this._cmSound10.TabIndex = 17;
+            this._cmSound10.Text = "> 10";
+            this._cmSound10.UseVisualStyleBackColor = false;
+            this._cmSound10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cmSound10_MouseDown);
+            this._cmSound10.MouseLeave += new System.EventHandler(this.cmSound01_MouseLeave);
+            this._cmSound10.MouseHover += new System.EventHandler(this.cmSound10_MouseHover);
             // 
-            // cmSound09
+            // _cmSound09
             // 
-            _cmSound09.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound09.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound09.FlatStyle = FlatStyle.Flat;
-            _cmSound09.ForeColor = Color.Black;
-            _cmSound09.Location = new Point(125, 65);
-            _cmSound09.Name = "_cmSound09";
-            _cmSound09.Size = new Size(55, 23);
-            _cmSound09.TabIndex = 16;
-            _cmSound09.Text = "> 09";
-            _cmSound09.UseVisualStyleBackColor = false;
+            this._cmSound09.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmSound09.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmSound09.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmSound09.ForeColor = System.Drawing.Color.Black;
+            this._cmSound09.Location = new System.Drawing.Point(125, 65);
+            this._cmSound09.Name = "_cmSound09";
+            this._cmSound09.Size = new System.Drawing.Size(55, 23);
+            this._cmSound09.TabIndex = 16;
+            this._cmSound09.Text = "> 09";
+            this._cmSound09.UseVisualStyleBackColor = false;
+            this._cmSound09.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cmSound09_MouseDown);
+            this._cmSound09.MouseLeave += new System.EventHandler(this.cmSound01_MouseLeave);
+            this._cmSound09.MouseHover += new System.EventHandler(this.cmSound09_MouseHover);
             // 
-            // cmSound08
+            // _cmSound08
             // 
-            _cmSound08.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound08.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound08.FlatStyle = FlatStyle.Flat;
-            _cmSound08.ForeColor = Color.Black;
-            _cmSound08.Location = new Point(65, 65);
-            _cmSound08.Name = "_cmSound08";
-            _cmSound08.Size = new Size(55, 23);
-            _cmSound08.TabIndex = 15;
-            _cmSound08.Text = "> 08";
-            _cmSound08.UseVisualStyleBackColor = false;
+            this._cmSound08.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmSound08.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmSound08.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmSound08.ForeColor = System.Drawing.Color.Black;
+            this._cmSound08.Location = new System.Drawing.Point(65, 65);
+            this._cmSound08.Name = "_cmSound08";
+            this._cmSound08.Size = new System.Drawing.Size(55, 23);
+            this._cmSound08.TabIndex = 15;
+            this._cmSound08.Text = "> 08";
+            this._cmSound08.UseVisualStyleBackColor = false;
+            this._cmSound08.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cmSound08_MouseDown);
+            this._cmSound08.MouseLeave += new System.EventHandler(this.cmSound01_MouseLeave);
+            this._cmSound08.MouseHover += new System.EventHandler(this.cmSound08_MouseHover);
             // 
-            // cmSound07
+            // _cmSound07
             // 
-            _cmSound07.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound07.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound07.FlatStyle = FlatStyle.Flat;
-            _cmSound07.ForeColor = Color.Black;
-            _cmSound07.Location = new Point(5, 65);
-            _cmSound07.Name = "_cmSound07";
-            _cmSound07.Size = new Size(55, 23);
-            _cmSound07.TabIndex = 14;
-            _cmSound07.Text = "> 07";
-            _cmSound07.UseVisualStyleBackColor = false;
+            this._cmSound07.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmSound07.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmSound07.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmSound07.ForeColor = System.Drawing.Color.Black;
+            this._cmSound07.Location = new System.Drawing.Point(5, 65);
+            this._cmSound07.Name = "_cmSound07";
+            this._cmSound07.Size = new System.Drawing.Size(55, 23);
+            this._cmSound07.TabIndex = 14;
+            this._cmSound07.Text = "> 07";
+            this._cmSound07.UseVisualStyleBackColor = false;
+            this._cmSound07.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cmSound07_MouseDown);
+            this._cmSound07.MouseLeave += new System.EventHandler(this.cmSound01_MouseLeave);
+            this._cmSound07.MouseHover += new System.EventHandler(this.cmSound07_MouseHover);
             // 
-            // cmSound06
+            // _cmSound06
             // 
-            _cmSound06.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound06.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound06.FlatStyle = FlatStyle.Flat;
-            _cmSound06.ForeColor = Color.Black;
-            _cmSound06.Location = new Point(125, 40);
-            _cmSound06.Name = "_cmSound06";
-            _cmSound06.Size = new Size(55, 23);
-            _cmSound06.TabIndex = 13;
-            _cmSound06.Text = "> 06";
-            _cmSound06.UseVisualStyleBackColor = false;
+            this._cmSound06.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmSound06.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmSound06.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmSound06.ForeColor = System.Drawing.Color.Black;
+            this._cmSound06.Location = new System.Drawing.Point(125, 40);
+            this._cmSound06.Name = "_cmSound06";
+            this._cmSound06.Size = new System.Drawing.Size(55, 23);
+            this._cmSound06.TabIndex = 13;
+            this._cmSound06.Text = "> 06";
+            this._cmSound06.UseVisualStyleBackColor = false;
+            this._cmSound06.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cmSound06_MouseDown);
+            this._cmSound06.MouseLeave += new System.EventHandler(this.cmSound01_MouseLeave);
+            this._cmSound06.MouseHover += new System.EventHandler(this.cmSound06_MouseHover);
             // 
-            // cmSound05
+            // _cmSound05
             // 
-            _cmSound05.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound05.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound05.FlatStyle = FlatStyle.Flat;
-            _cmSound05.ForeColor = Color.Black;
-            _cmSound05.Location = new Point(65, 40);
-            _cmSound05.Name = "_cmSound05";
-            _cmSound05.Size = new Size(55, 23);
-            _cmSound05.TabIndex = 12;
-            _cmSound05.Text = "> 05";
-            _cmSound05.UseVisualStyleBackColor = false;
+            this._cmSound05.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmSound05.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmSound05.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmSound05.ForeColor = System.Drawing.Color.Black;
+            this._cmSound05.Location = new System.Drawing.Point(65, 40);
+            this._cmSound05.Name = "_cmSound05";
+            this._cmSound05.Size = new System.Drawing.Size(55, 23);
+            this._cmSound05.TabIndex = 12;
+            this._cmSound05.Text = "> 05";
+            this._cmSound05.UseVisualStyleBackColor = false;
+            this._cmSound05.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cmSound05_MouseDown);
+            this._cmSound05.MouseLeave += new System.EventHandler(this.cmSound01_MouseLeave);
+            this._cmSound05.MouseHover += new System.EventHandler(this.cmSound05_MouseHover);
             // 
-            // cmSound04
+            // _cmSound04
             // 
-            _cmSound04.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound04.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound04.FlatStyle = FlatStyle.Flat;
-            _cmSound04.ForeColor = Color.Black;
-            _cmSound04.Location = new Point(5, 40);
-            _cmSound04.Name = "_cmSound04";
-            _cmSound04.Size = new Size(55, 23);
-            _cmSound04.TabIndex = 11;
-            _cmSound04.Text = "> 04";
-            _cmSound04.UseVisualStyleBackColor = false;
+            this._cmSound04.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmSound04.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmSound04.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmSound04.ForeColor = System.Drawing.Color.Black;
+            this._cmSound04.Location = new System.Drawing.Point(5, 40);
+            this._cmSound04.Name = "_cmSound04";
+            this._cmSound04.Size = new System.Drawing.Size(55, 23);
+            this._cmSound04.TabIndex = 11;
+            this._cmSound04.Text = "> 04";
+            this._cmSound04.UseVisualStyleBackColor = false;
+            this._cmSound04.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cmSound04_MouseDown);
+            this._cmSound04.MouseLeave += new System.EventHandler(this.cmSound01_MouseLeave);
+            this._cmSound04.MouseHover += new System.EventHandler(this.cmSound04_MouseHover);
             // 
-            // cmSound03
+            // _cmSound03
             // 
-            _cmSound03.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound03.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound03.FlatStyle = FlatStyle.Flat;
-            _cmSound03.ForeColor = Color.Black;
-            _cmSound03.Location = new Point(125, 15);
-            _cmSound03.Name = "_cmSound03";
-            _cmSound03.Size = new Size(55, 23);
-            _cmSound03.TabIndex = 10;
-            _cmSound03.Text = "> 03";
-            _cmSound03.UseVisualStyleBackColor = false;
+            this._cmSound03.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmSound03.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmSound03.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmSound03.ForeColor = System.Drawing.Color.Black;
+            this._cmSound03.Location = new System.Drawing.Point(125, 15);
+            this._cmSound03.Name = "_cmSound03";
+            this._cmSound03.Size = new System.Drawing.Size(55, 23);
+            this._cmSound03.TabIndex = 10;
+            this._cmSound03.Text = "> 03";
+            this._cmSound03.UseVisualStyleBackColor = false;
+            this._cmSound03.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cmSound03_MouseDown);
+            this._cmSound03.MouseLeave += new System.EventHandler(this.cmSound01_MouseLeave);
+            this._cmSound03.MouseHover += new System.EventHandler(this.cmSound03_MouseHover);
             // 
-            // cmSound02
+            // _cmSound02
             // 
-            _cmSound02.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound02.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound02.FlatStyle = FlatStyle.Flat;
-            _cmSound02.ForeColor = Color.Black;
-            _cmSound02.Location = new Point(65, 15);
-            _cmSound02.Name = "_cmSound02";
-            _cmSound02.Size = new Size(55, 23);
-            _cmSound02.TabIndex = 9;
-            _cmSound02.Text = "> 02";
-            _cmSound02.UseVisualStyleBackColor = false;
+            this._cmSound02.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmSound02.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmSound02.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmSound02.ForeColor = System.Drawing.Color.Black;
+            this._cmSound02.Location = new System.Drawing.Point(65, 15);
+            this._cmSound02.Name = "_cmSound02";
+            this._cmSound02.Size = new System.Drawing.Size(55, 23);
+            this._cmSound02.TabIndex = 9;
+            this._cmSound02.Text = "> 02";
+            this._cmSound02.UseVisualStyleBackColor = false;
+            this._cmSound02.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cmSound02_MouseDown);
+            this._cmSound02.MouseLeave += new System.EventHandler(this.cmSound01_MouseLeave);
+            this._cmSound02.MouseHover += new System.EventHandler(this.cmSound02_MouseHover);
             // 
-            // cmSound01
+            // _cmSound01
             // 
-            _cmSound01.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound01.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmSound01.FlatStyle = FlatStyle.Flat;
-            _cmSound01.ForeColor = Color.Black;
-            _cmSound01.Location = new Point(5, 15);
-            _cmSound01.Name = "_cmSound01";
-            _cmSound01.Size = new Size(55, 23);
-            _cmSound01.TabIndex = 8;
-            _cmSound01.Text = "> 01";
-            _cmSound01.UseVisualStyleBackColor = false;
+            this._cmSound01.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmSound01.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmSound01.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmSound01.ForeColor = System.Drawing.Color.Black;
+            this._cmSound01.Location = new System.Drawing.Point(5, 15);
+            this._cmSound01.Name = "_cmSound01";
+            this._cmSound01.Size = new System.Drawing.Size(55, 23);
+            this._cmSound01.TabIndex = 8;
+            this._cmSound01.Text = "> 01";
+            this._cmSound01.UseVisualStyleBackColor = false;
+            this._cmSound01.Click += new System.EventHandler(this.cmSound01_Click);
+            this._cmSound01.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cmSound01_MouseDown);
+            this._cmSound01.MouseLeave += new System.EventHandler(this.cmSound01_MouseLeave);
+            this._cmSound01.MouseHover += new System.EventHandler(this.cmSound01_MouseHover);
             // 
             // pbNote3
             // 
-            pbNote3.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)));
-            pbNote3.Cursor = Cursors.Default;
-            pbNote3.Location = new Point(11, 516);
-            pbNote3.Name = "pbNote3";
-            pbNote3.Size = new Size(500, 60);
-            pbNote3.TabIndex = 96;
-            pbNote3.TabStop = false;
+            this.pbNote3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pbNote3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pbNote3.Location = new System.Drawing.Point(11, 553);
+            this.pbNote3.Name = "pbNote3";
+            this.pbNote3.Size = new System.Drawing.Size(500, 60);
+            this.pbNote3.TabIndex = 96;
+            this.pbNote3.TabStop = false;
             // 
             // pbNote4
             // 
-            pbNote4.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)));
-            pbNote4.Cursor = Cursors.Default;
-            pbNote4.Location = new Point(11, 581);
-            pbNote4.Name = "pbNote4";
-            pbNote4.Size = new Size(500, 60);
-            pbNote4.TabIndex = 97;
-            pbNote4.TabStop = false;
+            this.pbNote4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pbNote4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pbNote4.Location = new System.Drawing.Point(11, 618);
+            this.pbNote4.Name = "pbNote4";
+            this.pbNote4.Size = new System.Drawing.Size(500, 60);
+            this.pbNote4.TabIndex = 97;
+            this.pbNote4.TabStop = false;
             // 
             // pbNote2
             // 
-            pbNote2.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)));
-            pbNote2.Cursor = Cursors.Default;
-            pbNote2.Location = new Point(11, 451);
-            pbNote2.Name = "pbNote2";
-            pbNote2.Size = new Size(500, 60);
-            pbNote2.TabIndex = 98;
-            pbNote2.TabStop = false;
+            this.pbNote2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pbNote2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pbNote2.Location = new System.Drawing.Point(11, 488);
+            this.pbNote2.Name = "pbNote2";
+            this.pbNote2.Size = new System.Drawing.Size(500, 60);
+            this.pbNote2.TabIndex = 98;
+            this.pbNote2.TabStop = false;
             // 
             // chkPosition
             // 
-            chkPosition.AutoSize = true;
-            chkPosition.Location = new Point(991, 59);
-            chkPosition.Name = "chkPosition";
-            chkPosition.Size = new Size(114, 17);
-            chkPosition.TabIndex = 12;
-            chkPosition.Text = "Save Window Pos";
-            chkPosition.UseVisualStyleBackColor = true;
+            this.chkPosition.AutoSize = true;
+            this.chkPosition.Location = new System.Drawing.Point(991, 59);
+            this.chkPosition.Name = "chkPosition";
+            this.chkPosition.Size = new System.Drawing.Size(114, 17);
+            this.chkPosition.TabIndex = 12;
+            this.chkPosition.Text = "Save Window Pos";
+            this.chkPosition.UseVisualStyleBackColor = true;
             // 
             // tsmPlayer
             // 
-            tsmPlayer.Items.AddRange(new ToolStripItem[] { _tsmPlayer_Relic, _tsmPlayer_OrgAT, _tsmPlayer_OrgFaction, _tsmPlayer_OrgPlayercard, _tsmPlayer_Google, _tsmPlayer_Steam });
-            tsmPlayer.Name = "tsmPlayer";
-            tsmPlayer.Size = new Size(290, 136);
+            this.tsmPlayer.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this._tsmPlayer_Relic,
+            this._tsmPlayer_OrgAT,
+            this._tsmPlayer_OrgFaction,
+            this._tsmPlayer_OrgPlayercard,
+            this._tsmPlayer_Google,
+            this._tsmPlayer_Steam});
+            this.tsmPlayer.Name = "tsmPlayer";
+            this.tsmPlayer.Size = new System.Drawing.Size(290, 136);
             // 
-            // tsmPlayer_Relic
+            // _tsmPlayer_Relic
             // 
-            _tsmPlayer_Relic.Image = (Image)resources.GetObject("tsmPlayer_Relic.Image");
-            _tsmPlayer_Relic.Name = "_tsmPlayer_Relic";
-            _tsmPlayer_Relic.Size = new Size(289, 22);
-            _tsmPlayer_Relic.Text = "&1 - Open Relic Stats webpage";
+            this._tsmPlayer_Relic.Image = ((System.Drawing.Image)(resources.GetObject("_tsmPlayer_Relic.Image")));
+            this._tsmPlayer_Relic.Name = "_tsmPlayer_Relic";
+            this._tsmPlayer_Relic.Size = new System.Drawing.Size(289, 22);
+            this._tsmPlayer_Relic.Text = "&1 - Open Relic Stats webpage";
+            this._tsmPlayer_Relic.Click += new System.EventHandler(this.tsmPlayer_Relic_Click);
             // 
-            // tsmPlayer_OrgAT
+            // _tsmPlayer_OrgAT
             // 
-            _tsmPlayer_OrgAT.Image = (Image)resources.GetObject("tsmPlayer_OrgAT.Image");
-            _tsmPlayer_OrgAT.Name = "_tsmPlayer_OrgAT";
-            _tsmPlayer_OrgAT.Size = new Size(289, 22);
-            _tsmPlayer_OrgAT.Text = "&2 - Open Coh2.Org AT stats webpage";
+            this._tsmPlayer_OrgAT.Image = ((System.Drawing.Image)(resources.GetObject("_tsmPlayer_OrgAT.Image")));
+            this._tsmPlayer_OrgAT.Name = "_tsmPlayer_OrgAT";
+            this._tsmPlayer_OrgAT.Size = new System.Drawing.Size(289, 22);
+            this._tsmPlayer_OrgAT.Text = "&2 - Open Coh2.Org AT stats webpage";
+            this._tsmPlayer_OrgAT.Click += new System.EventHandler(this.tsmPlayer_OrgAT_Click);
             // 
-            // tsmPlayer_OrgFaction
+            // _tsmPlayer_OrgFaction
             // 
-            _tsmPlayer_OrgFaction.Image = (Image)resources.GetObject("tsmPlayer_OrgFaction.Image");
-            _tsmPlayer_OrgFaction.Name = "_tsmPlayer_OrgFaction";
-            _tsmPlayer_OrgFaction.Size = new Size(289, 22);
-            _tsmPlayer_OrgFaction.Text = "3 - Open Coh2.Org Faction webpage";
+            this._tsmPlayer_OrgFaction.Image = ((System.Drawing.Image)(resources.GetObject("_tsmPlayer_OrgFaction.Image")));
+            this._tsmPlayer_OrgFaction.Name = "_tsmPlayer_OrgFaction";
+            this._tsmPlayer_OrgFaction.Size = new System.Drawing.Size(289, 22);
+            this._tsmPlayer_OrgFaction.Text = "3 - Open Coh2.Org Faction webpage";
+            this._tsmPlayer_OrgFaction.Click += new System.EventHandler(this.tsmPlayer_OrgFaction_Click);
             // 
-            // tsmPlayer_OrgPlayercard
+            // _tsmPlayer_OrgPlayercard
             // 
-            _tsmPlayer_OrgPlayercard.Image = (Image)resources.GetObject("tsmPlayer_OrgPlayercard.Image");
-            _tsmPlayer_OrgPlayercard.Name = "_tsmPlayer_OrgPlayercard";
-            _tsmPlayer_OrgPlayercard.Size = new Size(289, 22);
-            _tsmPlayer_OrgPlayercard.Text = "&4 - Open Coh2.Org Playercard webpage";
+            this._tsmPlayer_OrgPlayercard.Image = ((System.Drawing.Image)(resources.GetObject("_tsmPlayer_OrgPlayercard.Image")));
+            this._tsmPlayer_OrgPlayercard.Name = "_tsmPlayer_OrgPlayercard";
+            this._tsmPlayer_OrgPlayercard.Size = new System.Drawing.Size(289, 22);
+            this._tsmPlayer_OrgPlayercard.Text = "&4 - Open Coh2.Org Playercard webpage";
+            this._tsmPlayer_OrgPlayercard.Click += new System.EventHandler(this.tsmPlayer_OrgPlayercard_Click);
             // 
-            // tsmPlayer_Google
+            // _tsmPlayer_Google
             // 
-            _tsmPlayer_Google.Image = (Image)resources.GetObject("tsmPlayer_Google.Image");
-            _tsmPlayer_Google.Name = "_tsmPlayer_Google";
-            _tsmPlayer_Google.Size = new Size(289, 22);
-            _tsmPlayer_Google.Text = "&5 - Send player name to Google Translate";
+            this._tsmPlayer_Google.Image = ((System.Drawing.Image)(resources.GetObject("_tsmPlayer_Google.Image")));
+            this._tsmPlayer_Google.Name = "_tsmPlayer_Google";
+            this._tsmPlayer_Google.Size = new System.Drawing.Size(289, 22);
+            this._tsmPlayer_Google.Text = "&5 - Send player name to Google Translate";
+            this._tsmPlayer_Google.Click += new System.EventHandler(this.tsmPlayer_Google_Click);
             // 
-            // tsmPlayer_Steam
+            // _tsmPlayer_Steam
             // 
-            _tsmPlayer_Steam.Image = (Image)resources.GetObject("tsmPlayer_Steam.Image");
-            _tsmPlayer_Steam.Name = "_tsmPlayer_Steam";
-            _tsmPlayer_Steam.Size = new Size(289, 22);
-            _tsmPlayer_Steam.Text = "&6 - Open player Steam page";
+            this._tsmPlayer_Steam.Image = ((System.Drawing.Image)(resources.GetObject("_tsmPlayer_Steam.Image")));
+            this._tsmPlayer_Steam.Name = "_tsmPlayer_Steam";
+            this._tsmPlayer_Steam.Size = new System.Drawing.Size(289, 22);
+            this._tsmPlayer_Steam.Text = "&6 - Open player Steam page";
+            this._tsmPlayer_Steam.Click += new System.EventHandler(this.tsmPlayer_Steam_Click);
             // 
-            // chkPopUp
+            // _chkPopUp
             // 
-            _chkPopUp.AutoSize = true;
-            _chkPopUp.Location = new Point(1029, 201);
-            _chkPopUp.Name = "_chkPopUp";
-            _chkPopUp.Size = new Size(106, 17);
-            _chkPopUp.TabIndex = 13;
-            _chkPopUp.Text = "Use Stats Popup";
-            _chkPopUp.UseVisualStyleBackColor = true;
-            _chkPopUp.Visible = false;
+            this._chkPopUp.AutoSize = true;
+            this._chkPopUp.Location = new System.Drawing.Point(1029, 237);
+            this._chkPopUp.Name = "_chkPopUp";
+            this._chkPopUp.Size = new System.Drawing.Size(106, 17);
+            this._chkPopUp.TabIndex = 13;
+            this._chkPopUp.Text = "Use Stats Popup";
+            this._chkPopUp.UseVisualStyleBackColor = true;
+            this._chkPopUp.Visible = false;
+            this._chkPopUp.CheckedChanged += new System.EventHandler(this.chkPopUp_CheckedChanged);
             // 
             // tsmAudio
             // 
-            tsmAudio.Items.AddRange(new ToolStripItem[] { _tsmSetVolTo100, _tsmSetVolTo90, _tsmSetVolTo80, _tsmSetVolTo70, _tsmSetVolTo60, _tsmSetVolTo50, _tsmSetVolTo40, _tsmSetVolTo30, _tsmSetVolTo20, _tsmSetVolTo10, ToolStripMenuItem1, _tsmSelectFile });
-            tsmAudio.Name = "tsmAudio";
-            tsmAudio.Size = new Size(216, 252);
+            this.tsmAudio.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this._tsmSetVolTo100,
+            this._tsmSetVolTo90,
+            this._tsmSetVolTo80,
+            this._tsmSetVolTo70,
+            this._tsmSetVolTo60,
+            this._tsmSetVolTo50,
+            this._tsmSetVolTo40,
+            this._tsmSetVolTo30,
+            this._tsmSetVolTo20,
+            this._tsmSetVolTo10,
+            this.ToolStripMenuItem1,
+            this._tsmSelectFile});
+            this.tsmAudio.Name = "tsmAudio";
+            this.tsmAudio.Size = new System.Drawing.Size(216, 252);
             // 
-            // tsmSetVolTo100
+            // _tsmSetVolTo100
             // 
-            _tsmSetVolTo100.Name = "_tsmSetVolTo100";
-            _tsmSetVolTo100.Size = new Size(215, 22);
-            _tsmSetVolTo100.Text = "&0 - Set Vol to 100%";
+            this._tsmSetVolTo100.Name = "_tsmSetVolTo100";
+            this._tsmSetVolTo100.Size = new System.Drawing.Size(215, 22);
+            this._tsmSetVolTo100.Text = "&0 - Set Vol to 100%";
+            this._tsmSetVolTo100.Click += new System.EventHandler(this.tsmSetVolTo100_Click);
             // 
-            // tsmSetVolTo90
+            // _tsmSetVolTo90
             // 
-            _tsmSetVolTo90.Name = "_tsmSetVolTo90";
-            _tsmSetVolTo90.Size = new Size(215, 22);
-            _tsmSetVolTo90.Text = "9 - Set Vol to 90%";
+            this._tsmSetVolTo90.Name = "_tsmSetVolTo90";
+            this._tsmSetVolTo90.Size = new System.Drawing.Size(215, 22);
+            this._tsmSetVolTo90.Text = "9 - Set Vol to 90%";
+            this._tsmSetVolTo90.Click += new System.EventHandler(this.tsmSetVolTo90_Click);
             // 
-            // tsmSetVolTo80
+            // _tsmSetVolTo80
             // 
-            _tsmSetVolTo80.Name = "_tsmSetVolTo80";
-            _tsmSetVolTo80.Size = new Size(215, 22);
-            _tsmSetVolTo80.Text = "8 - Set Vol to 80%";
+            this._tsmSetVolTo80.Name = "_tsmSetVolTo80";
+            this._tsmSetVolTo80.Size = new System.Drawing.Size(215, 22);
+            this._tsmSetVolTo80.Text = "8 - Set Vol to 80%";
+            this._tsmSetVolTo80.Click += new System.EventHandler(this.tsmSetVolTo80_Click);
             // 
-            // tsmSetVolTo70
+            // _tsmSetVolTo70
             // 
-            _tsmSetVolTo70.Name = "_tsmSetVolTo70";
-            _tsmSetVolTo70.Size = new Size(215, 22);
-            _tsmSetVolTo70.Text = "7 - Set Vol to 70%";
+            this._tsmSetVolTo70.Name = "_tsmSetVolTo70";
+            this._tsmSetVolTo70.Size = new System.Drawing.Size(215, 22);
+            this._tsmSetVolTo70.Text = "7 - Set Vol to 70%";
+            this._tsmSetVolTo70.Click += new System.EventHandler(this.tsmSetVolTo70_Click);
             // 
-            // tsmSetVolTo60
+            // _tsmSetVolTo60
             // 
-            _tsmSetVolTo60.Name = "_tsmSetVolTo60";
-            _tsmSetVolTo60.Size = new Size(215, 22);
-            _tsmSetVolTo60.Text = "6 - Set Vol to 60%";
+            this._tsmSetVolTo60.Name = "_tsmSetVolTo60";
+            this._tsmSetVolTo60.Size = new System.Drawing.Size(215, 22);
+            this._tsmSetVolTo60.Text = "6 - Set Vol to 60%";
+            this._tsmSetVolTo60.Click += new System.EventHandler(this.tsmSetVolTo60_Click);
             // 
-            // tsmSetVolTo50
+            // _tsmSetVolTo50
             // 
-            _tsmSetVolTo50.Name = "_tsmSetVolTo50";
-            _tsmSetVolTo50.Size = new Size(215, 22);
-            _tsmSetVolTo50.Text = "5 - Set Vol to 50%";
+            this._tsmSetVolTo50.Name = "_tsmSetVolTo50";
+            this._tsmSetVolTo50.Size = new System.Drawing.Size(215, 22);
+            this._tsmSetVolTo50.Text = "5 - Set Vol to 50%";
+            this._tsmSetVolTo50.Click += new System.EventHandler(this.tsmSetVolTo50_Click);
             // 
-            // tsmSetVolTo40
+            // _tsmSetVolTo40
             // 
-            _tsmSetVolTo40.Name = "_tsmSetVolTo40";
-            _tsmSetVolTo40.Size = new Size(215, 22);
-            _tsmSetVolTo40.Text = "4 - Set Vol to 40%";
+            this._tsmSetVolTo40.Name = "_tsmSetVolTo40";
+            this._tsmSetVolTo40.Size = new System.Drawing.Size(215, 22);
+            this._tsmSetVolTo40.Text = "4 - Set Vol to 40%";
+            this._tsmSetVolTo40.Click += new System.EventHandler(this.tsmSetVolTo40_Click);
             // 
-            // tsmSetVolTo30
+            // _tsmSetVolTo30
             // 
-            _tsmSetVolTo30.Name = "_tsmSetVolTo30";
-            _tsmSetVolTo30.Size = new Size(215, 22);
-            _tsmSetVolTo30.Text = "3 - Set Vol to 30%";
+            this._tsmSetVolTo30.Name = "_tsmSetVolTo30";
+            this._tsmSetVolTo30.Size = new System.Drawing.Size(215, 22);
+            this._tsmSetVolTo30.Text = "3 - Set Vol to 30%";
+            this._tsmSetVolTo30.Click += new System.EventHandler(this.tsmSetVolTo30_Click);
             // 
-            // tsmSetVolTo20
+            // _tsmSetVolTo20
             // 
-            _tsmSetVolTo20.Name = "_tsmSetVolTo20";
-            _tsmSetVolTo20.Size = new Size(215, 22);
-            _tsmSetVolTo20.Text = "2 - Set Vol to 20%";
+            this._tsmSetVolTo20.Name = "_tsmSetVolTo20";
+            this._tsmSetVolTo20.Size = new System.Drawing.Size(215, 22);
+            this._tsmSetVolTo20.Text = "2 - Set Vol to 20%";
+            this._tsmSetVolTo20.Click += new System.EventHandler(this.tsmSetVolTo20_Click);
             // 
-            // tsmSetVolTo10
+            // _tsmSetVolTo10
             // 
-            _tsmSetVolTo10.Name = "_tsmSetVolTo10";
-            _tsmSetVolTo10.Size = new Size(215, 22);
-            _tsmSetVolTo10.Text = "1 - Set Vol to 10%";
+            this._tsmSetVolTo10.Name = "_tsmSetVolTo10";
+            this._tsmSetVolTo10.Size = new System.Drawing.Size(215, 22);
+            this._tsmSetVolTo10.Text = "1 - Set Vol to 10%";
+            this._tsmSetVolTo10.Click += new System.EventHandler(this.tsmSetVolTo10_Click);
             // 
             // ToolStripMenuItem1
             // 
-            ToolStripMenuItem1.Name = "ToolStripMenuItem1";
-            ToolStripMenuItem1.Size = new Size(212, 6);
+            this.ToolStripMenuItem1.Name = "ToolStripMenuItem1";
+            this.ToolStripMenuItem1.Size = new System.Drawing.Size(212, 6);
             // 
-            // tsmSelectFile
+            // _tsmSelectFile
             // 
-            _tsmSelectFile.Name = "_tsmSelectFile";
-            _tsmSelectFile.Size = new Size(215, 22);
-            _tsmSelectFile.Text = "F - Select Audio file to play";
+            this._tsmSelectFile.Name = "_tsmSelectFile";
+            this._tsmSelectFile.Size = new System.Drawing.Size(215, 22);
+            this._tsmSelectFile.Text = "F - Select Audio file to play";
+            this._tsmSelectFile.Click += new System.EventHandler(this.tsmSelectFile_Click);
             // 
-            // chkSmoothAni
+            // _chkSmoothAni
             // 
-            _chkSmoothAni.AutoSize = true;
-            _chkSmoothAni.Location = new Point(991, 93);
-            _chkSmoothAni.Name = "_chkSmoothAni";
-            _chkSmoothAni.Size = new Size(111, 17);
-            _chkSmoothAni.TabIndex = 14;
-            _chkSmoothAni.Text = "Smooth Animation";
-            _chkSmoothAni.UseVisualStyleBackColor = true;
+            this._chkSmoothAni.AutoSize = true;
+            this._chkSmoothAni.Location = new System.Drawing.Point(991, 93);
+            this._chkSmoothAni.Name = "_chkSmoothAni";
+            this._chkSmoothAni.Size = new System.Drawing.Size(111, 17);
+            this._chkSmoothAni.TabIndex = 14;
+            this._chkSmoothAni.Text = "Smooth Animation";
+            this._chkSmoothAni.UseVisualStyleBackColor = true;
+            this._chkSmoothAni.CheckedChanged += new System.EventHandler(this.chkSmoothAni_CheckedChanged);
             // 
-            // chkFoundSound
+            // _chkFoundSound
             // 
-            _chkFoundSound.AutoSize = true;
-            _chkFoundSound.Location = new Point(991, 110);
-            _chkFoundSound.Name = "_chkFoundSound";
-            _chkFoundSound.Size = new Size(113, 17);
-            _chkFoundSound.TabIndex = 101;
-            _chkFoundSound.Text = "Match Found Alert";
-            _chkFoundSound.UseVisualStyleBackColor = true;
+            this._chkFoundSound.AutoSize = true;
+            this._chkFoundSound.Location = new System.Drawing.Point(991, 110);
+            this._chkFoundSound.Name = "_chkFoundSound";
+            this._chkFoundSound.Size = new System.Drawing.Size(113, 17);
+            this._chkFoundSound.TabIndex = 101;
+            this._chkFoundSound.Text = "Match Found Alert";
+            this._chkFoundSound.UseVisualStyleBackColor = true;
+            this._chkFoundSound.CheckedChanged += new System.EventHandler(this.chkFoundSound_CheckedChanged);
             // 
             // lbTime
             // 
-            lbTime.AutoSize = true;
-            lbTime.ForeColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)), Conversions.ToInteger(Conversions.ToByte(32)));
-            lbTime.Location = new Point(8, 170);
-            lbTime.Name = "lbTime";
-            lbTime.Size = new Size(56, 13);
-            lbTime.TabIndex = 102;
-            lbTime.Text = "Time (sec)";
+            this.lbTime.AutoSize = true;
+            this.lbTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.lbTime.Location = new System.Drawing.Point(8, 170);
+            this.lbTime.Name = "lbTime";
+            this.lbTime.Size = new System.Drawing.Size(56, 13);
+            this.lbTime.TabIndex = 102;
+            this.lbTime.Text = "Time (sec)";
             // 
-            // cboDelay
+            // _cboDelay
             // 
-            _cboDelay.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)), Conversions.ToInteger(Conversions.ToByte(64)));
-            _cboDelay.DropDownStyle = ComboBoxStyle.DropDownList;
-            _cboDelay.ForeColor = Color.White;
-            _cboDelay.FormattingEnabled = true;
-            _cboDelay.Location = new Point(70, 165);
-            _cboDelay.Name = "_cboDelay";
-            _cboDelay.Size = new Size(51, 21);
-            _cboDelay.TabIndex = 103;
+            this._cboDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this._cboDelay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._cboDelay.ForeColor = System.Drawing.Color.White;
+            this._cboDelay.FormattingEnabled = true;
+            this._cboDelay.Location = new System.Drawing.Point(70, 165);
+            this._cboDelay.Name = "_cboDelay";
+            this._cboDelay.Size = new System.Drawing.Size(51, 21);
+            this._cboDelay.TabIndex = 103;
+            this._cboDelay.SelectedIndexChanged += new System.EventHandler(this.cboDelay_SelectedIndexChanged);
             // 
-            // chkHideMissing
+            // _chkHideMissing
             // 
-            _chkHideMissing.AutoSize = true;
-            _chkHideMissing.Location = new Point(991, 127);
-            _chkHideMissing.Name = "_chkHideMissing";
-            _chkHideMissing.Size = new Size(123, 17);
-            _chkHideMissing.TabIndex = 104;
-            _chkHideMissing.Text = "Hide Missing Players";
-            _chkHideMissing.UseVisualStyleBackColor = true;
+            this._chkHideMissing.AutoSize = true;
+            this._chkHideMissing.Location = new System.Drawing.Point(991, 127);
+            this._chkHideMissing.Name = "_chkHideMissing";
+            this._chkHideMissing.Size = new System.Drawing.Size(123, 17);
+            this._chkHideMissing.TabIndex = 104;
+            this._chkHideMissing.Text = "Hide Missing Players";
+            this._chkHideMissing.UseVisualStyleBackColor = true;
+            this._chkHideMissing.CheckedChanged += new System.EventHandler(this.chkHideMissing_CheckedChanged);
             // 
-            // chkShowELO
+            // _chkShowELO
             // 
-            _chkShowELO.AutoSize = true;
-            _chkShowELO.Location = new Point(991, 144);
-            _chkShowELO.Name = "_chkShowELO";
-            _chkShowELO.Size = new Size(99, 17);
-            _chkShowELO.TabIndex = 105;
-            _chkShowELO.Text = "Cycle ELO Vals";
-            _chkShowELO.UseVisualStyleBackColor = true;
+            this._chkShowELO.AutoSize = true;
+            this._chkShowELO.Location = new System.Drawing.Point(991, 144);
+            this._chkShowELO.Name = "_chkShowELO";
+            this._chkShowELO.Size = new System.Drawing.Size(99, 17);
+            this._chkShowELO.TabIndex = 105;
+            this._chkShowELO.Text = "Cycle ELO Vals";
+            this._chkShowELO.UseVisualStyleBackColor = true;
+            this._chkShowELO.CheckedChanged += new System.EventHandler(this.chkShowELO_CheckedChanged);
             // 
-            // timELOCycle
+            // _timELOCycle
             // 
-            _timELOCycle.Enabled = true;
-            _timELOCycle.Interval = 3000;
+            this._timELOCycle.Enabled = true;
+            this._timELOCycle.Interval = 3000;
+            this._timELOCycle.Tick += new System.EventHandler(this.timELOCycle_Tick);
             // 
-            // scrStats
+            // _scrStats
             // 
-            _scrStats.LargeChange = 90;
-            _scrStats.Location = new Point(1003, 201);
-            _scrStats.Name = "_scrStats";
-            _scrStats.Size = new Size(23, 178);
-            _scrStats.TabIndex = 107;
+            this._scrStats.LargeChange = 90;
+            this._scrStats.Location = new System.Drawing.Point(1003, 238);
+            this._scrStats.Name = "_scrStats";
+            this._scrStats.Size = new System.Drawing.Size(23, 178);
+            this._scrStats.TabIndex = 107;
+            this._scrStats.Scroll += new System.Windows.Forms.ScrollEventHandler(this.scrStats_Scroll);
+            this._scrStats.ValueChanged += new System.EventHandler(this.scrStats_ValueChanged);
             // 
-            // chkSpeech
+            // _chkSpeech
             // 
-            _chkSpeech.AutoSize = true;
-            _chkSpeech.Location = new Point(991, 161);
-            _chkSpeech.Name = "_chkSpeech";
-            _chkSpeech.Size = new Size(116, 17);
-            _chkSpeech.TabIndex = 108;
-            _chkSpeech.Text = "Read Ranks Aloud";
-            _chkSpeech.UseVisualStyleBackColor = true;
+            this._chkSpeech.AutoSize = true;
+            this._chkSpeech.Location = new System.Drawing.Point(991, 161);
+            this._chkSpeech.Name = "_chkSpeech";
+            this._chkSpeech.Size = new System.Drawing.Size(116, 17);
+            this._chkSpeech.TabIndex = 108;
+            this._chkSpeech.Text = "Read Ranks Aloud";
+            this._chkSpeech.UseVisualStyleBackColor = true;
+            this._chkSpeech.CheckedChanged += new System.EventHandler(this.chkSpeech_CheckedChanged);
             // 
-            // chkGetTeams
+            // _chkGetTeams
             // 
-            _chkGetTeams.AutoSize = true;
-            _chkGetTeams.Location = new Point(991, 178);
-            _chkGetTeams.Name = "_chkGetTeams";
-            _chkGetTeams.Size = new Size(110, 17);
-            _chkGetTeams.TabIndex = 109;
-            _chkGetTeams.Text = "Find Team Ranks";
-            _chkGetTeams.UseVisualStyleBackColor = true;
+            this._chkGetTeams.AutoSize = true;
+            this._chkGetTeams.Location = new System.Drawing.Point(991, 178);
+            this._chkGetTeams.Name = "_chkGetTeams";
+            this._chkGetTeams.Size = new System.Drawing.Size(110, 17);
+            this._chkGetTeams.TabIndex = 109;
+            this._chkGetTeams.Text = "Find Team Ranks";
+            this._chkGetTeams.UseVisualStyleBackColor = true;
+            this._chkGetTeams.CheckedChanged += new System.EventHandler(this.chkGetTeams_CheckedChanged);
             // 
             // lstLog
             // 
-            lstLog.FormattingEnabled = true;
-            lstLog.Location = new Point(790, 393);
-            lstLog.Name = "lstLog";
-            lstLog.Size = new Size(288, 277);
-            lstLog.TabIndex = 110;
-            lstLog.Visible = false;
+            this.lstLog.FormattingEnabled = true;
+            this.lstLog.Location = new System.Drawing.Point(790, 430);
+            this.lstLog.Name = "lstLog";
+            this.lstLog.Size = new System.Drawing.Size(288, 277);
+            this.lstLog.TabIndex = 110;
+            this.lstLog.Visible = false;
             // 
-            // cmErrLog
+            // _cmErrLog
             // 
-            _cmErrLog.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmErrLog.FlatAppearance.MouseOverBackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(255)), Conversions.ToInteger(Conversions.ToByte(232)));
-            _cmErrLog.FlatStyle = FlatStyle.Flat;
-            _cmErrLog.ForeColor = Color.Black;
-            _cmErrLog.Location = new Point(880, 170);
-            _cmErrLog.Name = "_cmErrLog";
-            _cmErrLog.Size = new Size(105, 23);
-            _cmErrLog.TabIndex = 111;
-            _cmErrLog.Text = "View Web Log";
-            _cmErrLog.UseVisualStyleBackColor = false;
+            this._cmErrLog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this._cmErrLog.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this._cmErrLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._cmErrLog.ForeColor = System.Drawing.Color.Black;
+            this._cmErrLog.Location = new System.Drawing.Point(880, 170);
+            this._cmErrLog.Name = "_cmErrLog";
+            this._cmErrLog.Size = new System.Drawing.Size(105, 23);
+            this._cmErrLog.TabIndex = 111;
+            this._cmErrLog.Text = "View Web Log";
+            this._cmErrLog.UseVisualStyleBackColor = false;
+            this._cmErrLog.Click += new System.EventHandler(this.cmErrLog_Click);
             // 
-            // chkCountry
+            // _chkCountry
             // 
-            _chkCountry.AutoSize = true;
-            _chkCountry.Location = new Point(991, 76);
-            _chkCountry.Name = "_chkCountry";
-            _chkCountry.Size = new Size(120, 17);
-            _chkCountry.TabIndex = 112;
-            _chkCountry.Text = "Show Country Flags";
-            _chkCountry.UseVisualStyleBackColor = true;
+            this._chkCountry.AutoSize = true;
+            this._chkCountry.Location = new System.Drawing.Point(991, 76);
+            this._chkCountry.Name = "_chkCountry";
+            this._chkCountry.Size = new System.Drawing.Size(120, 17);
+            this._chkCountry.TabIndex = 112;
+            this._chkCountry.Text = "Show Country Flags";
+            this._chkCountry.UseVisualStyleBackColor = true;
+            this._chkCountry.CheckedChanged += new System.EventHandler(this.chkCountry_CheckedChanged);
             // 
             // SS1
             // 
-            SS1.Items.AddRange(new ToolStripItem[] { SS1_Version, SS1_Sep1, SS1_Filename, SS1_Sep2, SS1_Time, SS1_Sep3 });
-            SS1.Location = new Point(0, 638);
-            SS1.Name = "SS1";
-            SS1.RenderMode = ToolStripRenderMode.Professional;
-            SS1.Size = new Size(1130, 22);
-            SS1.TabIndex = 113;
+            this.SS1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.SS1_Version,
+            this.SS1_Sep1,
+            this.SS1_Filename,
+            this.SS1_Sep2,
+            this.SS1_Time,
+            this.SS1_Sep3});
+            this.SS1.Location = new System.Drawing.Point(0, 717);
+            this.SS1.Name = "SS1";
+            this.SS1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.SS1.Size = new System.Drawing.Size(1130, 22);
+            this.SS1.TabIndex = 113;
             // 
             // SS1_Version
             // 
-            SS1_Version.AutoSize = false;
-            SS1_Version.BorderStyle = Border3DStyle.Sunken;
-            SS1_Version.Name = "SS1_Version";
-            SS1_Version.Size = new Size(35, 17);
-            SS1_Version.Text = "v4.50";
-            SS1_Version.TextAlign = ContentAlignment.MiddleLeft;
+            this.SS1_Version.AutoSize = false;
+            this.SS1_Version.BorderStyle = System.Windows.Forms.Border3DStyle.Sunken;
+            this.SS1_Version.Name = "SS1_Version";
+            this.SS1_Version.Size = new System.Drawing.Size(35, 17);
+            this.SS1_Version.Text = "v4.50";
+            this.SS1_Version.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SS1_Sep1
             // 
-            SS1_Sep1.AutoSize = false;
-            SS1_Sep1.Name = "SS1_Sep1";
-            SS1_Sep1.Size = new Size(10, 17);
-            SS1_Sep1.Text = "|";
+            this.SS1_Sep1.AutoSize = false;
+            this.SS1_Sep1.Name = "SS1_Sep1";
+            this.SS1_Sep1.Size = new System.Drawing.Size(10, 17);
+            this.SS1_Sep1.Text = "|";
             // 
             // SS1_Filename
             // 
-            SS1_Filename.AutoSize = false;
-            SS1_Filename.BorderStyle = Border3DStyle.RaisedOuter;
-            SS1_Filename.Name = "SS1_Filename";
-            SS1_Filename.Size = new Size(250, 17);
-            SS1_Filename.Text = "default.mcs";
-            SS1_Filename.TextAlign = ContentAlignment.MiddleLeft;
+            this.SS1_Filename.AutoSize = false;
+            this.SS1_Filename.BorderStyle = System.Windows.Forms.Border3DStyle.RaisedOuter;
+            this.SS1_Filename.Name = "SS1_Filename";
+            this.SS1_Filename.Size = new System.Drawing.Size(250, 17);
+            this.SS1_Filename.Text = "default.mcs";
+            this.SS1_Filename.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SS1_Sep2
             // 
-            SS1_Sep2.AutoSize = false;
-            SS1_Sep2.Name = "SS1_Sep2";
-            SS1_Sep2.Size = new Size(10, 17);
-            SS1_Sep2.Text = "|";
+            this.SS1_Sep2.AutoSize = false;
+            this.SS1_Sep2.Name = "SS1_Sep2";
+            this.SS1_Sep2.Size = new System.Drawing.Size(10, 17);
+            this.SS1_Sep2.Text = "|";
             // 
             // SS1_Time
             // 
-            SS1_Time.AutoSize = false;
-            SS1_Time.BorderStyle = Border3DStyle.Sunken;
-            SS1_Time.Name = "SS1_Time";
-            SS1_Time.Size = new Size(180, 17);
-            SS1_Time.Text = "Match found:";
-            SS1_Time.TextAlign = ContentAlignment.MiddleLeft;
+            this.SS1_Time.AutoSize = false;
+            this.SS1_Time.BorderStyle = System.Windows.Forms.Border3DStyle.Sunken;
+            this.SS1_Time.Name = "SS1_Time";
+            this.SS1_Time.Size = new System.Drawing.Size(180, 17);
+            this.SS1_Time.Text = "Match found:";
+            this.SS1_Time.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SS1_Sep3
             // 
-            SS1_Sep3.AutoSize = false;
-            SS1_Sep3.Name = "SS1_Sep3";
-            SS1_Sep3.Size = new Size(10, 17);
-            SS1_Sep3.Text = "|";
+            this.SS1_Sep3.AutoSize = false;
+            this.SS1_Sep3.Name = "SS1_Sep3";
+            this.SS1_Sep3.Size = new System.Drawing.Size(10, 17);
+            this.SS1_Sep3.Text = "|";
+            // 
+            // _chkToggleOverlay
+            // 
+            this._chkToggleOverlay.AutoSize = true;
+            this._chkToggleOverlay.Location = new System.Drawing.Point(991, 201);
+            this._chkToggleOverlay.Name = "_chkToggleOverlay";
+            this._chkToggleOverlay.Size = new System.Drawing.Size(98, 17);
+            this._chkToggleOverlay.TabIndex = 115;
+            this._chkToggleOverlay.Text = "Toggle Overlay";
+            this._chkToggleOverlay.UseVisualStyleBackColor = true;
+            this._chkToggleOverlay.CheckedChanged += new System.EventHandler(this._chkToggleOverlay_CheckedChanged);
             // 
             // frmMain
             // 
-            AutoScaleDimensions = new SizeF(6.0f, 13.0f);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)), Conversions.ToInteger(Conversions.ToByte(232)));
-            ClientSize = new Size(1130, 660);
-            Controls.Add(SS1);
-            Controls.Add(_chkCountry);
-            Controls.Add(_cmErrLog);
-            Controls.Add(lstLog);
-            Controls.Add(_chkGetTeams);
-            Controls.Add(_chkSpeech);
-            Controls.Add(_scrStats);
-            Controls.Add(_chkShowELO);
-            Controls.Add(_chkHideMissing);
-            Controls.Add(_cboDelay);
-            Controls.Add(lbTime);
-            Controls.Add(_chkFoundSound);
-            Controls.Add(_chkSmoothAni);
-            Controls.Add(_chkPopUp);
-            Controls.Add(chkPosition);
-            Controls.Add(_cmCopy);
-            Controls.Add(_cmSave);
-            Controls.Add(pbNote2);
-            Controls.Add(pbNote4);
-            Controls.Add(pbNote3);
-            Controls.Add(gbSound);
-            Controls.Add(pbNote1);
-            Controls.Add(_chkTips);
-            Controls.Add(lbError2);
-            Controls.Add(lbError1);
-            Controls.Add(gbFX);
-            Controls.Add(_cmLastMatch);
-            Controls.Add(_cmTestData);
-            Controls.Add(_pbStats);
-            Controls.Add(gbLayout);
-            Controls.Add(gbRank);
-            Controls.Add(_cmAbout);
-            Controls.Add(Label2);
-            Controls.Add(_cmScanLog);
-            Controls.Add(_cmFindLog);
-            Controls.Add(lbSteam08);
-            Controls.Add(lbSteam07);
-            Controls.Add(lbSteam06);
-            Controls.Add(lbSteam05);
-            Controls.Add(lbSteam04);
-            Controls.Add(lbSteam03);
-            Controls.Add(lbSteam02);
-            Controls.Add(lbSteam01);
-            Controls.Add(pbFact05);
-            Controls.Add(pbFact04);
-            Controls.Add(pbFact03);
-            Controls.Add(pbFact02);
-            Controls.Add(pbFact01);
-            Controls.Add(lbStatus);
-            Controls.Add(_cmCheckLog);
-            DoubleBuffered = true;
-            ForeColor = Color.Black;
-            Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "frmMain";
-            Text = "MakoCelo";
-            ((System.ComponentModel.ISupportInitialize)pbFact01).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pbFact02).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pbFact03).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pbFact04).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pbFact05).EndInit();
-            gbRank.ResumeLayout(false);
-            gbRank.PerformLayout();
-            gbLayout.ResumeLayout(false);
-            gbLayout.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)_pbStats).EndInit();
-            gbFX.ResumeLayout(false);
-            gbFX.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pbNote1).EndInit();
-            gbSound.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pbNote3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pbNote4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pbNote2).EndInit();
-            tsmPlayer.ResumeLayout(false);
-            tsmAudio.ResumeLayout(false);
-            SS1.ResumeLayout(false);
-            SS1.PerformLayout();
-            Load += new EventHandler(frmMain_Load);
-            Shown += new EventHandler(frmMain_Shown);
-            FormClosed += new FormClosedEventHandler(frmMain_FormClosed);
-            Closing += new System.ComponentModel.CancelEventHandler(frmMain_Closing);
-            Paint += new PaintEventHandler(frmMain_Paint);
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.ClientSize = new System.Drawing.Size(1130, 739);
+            this.Controls.Add(this._chkToggleOverlay);
+            this.Controls.Add(this.SS1);
+            this.Controls.Add(this._chkCountry);
+            this.Controls.Add(this._cmErrLog);
+            this.Controls.Add(this.lstLog);
+            this.Controls.Add(this._chkGetTeams);
+            this.Controls.Add(this._chkSpeech);
+            this.Controls.Add(this._scrStats);
+            this.Controls.Add(this._chkShowELO);
+            this.Controls.Add(this._chkHideMissing);
+            this.Controls.Add(this._cboDelay);
+            this.Controls.Add(this.lbTime);
+            this.Controls.Add(this._chkFoundSound);
+            this.Controls.Add(this._chkSmoothAni);
+            this.Controls.Add(this._chkPopUp);
+            this.Controls.Add(this.chkPosition);
+            this.Controls.Add(this._cmCopy);
+            this.Controls.Add(this._cmSave);
+            this.Controls.Add(this.pbNote2);
+            this.Controls.Add(this.pbNote4);
+            this.Controls.Add(this.pbNote3);
+            this.Controls.Add(this.gbSound);
+            this.Controls.Add(this.pbNote1);
+            this.Controls.Add(this._chkTips);
+            this.Controls.Add(this.lbError2);
+            this.Controls.Add(this.lbError1);
+            this.Controls.Add(this.gbFX);
+            this.Controls.Add(this._cmLastMatch);
+            this.Controls.Add(this._cmTestData);
+            this.Controls.Add(this._pbStats);
+            this.Controls.Add(this.gbLayout);
+            this.Controls.Add(this.gbRank);
+            this.Controls.Add(this._cmAbout);
+            this.Controls.Add(this.Label2);
+            this.Controls.Add(this._cmScanLog);
+            this.Controls.Add(this._cmFindLog);
+            this.Controls.Add(this.lbSteam08);
+            this.Controls.Add(this.lbSteam07);
+            this.Controls.Add(this.lbSteam06);
+            this.Controls.Add(this.lbSteam05);
+            this.Controls.Add(this.lbSteam04);
+            this.Controls.Add(this.lbSteam03);
+            this.Controls.Add(this.lbSteam02);
+            this.Controls.Add(this.lbSteam01);
+            this.Controls.Add(this.pbFact05);
+            this.Controls.Add(this.pbFact04);
+            this.Controls.Add(this.pbFact03);
+            this.Controls.Add(this.pbFact02);
+            this.Controls.Add(this.pbFact01);
+            this.Controls.Add(this.lbStatus);
+            this.Controls.Add(this._cmCheckLog);
+            this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.Color.Black;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "frmMain";
+            this.Text = "MakoCelo";
+            this.Closing += new System.ComponentModel.CancelEventHandler(this.frmMain_Closing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMain_FormClosed);
+            this.Load += new System.EventHandler(this.frmMain_Load);
+            this.Shown += new System.EventHandler(this.frmMain_Shown);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmMain_Paint);
+            ((System.ComponentModel.ISupportInitialize)(this.pbFact01)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFact02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFact03)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFact04)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFact05)).EndInit();
+            this.gbRank.ResumeLayout(false);
+            this.gbRank.PerformLayout();
+            this.gbLayout.ResumeLayout(false);
+            this.gbLayout.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._pbStats)).EndInit();
+            this.gbFX.ResumeLayout(false);
+            this.gbFX.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNote1)).EndInit();
+            this.gbSound.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbNote3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNote4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNote2)).EndInit();
+            this.tsmPlayer.ResumeLayout(false);
+            this.tsmAudio.ResumeLayout(false);
+            this.SS1.ResumeLayout(false);
+            this.SS1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         private Button _cmCheckLog;
@@ -4714,5 +4753,7 @@ namespace MakoCelo
         internal ToolStripStatusLabel SS1_Sep2;
         internal ToolStripStatusLabel SS1_Time;
         internal ToolStripStatusLabel SS1_Sep3;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private CheckBox _chkToggleOverlay;
     }
 }

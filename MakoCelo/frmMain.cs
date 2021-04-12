@@ -9,6 +9,7 @@ using System.Media;
 using System.Net;
 using System.Runtime.InteropServices;
 using System.Speech.Synthesis;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
@@ -124,6 +125,7 @@ namespace MakoCelo
 
         private SpeechSynthesizer SpeechSynth = new SpeechSynthesizer();      // R4.34 Added for TEXT-TO-SPEECH option.
         private SoundPlayer _soundPlayer = new SoundPlayer();
+        private Overlay.Coh2Overlay _overlay = new Overlay.Coh2Overlay();
         // R4.41 Made these PUBLIC.
         private HttpWebRequest WBrequest = null;
         private HttpWebResponse WBresponse = null;
@@ -939,10 +941,11 @@ namespace MakoCelo
                 // R4.30 Reset the ELO cycle mode.
                 FLAG_EloMode = 0;
                 STATS_StoreLast();
-                if (chkFoundSound.Checked == true & SCAN_Enabled & !string.IsNullOrEmpty(SOUND_File[15]) & 0 < PlrCnt)
+                if (SCAN_Enabled && chkFoundSound.Checked == true && !string.IsNullOrEmpty(SOUND_File[15]) & 0 < PlrCnt)
                 {
                     AUDIO_SetVolume(100, Conversions.ToInteger(SOUND_Vol[15]));
                     SOUND_Play(SOUND_File[15]);
+
                 }
 
                 // R4.50 Show time on status bar.
@@ -1130,7 +1133,11 @@ namespace MakoCelo
                 // R4.34 Draw the updated ranks.
                 GFX_DrawStats();
             }
-
+            // R5.00 Overlay
+            if (SCAN_Enabled && F_NewData && _chkToggleOverlay.Checked)
+            {
+                _overlay.Run(PlrRank, PlrName);
+            }
             // R4.30 Clean up our GUI user indicators.
             Cursor = Cursors.Default;
             lbStatus.Text = "Ready";
@@ -5524,7 +5531,7 @@ namespace MakoCelo
         // Static SecCnt As Long
         private void Timer1_Tick(object sender, EventArgs e)  // R4.10 Added.
         {
-            
+
 
             // R4.10 MSGBOX in LOG_Scan holds code there, but animation timer keeps going which triggers this timer and you get a loop.
             if (FLAG_CheckingLog)
@@ -11855,6 +11862,11 @@ namespace MakoCelo
 
         private void tbYoff_TextChanged(object sender, EventArgs e)
         {
+        }
+
+        private void _chkToggleOverlay_CheckedChanged(object sender, EventArgs e)
+        {
+            GameOverlay.TimerService.EnableHighPrecisionTimers();
         }
     }
 }
