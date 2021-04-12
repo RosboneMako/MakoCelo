@@ -26,23 +26,6 @@ namespace MakoCelo.Overlay
 
 		public Coh2Overlay()
 		{
-			var gfx = new Graphics()
-			{
-				MeasureFPS = false,
-				PerPrimitiveAntiAliasing = true,
-				TextAntiAliasing = true
-			};
-			
-			_window = new StickyWindow(IntPtr.Zero, gfx)
-			{
-				FPS = 10,
-				IsTopmost = true,
-				IsVisible = true
-			};
-			_window.DestroyGraphics += _window_DestroyGraphics;
-			_window.DrawGraphics += _window_DrawGraphics;
-			_window.SetupGraphics += _window_SetupGraphics;
-
 			_brushes = new Dictionary<string, SolidBrush>();
 			_fonts = new Dictionary<string, Font>();
 			_images = new Dictionary<string, Image>();
@@ -126,12 +109,27 @@ namespace MakoCelo.Overlay
 			var processes = Process.GetProcessesByName("RelicCoH2");
 			if (processes.Length > 0)
 			{
-				_hWnd = Native.FindWindow(null, "Company Of Heroes 2");
-				Native.RECT x;
-				Native.GetWindowRect(_hWnd, out x);
-
-				_window.ParentWindowHandle = _hWnd;
-				_window.Resize(x.Left, x.Top, x.Right - x.Left, x.Bottom - x.Top);
+				if (_window == null)
+				{
+					var gfx = new Graphics()
+					{
+						MeasureFPS = false,
+						PerPrimitiveAntiAliasing = true,
+						TextAntiAliasing = true
+					};
+					_hWnd = Native.FindWindow(null, "Company Of Heroes 2");
+					Native.RECT x;
+					Native.GetWindowRect(_hWnd, out x);
+					_window = new StickyWindow(x.Left, x.Top, x.Right - x.Left, x.Bottom - x.Top, _hWnd, gfx)
+					{
+						FPS = 10,
+						IsTopmost = true,
+						IsVisible = true
+					};
+					_window.DestroyGraphics += _window_DestroyGraphics;
+					_window.DrawGraphics += _window_DrawGraphics;
+					_window.SetupGraphics += _window_SetupGraphics;
+				}
 
 				if (!_window.IsInitialized)
 				{
@@ -164,9 +162,12 @@ namespace MakoCelo.Overlay
 
 		protected virtual void Dispose(bool disposing)
 		{
-			if (!disposedValue && _window != null)
+			if (!disposedValue)
 			{
-				_window.Dispose();
+				if (_window != null )
+                {
+					_window.Dispose();
+				}
 
 				disposedValue = true;
 			}

@@ -1025,7 +1025,7 @@ namespace MakoCelo
             // 
             this._pbStats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this._pbStats.Cursor = System.Windows.Forms.Cursors.Default;
-            this._pbStats.Location = new System.Drawing.Point(10, 237);
+            this._pbStats.Location = new System.Drawing.Point(10, 201);
             this._pbStats.Name = "_pbStats";
             this._pbStats.Size = new System.Drawing.Size(990, 180);
             this._pbStats.TabIndex = 77;
@@ -1293,7 +1293,7 @@ namespace MakoCelo
             // 
             this.pbNote1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pbNote1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pbNote1.Location = new System.Drawing.Point(11, 423);
+            this.pbNote1.Location = new System.Drawing.Point(11, 387);
             this.pbNote1.Name = "pbNote1";
             this.pbNote1.Size = new System.Drawing.Size(500, 60);
             this.pbNote1.TabIndex = 91;
@@ -1628,7 +1628,7 @@ namespace MakoCelo
             // 
             this.pbNote3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pbNote3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pbNote3.Location = new System.Drawing.Point(11, 553);
+            this.pbNote3.Location = new System.Drawing.Point(11, 517);
             this.pbNote3.Name = "pbNote3";
             this.pbNote3.Size = new System.Drawing.Size(500, 60);
             this.pbNote3.TabIndex = 96;
@@ -1638,7 +1638,7 @@ namespace MakoCelo
             // 
             this.pbNote4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pbNote4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pbNote4.Location = new System.Drawing.Point(11, 618);
+            this.pbNote4.Location = new System.Drawing.Point(11, 582);
             this.pbNote4.Name = "pbNote4";
             this.pbNote4.Size = new System.Drawing.Size(500, 60);
             this.pbNote4.TabIndex = 97;
@@ -1648,7 +1648,7 @@ namespace MakoCelo
             // 
             this.pbNote2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pbNote2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pbNote2.Location = new System.Drawing.Point(11, 488);
+            this.pbNote2.Location = new System.Drawing.Point(11, 452);
             this.pbNote2.Name = "pbNote2";
             this.pbNote2.Size = new System.Drawing.Size(500, 60);
             this.pbNote2.TabIndex = 98;
@@ -1911,7 +1911,7 @@ namespace MakoCelo
             // _scrStats
             // 
             this._scrStats.LargeChange = 90;
-            this._scrStats.Location = new System.Drawing.Point(1003, 238);
+            this._scrStats.Location = new System.Drawing.Point(1003, 202);
             this._scrStats.Name = "_scrStats";
             this._scrStats.Size = new System.Drawing.Size(23, 178);
             this._scrStats.TabIndex = 107;
@@ -1943,7 +1943,7 @@ namespace MakoCelo
             // lstLog
             // 
             this.lstLog.FormattingEnabled = true;
-            this.lstLog.Location = new System.Drawing.Point(790, 430);
+            this.lstLog.Location = new System.Drawing.Point(738, 387);
             this.lstLog.Name = "lstLog";
             this.lstLog.Size = new System.Drawing.Size(288, 277);
             this.lstLog.TabIndex = 110;
@@ -1986,7 +1986,7 @@ namespace MakoCelo
             this.SS1.Location = new System.Drawing.Point(0, 717);
             this.SS1.Name = "SS1";
             this.SS1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.SS1.Size = new System.Drawing.Size(1130, 22);
+            this.SS1.Size = new System.Drawing.Size(1215, 22);
             this.SS1.TabIndex = 113;
             // 
             // SS1_Version
@@ -2040,7 +2040,7 @@ namespace MakoCelo
             // _chkToggleOverlay
             // 
             this._chkToggleOverlay.AutoSize = true;
-            this._chkToggleOverlay.Location = new System.Drawing.Point(991, 201);
+            this._chkToggleOverlay.Location = new System.Drawing.Point(1111, 43);
             this._chkToggleOverlay.Name = "_chkToggleOverlay";
             this._chkToggleOverlay.Size = new System.Drawing.Size(98, 17);
             this._chkToggleOverlay.TabIndex = 115;
@@ -2053,7 +2053,7 @@ namespace MakoCelo
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.ClientSize = new System.Drawing.Size(1130, 739);
+            this.ClientSize = new System.Drawing.Size(1215, 739);
             this.Controls.Add(this._chkToggleOverlay);
             this.Controls.Add(this.SS1);
             this.Controls.Add(this._chkCountry);

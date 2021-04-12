@@ -3090,6 +3090,20 @@ namespace MakoCelo
                                         chkCountry.Checked = false;
                                     }
                                 }
+
+                                A = sr.ReadLine(); // R4.45 Draw flags. 
+                                if (A == "SHOW OVERLAY")
+                                {
+                                    A = sr.ReadLine();
+                                    if (A == "1")
+                                    {
+                                        _chkToggleOverlay.Checked = true;
+                                    }
+                                    else
+                                    {
+                                        _chkToggleOverlay.Checked = false;
+                                    }
+                                }
                             }  // <-- REV 5 END
                         }   // <-- REV 4 END
                     }   // <-- REV 3 END
@@ -4981,6 +4995,16 @@ namespace MakoCelo
                     sw.WriteLine("0");
                 }
 
+                // R5.00 Added.
+                sw.WriteLine("SHOW OVERLAY");
+                if (_chkToggleOverlay.Checked)
+                {
+                    sw.WriteLine("1");
+                }
+                else
+                {
+                    sw.WriteLine("0");
+                }
 
                 // R3.10 Write some extra lines to stop file open fails on future revs.
                 for (int t = 1; t <= 100; t++)
