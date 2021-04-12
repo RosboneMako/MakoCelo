@@ -1136,7 +1136,7 @@ namespace MakoCelo
             // R5.00 Overlay
             if (SCAN_Enabled && F_NewData && _chkToggleOverlay.Checked)
             {
-                _overlay.Run(PlrRank, PlrName);
+                _overlay.Run(PlrName, PlrRank);
             }
             // R4.30 Clean up our GUI user indicators.
             Cursor = Cursors.Default;

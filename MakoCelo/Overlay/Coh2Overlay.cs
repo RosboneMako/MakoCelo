@@ -41,10 +41,10 @@ namespace MakoCelo.Overlay
 				foreach (var pair in _images) pair.Value.Dispose();
 			}
 
-			_brushes["black"] = gfx.CreateSolidBrush(0, 0, 0);
+			_brushes["black"] = gfx.CreateSolidBrush(0, 0, 0, 0.8F);
 			_brushes["white"] = gfx.CreateSolidBrush(255, 255, 255);
 			_brushes["red"] = gfx.CreateSolidBrush(255, 0, 0);
-			_brushes["green"] = gfx.CreateSolidBrush(0, 255, 0);
+			_brushes["green"] = gfx.CreateSolidBrush(0, 255, 0, 0.8F);
 			_brushes["blue"] = gfx.CreateSolidBrush(0, 0, 255);
 			_brushes["background"] = gfx.CreateSolidBrush(0x33, 0x36, 0x3F,0);
 			_brushes["grid"] = gfx.CreateSolidBrush(255, 255, 255, 0.2f);
@@ -87,19 +87,25 @@ namespace MakoCelo.Overlay
 		{
 			var gfx = e.Graphics;
 
-            for (int i = 0; i < _plrNames.Length; i++)
+			gfx.ClearScene(_brushes["background"]);
+
+			gfx.FillRoundedRectangle(_brushes["black"], 0, 0, 500, 100, 8.0f);
+
+			for (int i = 1; i < _plrNames.Length; i +=2)
             {
-				gfx.DrawTextWithBackground(_fonts["consolas"], _brushes["green"], _brushes["black"], 58, 40 + i * 20, _plrNames[i] + " " + _plrRanks[i]);
+                if (_plrNames[i] != "")
+                {
+					gfx.DrawText(_fonts["consolas"], _brushes["green"], 10, i * 10, _plrNames[i] + " " + _plrRanks[i]);
+				}
             }
-		}
 
-		private SolidBrush GetRandomColor()
-		{
-			var brush = _brushes["random"];
-
-			brush.Color = new Color(_random.Next(0, 256), _random.Next(0, 256), _random.Next(0, 256));
-
-			return brush;
+			for (int i = 2; i < _plrNames.Length; i += 2)
+			{
+				if (_plrNames[i] != "")
+				{
+					gfx.DrawText(_fonts["consolas"], _brushes["green"], 300, (i * 10) - 10, _plrNames[i] + " " + _plrRanks[i]);
+				}
+			}
 		}
 
 		public void Run(string[] plrName, string[] plrRank)
@@ -143,13 +149,9 @@ namespace MakoCelo.Overlay
 			}
 			Task.Delay(30000).ContinueWith(x =>
 			{
-				this.Pause();
+				_window.Pause();
+				_window.Hide();
 			});
-		}
-		internal void Pause()
-		{
-			_window.Pause();
-			_window.Hide();
 		}
 
 		~Coh2Overlay()
